@@ -18814,4 +18814,78 @@ ul.children {
 }
 .footer.style-5 .footer-widget.widget_nav_menu li a:before {
   display: none;
+}
+
+.checknow-form {
+  margin-top: 150px;
+}
+.checknow-form .inner-wrapper {
+  padding: 20px;
+  background-color: rgba(63, 63, 63, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.checknow-form form {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  padding: 30px;
+  background-color: #3f3f3f;
+}
+.checknow-form form .input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.checknow-form form .input-wrapper input,
+.checknow-form form .input-wrapper select {
+  padding: 16px 20px;
+  background-color: #564848;
+  color: #a19292;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  width: 290px;
+}
+.checknow-form form .input-wrapper label {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  text-transform: uppercase;
+}
+.checknow-form form .input-wrapper .date-container {
+  position: relative;
+  display: inline-block;
+}
+.checknow-form form .input-wrapper .date-container input[type=date] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.checknow-form form .input-wrapper .date-container .fa-calendar-alt {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+.checknow-form form .input-wrapper input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.checknow-form form .input-wrapper input[type=date]::-moz-calendar-picker-indicator {
+  display: none;
+}
+.checknow-form form .input-wrapper input[type=date]::-ms-clear {
+  display: none;
+}
+.checknow-form form button {
+  padding: 7px 40px;
+  background-color: #aa8453;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

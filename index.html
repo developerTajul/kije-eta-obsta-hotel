@@ -300,6 +300,46 @@
         </div>
         <!-- single slider end -->
       </div>
+      <div class="checknow-form">
+        <div class="container">
+          <div class="inner-wrapper">
+            <form action="/submit-checkin" method="POST">
+              <!-- Check-In Date -->
+              <div class="input-wrapper">
+                <label for="checkin">Check-In:</label>
+                <div class="date-container">
+                  <i class="fas fa-calendar-alt"></i>
+                  <input type="date" id="checkin" name="checkin" required />
+                </div>
+              </div>
+
+              <!-- Check-Out Date -->
+              <div class="input-wrapper">
+                <label for="checkout">Check-Out:</label>
+                <div class="date-container">
+                  <i class="fas fa-calendar-alt"></i>
+                  <input type="date" id="checkout" name="checkout" required />
+                </div>
+              </div>
+
+              <!-- Room Selection -->
+              <div class="input-wrapper">
+                <label for="room">Room:</label>
+                <select id="room" name="room" required>
+                  <option value="" disabled selected>Select your room</option>
+                  <option value="101">Room 101</option>
+                  <option value="102">Room 102</option>
+                  <option value="201">Room 201</option>
+                  <option value="202">Room 202</option>
+                </select>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit">Check In</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Slider Section End !-->
 
