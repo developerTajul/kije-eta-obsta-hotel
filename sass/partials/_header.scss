@@ -1,30 +1,16 @@
 .header-area {
   &.style-1 {
-    background-color: $gray-100;
-
-
-    .header-menu-area {
-      padding: 0 300px;
-
-      @include rmaxwd(1399) {
-        padding: 0;
-      }
-    }
-    .logo-wrapper {
-      margin-left: -200px;
-
-      @include rmaxwd(1399) {
-        margin-left: 0;
-      }
-    }
+    position: fixed;
+    width: 100%;
+    z-index: 99;
     .header-menu-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
       .search-btn-with-btn {
         margin-left: unset;
-        margin-right: -200px;
 
         @include rmaxwd(1199) {
           display: none;
@@ -110,7 +96,7 @@
         }
       }
       &.contact-info-item {
-        gap:0 10px !important;
+        gap: 0 10px !important;
       }
       a {
         display: flex;
@@ -148,7 +134,6 @@
   }
 }
 
-
 // Start Header Nav
 .header-menu-area {
   width: 100%;
@@ -158,7 +143,6 @@
   left: 0;
 
   .search-btn-with-btn {
-
     @include rmaxwd(991) {
       display: none;
     }
@@ -215,7 +199,7 @@
     top: 0;
     position: fixed;
     z-index: 9999;
-    background-color: $white;
+    background-color: #181717eb;
     box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.05);
 
     .logo {
@@ -242,7 +226,7 @@
           &.active,
           &.current-menu-ancestor {
             > a {
-              color: $primary-color;
+              color: $white;
 
               &:after {
                 display: none;
@@ -251,7 +235,7 @@
           }
           a {
             padding: 27px 24px;
-            color: $black;
+            // color: $white;
             @include transition;
             @include lg {
               padding: 27px 15px;
@@ -280,7 +264,6 @@
               }
             }
           }
-
         }
       }
     }
@@ -339,8 +322,6 @@
   }
 }
 
-
-
 .main-menu {
   ul {
     margin: 0;
@@ -355,7 +336,7 @@
       &.current-menu-ancestor {
         position: relative;
         > a {
-          color: $primary-color;
+          // color: $primary-color;
 
           //&:after {
           //  position: absolute;
@@ -418,16 +399,18 @@
       }
       a {
         display: block;
-        padding: 45px 24px;
+        padding: 24px;
         text-decoration: none;
         text-transform: capitalize;
         @include transition;
         position: relative;
-        color: $black;
+        color: $white;
         font-family: $body-font;
-        font-size: 16px;
-        font-weight: 500;
-
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
 
         &:before {
           position: absolute;
@@ -558,6 +541,10 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  .btn-wrapper {
+    a {
+    }
+  }
 
   .search-btn {
     font-size: 24px;
@@ -674,7 +661,7 @@
     }
 
     .search-form {
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: 0 30px 70px rgba(208, 225, 242, 0.3);
       padding: 15px 30px;
       flex: 1;
@@ -711,5 +698,4 @@
       }
     }
   }
-
 }

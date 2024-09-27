@@ -247,7 +247,7 @@
       infinite: true,
       autoplay: false,
       draggable: true,
-      arrows: true,
+      arrows: false,
       slidesToScroll: 1,
       loop: true,
       dots: true,
