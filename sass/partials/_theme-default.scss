@@ -272,24 +272,6 @@ input.theme-btn {
     letter-spacing: initial;
     font-size: 14px;
   }
-
-  //i {
-  //  display: inline-flex;
-  //  align-items: center;
-  //  justify-content: center;
-  //}
-  // &:before {
-  //   position: absolute;
-  //   left: -20%;
-  //   top: 0;
-  //   height: 100%;
-  //   width: 0;
-  //   content: "";
-  //   background-color: $blue-color;
-  //   z-index: -1;
-  //   transform: skew(45deg);
-  //   @include transition;
-  // }
   &:hover {
     color: #fff;
     border-color: $blue-color;
@@ -304,6 +286,19 @@ input.theme-btn {
 
   &:focus {
     color: $white;
+  }
+  &.style-2 {
+    border-color: $secondary-color;
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 3.2px;
+    padding: 15px 20px;
+    &:after {
+      background-color: $secondary-color;
+    }
   }
 }
 

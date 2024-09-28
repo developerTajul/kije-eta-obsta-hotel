@@ -325,13 +325,15 @@
               <!-- Room Selection -->
               <div class="input-wrapper">
                 <label for="room">Room:</label>
-                <select id="room" name="room" required>
-                  <option value="" disabled selected>Select your room</option>
-                  <option value="101">Room 101</option>
-                  <option value="102">Room 102</option>
-                  <option value="201">Room 201</option>
-                  <option value="202">Room 202</option>
-                </select>
+                <div class="select-container">
+                  <select id="room" name="room" required>
+                    <option value="" disabled selected>Select your room</option>
+                    <option value="101">Room 101</option>
+                    <option value="102">Room 102</option>
+                    <option value="201">Room 201</option>
+                    <option value="202">Room 202</option>
+                  </select>
+                </div>
               </div>
 
               <!-- Submit Button -->
@@ -344,38 +346,31 @@
     <!-- Slider Section End !-->
 
     <!-- About Us Area Start !-->
-    <div class="about-us-area style-2 py-120">
+    <div class="about-us-area style-1 py-120">
       <div class="container">
         <div class="row gy-5">
           <div class="col-lg-6">
-            <div class="about-image-card style-2">
-              <div class="main-img-wrapper">
+            <div class="about-image-card style-1">
+              <div class="image-wrapper">
                 <!-- images module -->
-                <div class="main-img-inner">
-                  <img
-                    class="tilt-animate"
-                    src="images/about/v-2/about-card-img.jpg"
-                    alt="about card img"
-                  />
-                  <div class="top-image">
-                    <img
-                      class="tilt-animate"
-                      src="images/about/v-2/about-img-two.jpg"
-                      alt="about card img"
-                    />
+                <div class="main-img">
+                  <div class="content">
+                    <p>Luxury Room</p>
+                  </div>
+                  <img src="images/image-card/img-1.jpg" alt="about card img" />
+                  <div class="shape">
+                    <img src="images/shape/image-card-shape.png" alt="image-card-shape" />
+                  </div>
+                  <div class="video-popup-btn">
+                    <a
+                      href="https://www.youtube.com/watch?v=SZEflIVnhH8"
+                      class="mfp-iframe video-play"
+                    >
+                      <i class="fa-solid fa-play" aria-hidden="true"></i>
+                    </a>
                   </div>
                 </div>
-
-                <!-- counter -->
-                <div class="review-card">
-                  <div class="icon">
-                    <img src="images/about/v-2/rating-icon.png" alt="about card img" />
-                  </div>
-                  <div class="card-text">
-                    <h2><span class="counter">5</span>K+</h2>
-                    <span>project completed</span>
-                  </div>
-                </div>
+                <div class="square-shape"></div>
               </div>
             </div>
           </div>
@@ -383,48 +378,64 @@
             <div class="about-info-card style-2">
               <div class="about-info-content">
                 <!-- heading -->
-                <div class="section-title">
+                <div class="section-title mb-0">
                   <div class="sec-content">
-                    <div class="short-title-wrapper">
-                      <h5 class="short-title only-divider">about us</h5>
-                    </div>
-                    <h2 class="title">Elevate Your Lifestyle with our Meets Interior Design</h2>
+                    <h5 class="short-title">The Cappa Luxury Hotel</h5>
+                    <h2 class="title">
+                      Stay with Comfort <br />
+                      and Style
+                    </h2>
 
-                    <p class="desc">
-                      It is a long established fact that a reader will be distracted by the
-                      readablejk content of a page when looking at its layout. Lorem Ipsum is simply
-                      dummyj
+                    <p class="sec-desc">
+                      Provide additional resources such as readings, articles, videos, or online
+                      tutorials for learners who want to explore the details further.Sit amet,
+                      consectetur adipiscing elit, sed do eiusmod. Sit amet, consectetur adipiscing
+                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit
+                      amet.
                     </p>
+                    <h4 class="para">
+                      Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    </h4>
                   </div>
                 </div>
 
-                <div class="icon-card style-2">
-                  <!-- icon moudle -->
-                  <div class="icon-card-inner">
+                <div class="icon-card-wrapper">
+                  <div class="icon-card style-1">
                     <div class="image">
-                      <img src="images/about/v-2/about-icon-one.png" alt="" />
+                      <img src="images/icon/covered-dish.png" alt="" />
                     </div>
 
                     <div class="content">
-                      <h3 class="info-title">swift work</h3>
-                      <p class="desc">
-                        It is a long established fact that a reader will distracted by the
-                        readablejk content of a page when looking at its layout time to close.
-                      </p>
+                      <h3 class="info-title">
+                        The Best <br />
+                        Restaurants
+                      </h3>
                     </div>
                   </div>
-                  <!-- icon moudle -->
-
-                  <div class="icon-card-inner">
+                  <div class="icon-card style-1">
                     <div class="image">
-                      <img src="images/about/v-2/about-icon-two.png" alt="" />
+                      <img src="images/icon/juice-cup.png" alt="" />
                     </div>
                     <div class="content">
-                      <h3 class="info-title">Express delybary</h3>
-                      <p class="desc">
-                        It is a long established fact that a reader will distracted by the
-                        readablejk content of a page when looking at its layout time to close.
-                      </p>
+                      <h3 class="info-title">
+                        The Best <br />
+                        Coctail bar
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-wrapper">
+                  <div class="inner-wrapper">
+                    <a href="#" class="theme-btn style-2">Know about us</a>
+                    <div class="booking-btn">
+                      <div class="image">
+                        <img src="images/icon/clock.png" />
+                      </div>
+                      <div class="content">
+                        <p>Booking Now</p>
+                        <a href="#">123456789</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -559,7 +570,7 @@
             <div class="section-title two-column">
               <div class="sec-content">
                 <span class="short-title-wrapper">
-                  <span class="short-title only-divider">recent work</span>
+                  <span class="short-title">recent work</span>
                 </span>
                 <h2 class="title">Your Visi Our Expertise Creating Beautiful Spac Inside</h2>
               </div>
@@ -720,7 +731,7 @@
             <div class="about-info-card style-4">
               <div class="about-info-content">
                 <div class="section-title">
-                  <h5 class="short-title only-divider">BEST SELLING products</h5>
+                  <h5 class="short-title">BEST SELLING products</h5>
                   <h2 class="title">Elevate Your Lifestyle with our Designs interior</h2>
                 </div>
                 <p class="desc">
@@ -774,7 +785,7 @@
             <div class="section-title two-column">
               <div class="sec-content">
                 <span class="short-title-wrapper">
-                  <span class="short-title only-divider">working process</span>
+                  <span class="short-title">working process</span>
                 </span>
                 <h2 class="title">
                   Creating Beautiful Spaces <br />
@@ -914,7 +925,7 @@
             <div class="section-title">
               <div class="sec-content">
                 <div class="short-title-wrapper">
-                  <span class="short-title only-divider">Clients Testimonials</span>
+                  <span class="short-title">Clients Testimonials</span>
                 </div>
                 <h2 class="title">Unleash the Potential of your Interiors</h2>
               </div>
@@ -1029,7 +1040,7 @@
         <div class="section-title">
           <div class="sec-content">
             <div class="short-title-wrapper">
-              <span class="short-title only-divider">blog and news</span>
+              <span class="short-title">blog and news</span>
             </div>
             <h2 class="title">
               Designing Spaces for Every <br />

@@ -329,7 +329,7 @@
       font-size: 16px;
       font-style: italic;
       color: $text-color;
-      font-family: $jost-font;
+      font-family: $body-font;
       text-transform: capitalize;
     }
     p {
@@ -337,7 +337,7 @@
       margin-bottom: 0;
       color: $text-color;
       font-size: 18px;
-      font-family: $jost-font;
+      font-family: $body-font;
     }
   }
   .author-social-profiles {
