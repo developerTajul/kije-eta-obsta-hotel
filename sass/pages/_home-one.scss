@@ -559,6 +559,61 @@
   }
 }
 
+// About-us area
+.about-us-area {
+  &.style-2 {
+    @include md {
+      padding: 100px 0px !important;
+    }
+    @include sm {
+      padding: 80px 0px !important;
+    }
+    .counter-card-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 76px;
+    }
+    .about-image-card {
+      position: relative;
+      .right-bar {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateX(65%);
+        z-index: 1;
+      }
+      .inner-wrapper {
+        position: relative;
+        width: 166px;
+        height: 2px;
+        background-color: $black;
+
+        .short-bar {
+          width: 58px;
+          height: 2px;
+          background-color: $white;
+          position: absolute;
+          left: 0;
+          z-index: 1;
+        }
+        .circle {
+          width: 16px;
+          height: 16px;
+          border-radius: 50px;
+          background-color: $black;
+          position: absolute;
+          right: 0;
+          transform: translate(50%, -50%);
+        }
+      }
+    }
+    .about-info-card {
+      margin-top: 50px;
+    }
+  }
+}
+
 // Portfolio Section
 .portfolio-section {
   &.style-1 {
