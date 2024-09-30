@@ -138,54 +138,14 @@
     margin-top: 20px;
     color: $gray;
   }
-  &.two-column {
-    align-items: flex-end;
-
-    @include sm {
-      flex-direction: column;
-      gap: 30px;
-      margin-bottom: 50px;
-      align-items: flex-start;
-    }
-    @include md {
-      flex-direction: column;
-      gap: 30px;
-      margin-bottom: 50px;
-      align-items: flex-start;
-    }
-
+  &.style-2 {
+    justify-content: center;
     .sec-content {
-      @include rmaxwd(767) {
-        width: 100%;
-      }
+      align-items: center;
+      text-align: center;
     }
-    .sec-desc {
-      width: 537px;
-      font-family: $body-font;
-
-      @include lg {
-        width: 440px;
-      }
-      @include md {
-        width: 100%;
-      }
-      @include rmaxwd(767) {
-        width: 100%;
-      }
-
-      .desc {
-        margin-bottom: 8px;
-      }
-
-      .simple-btn {
-        font-size: 18px;
-        font-weight: 500;
-        font-family: $heading-font;
-        color: $black;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-      }
+    .title {
+      margin-bottom: 0;
     }
   }
 }

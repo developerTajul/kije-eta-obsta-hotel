@@ -493,6 +493,28 @@
   }
 }
 
+// Service area
+.service-area {
+  padding: 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 43, 43, 0.9);
+    z-index: 1;
+  }
+  .card-wrapper {
+    margin-top: 46px;
+  }
+}
+
 // Feature Area
 .feature-area {
   &.style-1 {
