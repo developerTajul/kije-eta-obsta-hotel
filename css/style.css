@@ -2500,7 +2500,7 @@ img.emoji {
  Block Unit Test Widget
 ============================*/
 .wp-block-search__input {
-  border: 1px solid #e3e3e3 !important;
+  border: 1px solid #e0e0e0 !important;
 }
 
 .wp-block-search__button {
@@ -2639,7 +2639,7 @@ blockquote footer {
 .wp-block-categories select {
   height: 66px;
   width: 200px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #e0e0e0;
   padding: 0 10px;
   margin-bottom: 10px;
 }
@@ -2692,7 +2692,7 @@ nav.wp-calendar-nav a:hover {
 
 .blog-search-content .search-form input {
   width: 50%;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #e0e0e0;
 }
 @media (max-width: 991px) {
   .blog-search-content .search-form input {
@@ -8915,7 +8915,7 @@ body.admin-bar .header-area.style-7 {
 }
 .accordion-wrapper.style-three .accordion-box-wrapper .accordion-list-item .accordion-head.collapsed {
   color: #222;
-  border-color: #e3e3e3;
+  border-color: #e0e0e0;
   background-color: transparent;
   transition: all 0.5s ease-out;
 }
@@ -11672,7 +11672,7 @@ body.admin-bar .header-area.style-7 {
   max-width: 100%;
   height: 66px;
   width: 100%;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #e0e0e0;
   padding: 0 10px;
   border-radius: 5px;
   color: #616670;
@@ -11688,7 +11688,7 @@ body.admin-bar .header-area.style-7 {
   max-width: 100%;
   height: 50px;
   width: 100%;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #e0e0e0;
   padding: 0 10px;
   border-radius: 5px;
   color: #616670;
@@ -14615,6 +14615,51 @@ ul.children {
   line-height: 34px; /* 141.667% */
   letter-spacing: 2.4px;
   color: #222;
+}
+
+.room_and_suites .banner-text {
+  position: relative;
+}
+.room_and_suites .banner-text p {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(102, 102, 102, 0.7);
+  font-family: "Gilda Display";
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-wrap: nowrap;
+  transform: translate(-8%, -33%);
+}
+.room_and_suites .room-card-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  position: relative;
+  margin-top: -196px;
+}
+.room_and_suites .room-card-wrapper .room-card:nth-child(even) {
+  margin-top: 80px;
+}
+.room_and_suites .room-card-wrapper .slick-slide {
+  margin: 0 12px;
+}
+.room_and_suites .room-card-wrapper .slick-track {
+  margin: 0 -12px;
+}
+.room_and_suites .room-card-wrapper .room-card-btn {
+  position: absolute;
+}
+.room_and_suites .room-card-wrapper .room-card-btn.prev-btn {
+  left: 0;
+}
+.room_and_suites .room-card-wrapper .room-card-btn.next-btn {
+  right: 0;
 }
 
 .feature-area.style-1 {
@@ -18829,4 +18874,155 @@ ul.children {
   transform: translateY(-50%);
   pointer-events: none;
   color: #ffffff;
+}
+
+.room-card {
+  width: 505px;
+  height: 656px;
+  position: relative;
+  overflow: hidden;
+}
+.room-card:hover .booking-btn {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.5s ease-out;
+}
+.room-card:hover .content-wrapper {
+  height: 50%;
+  bottom: 0;
+  -webkit-clip-path: polygon(50% 0, 50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
+          clip-path: polygon(50% 0, 50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
+  transition: all 0.5s ease-out;
+}
+.room-card:hover .content-wrapper .inner-wrapper {
+  bottom: 30px;
+  transition: all 0.5s ease-out;
+}
+.room-card:hover .content-wrapper .inner-wrapper .rating {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 16px;
+  margin-top: 16px;
+  transform: scaleY(1);
+  transition: all 0.5s ease-out;
+}
+.room-card .content-wrapper {
+  height: 100%;
+  bottom: 0;
+  transition: height 0.5s ease-out;
+  -webkit-clip-path: none;
+          clip-path: none;
+  transition: all 0.5s ease-out;
+}
+.room-card .content-wrapper .inner-wrapper {
+  position: absolute;
+  width: 80%;
+  overflow: hidden;
+  bottom: 0;
+  transition: all 0.5s ease-out;
+}
+.room-card .booking-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  transition: all 0.5s ease-out;
+}
+.room-card .booking-btn a {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  background-color: #aa8453;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.room-card .content-wrapper {
+  color: #ffffff;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.75);
+  padding-left: 60px;
+  position: absolute;
+  overflow: visible;
+}
+.room-card .content-wrapper .inner-wrapper {
+  position: absolute;
+  width: 80%;
+  overflow: hidden;
+  bottom: 0;
+  transition: all 0.5s ease-out;
+}
+.room-card .content-wrapper .inner-wrapper .title {
+  font-family: "Gilda Display", serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+.room-card .content-wrapper .inner-wrapper .price-wrapper {
+  display: flex;
+  align-items: end;
+}
+.room-card .content-wrapper .inner-wrapper .price-wrapper .price {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+}
+.room-card .content-wrapper .inner-wrapper .price-wrapper .divider {
+  width: 1px;
+  height: 20px;
+  background-color: #ffffff;
+  margin: 0 16px 6px;
+}
+.room-card .content-wrapper .inner-wrapper .price-wrapper .day_night {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.room-card .content-wrapper .inner-wrapper .rating {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  visibility: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s ease-out;
+}
+.room-card .content-wrapper .inner-wrapper .rating .desc {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.room-card .content-wrapper .inner-wrapper .rating .desc p {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3px;
+}
+.room-card .image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.room-card .image-wrapper img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

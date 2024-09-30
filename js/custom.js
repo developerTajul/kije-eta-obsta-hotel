@@ -860,6 +860,57 @@
       ],
     });
 
+    // Room card slider
+    $(".room-card-wrapper").slick({
+      slidesToShow: 4,
+      infinite: true,
+      autoplay: false,
+      draggable: true,
+      arrows: true,
+      slidesToScroll: 1,
+      loop: true,
+      dots: false,
+      variableWidth: true,
+      speed: 1500,
+      rtl: false,
+      prevArrow:
+        "<button type='button' class='room-card-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='room-card-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            autoplay: true,
+            slidesToShow: 1,
+            arrows: true,
+            variableWidth: false,
+            speed: 1500,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            autoplay: true,
+            slidesToShow: 2,
+            arrows: true,
+            variableWidth: false,
+            speed: 1500,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            autoplay: true,
+            slidesToShow: 1,
+            arrows: true,
+            variableWidth: false,
+            speed: 1500,
+          },
+        },
+      ],
+    });
+
     /*
         Counter Js
         ============================*/
