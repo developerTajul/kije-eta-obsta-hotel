@@ -4474,6 +4474,24 @@ body.admin-bar .header-area.style-7 {
   margin-bottom: 0;
 }
 
+.banner-text {
+  position: relative;
+}
+.banner-text p {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(102, 102, 102, 0.7);
+  font-family: "Gilda Display";
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-wrap: nowrap;
+  transform: translate(-8%, -33%);
+}
+
 .slider-area {
   overflow: hidden;
   position: relative;
@@ -7737,94 +7755,22 @@ body.admin-bar .header-area.style-7 {
   padding: 0;
 }
 
-.testimonial-card {
-  padding: 40px;
-  background-color: #ffffff;
+.testimonial-card.style-1 .testimonial-card {
+  text-align: center;
+}
+.testimonial-card.style-1 .testimonial-card .icon {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
 }
-.testimonial-card.style-1 {
-  width: 410px;
-  gap: 14px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .testimonial-card.style-1 {
-    width: 540px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .testimonial-card.style-1 {
-    width: auto;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-card.style-1 {
-    width: auto;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-card.style-1 {
-    width: 100%;
-  }
-}
-.testimonial-card.style-1 .user-info-wrapper {
-  gap: 22px;
-}
-.testimonial-card .user-info-wrapper {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.testimonial-card .user-info-wrapper .user-img {
-  display: flex;
-  justify-content: center;
-  align-self: flex-start;
-  flex-shrink: 0;
-  width: 76px;
-  height: 76px;
-  position: relative;
-}
-.testimonial-card .user-info-wrapper .user-img img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 1/1;
-}
-.testimonial-card .user-info-wrapper .user-meta .name {
-  font-family: "Gilda Display", serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 30px;
+.testimonial-card.style-1 .testimonial-card .desc {
+  color: #aa8453;
   margin-bottom: 0;
-}
-.testimonial-card .user-info-wrapper .user-meta .designation {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  color: #666;
-  margin: 4px 0;
-}
-.testimonial-card .user-info-wrapper .user-meta .rating-icon {
-  font-family: "Font Awesome 6 Pro";
-  font-size: 14px;
-  font-weight: 900;
-  color: #FF9205;
-  margin-bottom: 0;
-}
-.testimonial-card .content-wrapper .description {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #666;
-  margin-bottom: 0;
+  line-height: normal;
+  letter-spacing: 5.4px;
+  text-transform: uppercase;
 }
 
 .testimonial-card.style-2 {
@@ -10286,6 +10232,24 @@ body.admin-bar .header-area.style-7 {
 }
 .section-title.style-2 .title {
   margin-bottom: 0;
+}
+
+.banner-text {
+  position: relative;
+}
+.banner-text p {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(102, 102, 102, 0.7);
+  font-family: "Gilda Display";
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-wrap: nowrap;
+  transform: translate(-8%, -33%);
 }
 
 .page-breadcrumb-area {
@@ -14019,23 +13983,6 @@ ul.children {
   color: #222;
 }
 
-.room_and_suites .banner-text {
-  position: relative;
-}
-.room_and_suites .banner-text p {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(102, 102, 102, 0.7);
-  font-family: "Gilda Display";
-  font-size: 200px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  color: #ffffff;
-  text-wrap: nowrap;
-  transform: translate(-8%, -33%);
-}
 .room_and_suites .room-card-wrapper {
   display: flex;
   gap: 50px;
@@ -14083,6 +14030,10 @@ ul.children {
 }
 .service-area .card-wrapper {
   margin-top: 46px;
+}
+
+.testimonial-area .banner-text p {
+  transform: translate(-8%, -17%);
 }
 
 .feature-area.style-1 {

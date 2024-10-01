@@ -149,3 +149,24 @@
     }
   }
 }
+.banner-text {
+  position: relative;
+  p {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(102, 102, 102, 0.7);
+    font-family: 'Gilda Display';
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: $white;
+    text-wrap: nowrap;
+    transform: translate(-8%, -33%);
+  }
+}
