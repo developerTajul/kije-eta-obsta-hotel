@@ -1,23 +1,26 @@
 .testimonial-card {
-  &.style-1 {
-    .testimonial-card {
-      text-align: center;
-      .icon {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .title {
-      }
-      .desc {
-        color: $primary-color;
-        margin-bottom: 0;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 5.4px;
-        text-transform: uppercase;
-      }
+  text-align: center;
+  display: flex !important;
+  flex-direction: column;
+  gap: 25px;
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    i {
+      color: $yellow;
     }
+  }
+  .title {
+  }
+  .desc {
+    color: $primary-color;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.4px;
+    text-transform: uppercase;
   }
 }

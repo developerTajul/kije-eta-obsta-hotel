@@ -502,7 +502,46 @@
 .testimonial-area {
   .banner-text {
     p {
-      transform: translate(-8%, -17%);
+      transform: translate(-10%, -17%);
+      letter-spacing: 32px;
+    }
+  }
+  .testimonial-slider {
+    position: relative;
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -96px;
+    .slick-list {
+      overflow: visible;
+    }
+    .testimonial-arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      // width: 44px;
+      // height: 44px;
+      background: none;
+      // border: 1px solid $border-color;
+      transition: all 0.5s;
+      i {
+        font-size: 70px;
+        font-weight: 300;
+        color: $gray-4;
+      }
+      &.next-btn {
+        right: 0;
+      }
+    }
+    .testimonial-card {
+      .title {
+        color: $gray-4;
+      }
+      &.slick-active {
+        .title {
+          color: $black;
+        }
+      }
     }
   }
 }
@@ -609,10 +648,12 @@
 // Feature and facilities
 .feature-and-facilities {
   &.style-1 {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .inner-wrapper {
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     .overlay {
       position: absolute;
       top: 0;
