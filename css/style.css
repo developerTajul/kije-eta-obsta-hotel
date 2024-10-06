@@ -28051,25 +28051,9 @@ ul.children {
   position: relative;
   background-color: #f2f2f2;
   top: 0;
+  width: 450px;
+  height: 656px;
   transition: all 0.5s ease-out;
-}
-.team-member-card:before {
-  content: "";
-  width: 100%;
-  height: 5px;
-  background-color: #aa8453;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transition: all 0.5s ease-out;
-}
-.team-member-card:hover {
-  top: -5px;
-  transition: all 0.5s ease-out;
-}
-.team-member-card:hover:before {
-  transform: scaleX(1);
 }
 .team-member-card:hover .image:before {
   height: 250%;
@@ -28080,22 +28064,19 @@ ul.children {
   transform: scale(1.1);
   transition: all 0.5s ease-out;
 }
-.team-member-card .image {
+.team-member-card .image-wrapper {
   overflow: hidden;
   position: relative;
 }
-.team-member-card .image:before {
+.team-member-card .image-wrapper .overlay {
+  background: rgba(49, 43, 43, 0.7);
   position: absolute;
-  width: 200%;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  content: "";
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
-.team-member-card .image img {
+.team-member-card .image-wrapper img {
   width: 100%;
   height: 100%;
   transform: scale(1);
@@ -28103,68 +28084,84 @@ ul.children {
 }
 .team-member-card .content-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   flex-direction: column;
-  padding: 30px 20px;
+  gap: 12px;
+  padding: 40px 60px;
   width: 100%;
   z-index: 2;
+  position: absolute;
+  bottom: 0;
 }
-.team-member-card .content-wrapper .content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  gap: 5px;
-}
-.team-member-card .content-wrapper .content .title {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #222;
+.team-member-card .content-wrapper .title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: #ffffff;
   font-family: "Gilda Display", serif;
   margin: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .team-member-card .content-wrapper .content .title {
+  .team-member-card .content-wrapper .title {
     font-size: 21px;
   }
 }
+.team-member-card .content-wrapper .content {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  z-index: 1;
+  border-left: 1px solid #ffffff;
+  gap: 16px;
+}
 .team-member-card .content-wrapper .content .desc {
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 400;
-  color: #616670;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
   font-family: "Barlow Condensed", sans-serif;
   margin: 0;
 }
-.team-member-card .content-wrapper .social {
-  background: #aa8453;
-  padding: 18px 0;
+.team-member-card .content-wrapper .content i {
+  transform: rotate(-45deg);
+  color: #ffffff;
+  font-weight: 300;
+}
+.team-member-card .social-links {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 22px;
-  width: 94%;
-  margin-top: -60px;
   z-index: -1;
   transition: all 0.5s ease-out;
+  position: absolute;
+  right: 0;
+  bottom: 130px;
 }
-.team-member-card .content-wrapper .social a:hover {
+.team-member-card .social-links a {
+  color: #ffffff;
+}
+.team-member-card .social-links a i {
+  font-size: 24px;
+  color: #ffffff;
+}
+.team-member-card .social-links a:hover {
   color: #aa8453;
   transition: all 0.5s ease-out;
 }
-.team-member-card .content-wrapper .social i {
+.team-member-card .social-links i {
   color: #ffffff;
 }
-.team-member-card:hover .content-wrapper .content {
+.team-member-card:hover .social-links {
+  right: 30px;
   z-index: 1;
-}
-.team-member-card:hover .content-wrapper .social {
-  margin-top: 0;
-  z-index: 0;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .team-member-card {
@@ -29883,6 +29880,15 @@ ul.children {
 }
 .testimonial-area .testimonial-slider .testimonial-card.slick-active .title {
   color: #222;
+}
+
+.team-area.style-1 {
+  position: relative;
+}
+.team-area.style-1 .shape {
+  position: absolute;
+  right: 50px;
+  top: 66px;
 }
 
 .feature-area.style-1 {

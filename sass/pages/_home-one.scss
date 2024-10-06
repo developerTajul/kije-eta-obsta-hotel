@@ -546,6 +546,18 @@
   }
 }
 
+// Team area style-1
+.team-area {
+  &.style-1 {
+    position: relative;
+    .shape {
+      position: absolute;
+      right: 50px;
+      top: 66px;
+    }
+  }
+}
+
 // Feature Area
 .feature-area {
   &.style-1 {

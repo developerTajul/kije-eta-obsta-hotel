@@ -2,51 +2,32 @@
   position: relative;
   background-color: $gray-100;
   top: 0;
+  width: 450px;
+  height: 656px;
   @include transition;
-  &:before{
-    content: "";
-    width: 100%;
-    height: 5px;
-    background-color: $primary-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    @include transition;
-
-  }
   &:hover {
-    top: -5px;
-    @include transition;
-    &:before{
-      transform: scaleX(1);
+    .image {
+      &:before {
+        height: 250%;
+        transition: all 900ms linear;
+        background-color: transparent;
+      }
+      img {
+        transform: scale(1.1);
+        @include transition;
+      }
     }
-   .image {
-     &:before {
-       height: 250%;
-       transition: all 900ms linear;
-       background-color: transparent;
-     }
-     img {
-       transform: scale(1.1);
-       @include transition;
-     }
-   }
   }
-  .image {
+  .image-wrapper {
     overflow: hidden;
     position: relative;
-
-    &:before {
+    .overlay {
+      background: rgba(49, 43, 43, 0.7);
       position: absolute;
-      width: 200%;
-      height: 0%;
-      left: 50%;
-      top: 50%;
-      background-color: rgba(255, 255, 255, 0.3);
-      transform: translate(-50%, -50%) rotate(-45deg);
-      content: "";
-      z-index: 1;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
     }
     img {
       width: 100%;
@@ -57,80 +38,86 @@
   }
   .content-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
-    padding: 30px 20px;
+    gap: 12px;
+    padding: 40px 60px;
     width: 100%;
     z-index: 2;
+    position: absolute;
+    bottom: 0;
 
+    .title {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+      color: $white;
+      font-family: $heading-font;
+      margin: 0;
+
+      @include lg {
+        font-size: 21px;
+      }
+    }
     .content {
       width: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       z-index: 1;
-      gap: 5px;
+      border-left: 1px solid $white;
+      gap: 16px;
 
-      .title {
-        font-size: 24px;
-        line-height: 30px;
-        font-weight: 700;
-        color: $black;
-        font-family: $heading-font;
-        margin: 0;
-
-        @include lg {
-          font-size: 21px;
-        }
-      }
       .desc {
-        font-size: 16px;
-        line-height: 28px;
-        font-weight: 400;
-        color: $text-color;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 250;
+        line-height: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: $white;
         font-family: $body-font;
         margin: 0;
       }
-    }
-    .social {
-      background: $primary-color;
-      padding: 18px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 22px;
-      width: 94%;
-      margin-top: -60px;
-      z-index: -1;
-      transition: all 0.5s ease-out;
-      a {
-        &:hover {
-          color: $primary-color;
-          @include transition
-
-
-
-
-
-          ;
-        }
-      }
       i {
+        transform: rotate(-45deg);
         color: $white;
+        font-weight: 300;
       }
     }
   }
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    z-index: -1;
+    transition: all 0.5s ease-out;
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    a {
+      color: $white;
+      i {
+        font-size: 24px;
+        color: $white;
+      }
+      &:hover {
+        color: $primary-color;
+        @include transition;
+      }
+    }
+    i {
+      color: $white;
+    }
+  }
   &:hover {
-    .content-wrapper {
-      .content {
-        z-index: 1;
-      }
-      .social {
-        margin-top: 0;
-        z-index: 0;
-      }
+    .social-links {
+      right: 30px;
+      z-index: 1;
     }
   }
   @include sm {
