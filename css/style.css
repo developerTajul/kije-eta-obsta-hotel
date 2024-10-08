@@ -49028,4 +49028,94 @@ ul.children {
 .room-card .image-wrapper img {
   width: 100%;
   height: 100%;
+}
+
+.blog-card {
+  position: relative;
+  overflow: hidden;
+}
+.blog-card:hover .content-wrapper .title-wrapper {
+  transition: all 0.5s ease-out;
+}
+.blog-card:hover .content-wrapper .desc {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  margin-top: 16px;
+  transition: all 0.5s ease-out;
+}
+.blog-card .content-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.blog-card .content-wrapper .title-wrapper {
+  position: relative;
+  background-color: #ffffff;
+  margin-left: 75px;
+  box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
+  transition: all 0.5s ease-out;
+}
+.blog-card .content-wrapper .desc {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: #808287;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-out;
+}
+.blog-card .content-wrapper .read-more {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-flex;
+  transform: rotate(-90deg) translate(26%, -153%);
+  width: 128px;
+}
+.blog-card .content-wrapper .read-more a {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  padding: 20px;
+  background-color: #222;
+  width: 100%;
+}
+.blog-card .content-wrapper .user-meta {
+  background-color: #aa8453;
+  padding: 14px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, -100%);
+}
+.blog-card .content-wrapper .user-meta ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.blog-card .content-wrapper .user-meta ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 0;
+}
+.blog-card .content-wrapper .user-meta ul li i {
+  color: #ffffff;
+}
+.blog-card .content-wrapper .user-meta ul li span {
+  color: #222;
 }/*# sourceMappingURL=style.css.map */
