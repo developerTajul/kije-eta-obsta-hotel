@@ -1,9 +1,9 @@
 // Define maximum spacing value
-$max-spacing: 100;
+$max-spacing: 350;
 
 // Generate exact margin and padding utilities for all devices
 @for $i from 0 through $max-spacing {
-  // Exact margin classes
+  // Exact positive margin classes
   .mt-#{$i} {
     margin-top: #{$i}px;
   }
@@ -39,5 +39,22 @@ $max-spacing: 100;
 
   .pr-#{$i} {
     padding-right: #{$i}px;
+  }
+
+  // Negative margin classes
+  .mt-n#{$i} {
+    margin-top: -#{$i}px;
+  }
+
+  .mb-n#{$i} {
+    margin-bottom: -#{$i}px;
+  }
+
+  .ml-n#{$i} {
+    margin-left: -#{$i}px;
+  }
+
+  .mr-n#{$i} {
+    margin-right: -#{$i}px;
   }
 }

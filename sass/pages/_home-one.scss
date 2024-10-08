@@ -415,28 +415,154 @@
         padding-top: 45px;
         border-top: 1px solid $border-color;
       }
-      .booking-btn {
-        display: flex;
-        align-items: center;
-        gap: 21px;
-        .content {
-          p {
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 2.7px;
-            color: $gray-800;
-            margin-bottom: 4px;
+    }
+  }
+  .booking-btn {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    .content {
+      p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        color: $gray-800;
+        margin-bottom: 4px;
+      }
+      a {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px; /* 141.667% */
+        letter-spacing: 2.4px;
+        color: $black;
+      }
+    }
+  }
+}
+.booking-area {
+  position: relative;
+  .shape-wrapper {
+    background-color: #f8f5f0;
+    position: absolute;
+    bottom: 87px;
+    right: 0;
+    width: 1645px;
+    height: 823px;
+    z-index: -1;
+    .shape {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .shape-2 {
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    z-index: -2;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    .icon {
+      width: 69px;
+      height: 69px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary-color;
+    }
+    .desc {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: $gray;
+    }
+  }
+  .booking-form {
+    padding: 55px 45px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
+    border-radius: 10px;
+    .sub-title {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 5.4px;
+      text-transform: uppercase;
+      color: $gray;
+    }
+    .title {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+      font-family: $heading-font;
+    }
+
+    form {
+      .form-group {
+        position: relative;
+        margin-bottom: 20px;
+
+        label {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px; /* 181.25% */
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+
+        input[type='date'],
+        select {
+          width: 100%;
+          padding: 12px;
+          font-size: 14px;
+          border: 1px solid #f2e2e2;
+          border-radius: 5px;
+          background-color: #f6f6f6;
+          color: $text-color;
+          ::-webkit-input-placeholder {
+            color: #8b2c2c; // Custom placeholder color
           }
-          a {
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 34px; /* 141.667% */
-            letter-spacing: 2.4px;
-            color: $black;
+          &:focus {
+            outline: none;
+            border-color: $primary-color;
           }
+        }
+
+        i {
+          display: inline-block;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(60%);
+          background-color: #f6f6f6;
+          color: #a19292;
+        }
+      }
+
+      .submit-btn {
+        background-color: $primary-color;
+        color: #fff;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 100%;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
         }
       }
     }
