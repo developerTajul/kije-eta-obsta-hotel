@@ -89,7 +89,7 @@
         width: 1px;
         display: inline-flex;
         height: 12px;
-        content: "";
+        content: '';
 
         @include sm {
           display: none;
@@ -234,7 +234,7 @@
             }
           }
           a {
-            padding: 27px 24px;
+            padding: 32px 24px;
             // color: $white;
             @include transition;
             @include lg {
@@ -414,7 +414,7 @@
 
         &:before {
           position: absolute;
-          content: "\f107";
+          content: '\f107';
           font-family: $font-awesome;
           //transform: rotate(45deg);
           //border: solid $white;
@@ -484,7 +484,7 @@
         a {
           line-height: 120%;
           padding: 10px 20px;
-          color: $secondary-color;
+          color: $black;
           border-bottom: 1px solid $gray-200;
           margin-left: 0;
           font-size: 16px;
@@ -689,7 +689,7 @@
         }
       }
 
-      input[type="search"] {
+      input[type='search'] {
         margin-top: 0 !important;
         background: transparent !important;
         border: 0 !important;

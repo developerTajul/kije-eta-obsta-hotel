@@ -5,24 +5,14 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: $black;
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
-  }
   .divider {
     color: inherit;
     border: 0;
     border-top: 1px solid;
     opacity: 0.25;
     margin-top: 30px;
-  }
-  &.style-1 {
-    background: linear-gradient(180deg, rgba(35, 38, 45, 0.9) 0%, #23262d 100%);
   }
 
   .footer-sec {
@@ -373,7 +363,7 @@
           align-items: start;
         }
         &:before {
-          content: "\f105";
+          content: '\f101';
           font-family: $font-awesome;
           font-size: 16px;
           color: $white;
@@ -478,7 +468,22 @@
       }
     }
   }
-
+  .subscribe-form-title-wrapper {
+    .subscribe-form-title {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 34px;
+      color: $white;
+    }
+    .subscribe-form-desc {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      color: $gray;
+    }
+  }
   // Footer Latest News
   .widget_latest_post {
     ul {
@@ -587,12 +592,12 @@
   gap: 10px 40px;
   flex-wrap: wrap-reverse;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-bottom-area {
   position: relative;
-  padding: 30px 0;
+  padding-bottom: 20px;
 
   .copyright-text {
     p {
@@ -652,7 +657,13 @@
 
 .subscribe-form-widget {
   position: relative;
-
+  .terms-condition {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    color: $gray;
+  }
   .mc4wp-form-fields {
     display: flex;
     background-color: transparent;
@@ -665,7 +676,7 @@
   .mc4wp-form-255 {
     margin-top: 12px;
     .mc4wp-form-fields {
-      input[type="submit"] {
+      input[type='submit'] {
         padding: 12px 20px;
         background-color: $primary-color;
         color: $white;
@@ -688,35 +699,35 @@
       padding: 0 20px;
       font-size: 16px;
       width: 100%;
-      background: none;
-      border: 1px solid $white-100;
+      background: #322e2e;
+      border: 1px solid #514b4b;
       border-right: 0;
     }
 
     *::-webkit-input-placeholder {
-      color: $white;
+      color: $gray;
     }
 
     *:-moz-placeholder {
-      color: $white;
+      color: $gray;
       opacity: 1;
     }
 
     *::-moz-placeholder {
-      color: $white;
+      color: $gray;
       opacity: 1;
     }
 
     *:-ms-input-placeholder {
-      color: $white;
+      color: $gray;
     }
 
     *::-ms-input-placeholder {
-      color: $white;
+      color: $gray;
     }
 
     *::placeholder {
-      color: $white;
+      color: $gray;
     }
   }
 
@@ -768,13 +779,10 @@
 
   a {
     color: $white;
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    background-color: rgba(244, 244, 244, 0.1);
     @include transition;
 
     &:hover {

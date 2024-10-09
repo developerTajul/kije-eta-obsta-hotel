@@ -1,0 +1,25 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="20" height="20" fill="#F5F5F5"/>
+<g id="01_Home" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="9356" transform="translate(-360 -9081)" fill="white"/>
+<g id="Footer" clip-path="url(#clip1_0_1)">
+<rect width="1920" height="650" transform="translate(-360 -375)" fill="#222222"/>
+<g id="social network">
+<g id="X_logo_2023_original 1" clip-path="url(#clip2_0_1)">
+<path id="Vector" d="M11.8947 8.46958L19.3351 0H17.5726L11.1094 7.35252L5.95102 0H0L7.80214 11.1194L0 19.9999H1.76252L8.58348 12.2338L14.0323 19.9999H19.9833M2.39866 1.30158H5.10639L17.5713 18.7623H14.8629" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="9356" fill="white" transform="translate(-360 -9081)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1920" height="650" fill="white" transform="translate(-360 -375)"/>
+</clipPath>
+<clipPath id="clip2_0_1">
+<rect width="19.9833" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
