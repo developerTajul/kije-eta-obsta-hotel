@@ -3,6 +3,9 @@
   height: 656px;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &:hover {
     .booking-btn {

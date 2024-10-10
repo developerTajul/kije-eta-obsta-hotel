@@ -874,8 +874,8 @@
       slidesToShow: 4,
       infinite: true,
       autoplay: false,
-      draggable: true,
-      arrows: true,
+      draggable: false,
+      arrows: false,
       slidesToScroll: 1,
       loop: true,
       dots: false,
@@ -891,7 +891,7 @@
           breakpoint: 1199,
           settings: {
             autoplay: true,
-            slidesToShow: 1,
+            slidesToShow: 2,
             arrows: true,
             variableWidth: false,
             speed: 1500,
@@ -918,6 +918,39 @@
           },
         },
       ],
+    });
+    // Drag functionality
+    let isDragging = false;
+    let startX;
+
+    $('.drag-handle').on('mousedown touchstart', function (e) {
+      isDragging = true;
+      startX = e.pageX || e.originalEvent.touches[0].pageX;
+      $(this).addClass('grabbing');
+    });
+
+    $(document).on('mousemove touchmove', function (e) {
+      if (isDragging) {
+        let currentX = e.pageX || e.originalEvent.touches[0].pageX;
+        let diff = startX - currentX;
+
+        // Determine the drag direction and apply animation
+        if (diff > 50) {
+          $('.room-card-wrapper').slick('slickNext');
+          startX = currentX; // Reset the start point
+          $('.slick-active').addClass('drag-left').removeClass('drag-right');
+        } else if (diff < -50) {
+          $('.room-card-wrapper').slick('slickPrev');
+          startX = currentX; // Reset the start point
+          $('.slick-active').addClass('drag-right').removeClass('drag-left');
+        }
+      }
+    });
+
+    $(document).on('mouseup touchend', function () {
+      isDragging = false;
+      $('.drag-handle').removeClass('grabbing');
+      $('.slick-active').removeClass('drag-left drag-right');
     });
 
     /*

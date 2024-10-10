@@ -598,6 +598,69 @@
 
 // Room and suites
 .room_and_suites {
+  background-color: #f8f5f0;
+  .room-card-slider-container {
+    position: relative;
+  }
+  .drag-btn-wrapper {
+    position: absolute;
+    bottom: 84px;
+    left: 50%;
+    transform: translateY(-50%);
+    cursor: grab;
+    z-index: 100;
+  }
+  /* Animation for drag left */
+  .drag-left {
+    transform: rotateY(10deg) scale(1.05); /* Slight tilt and scale for left drag */
+    transition: transform 0.3s ease;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2); /* Shadow to enhance the effect */
+  }
+
+  /* Animation for drag right */
+  .drag-right {
+    transform: rotateY(-10deg) scale(1.05); /* Slight tilt and scale for right drag */
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); /* Shadow to enhance the effect */
+  }
+
+  /* Reset transform */
+  .room-card {
+    transition: transform 0.3s ease; /* Smooth transition back to normal */
+  }
+
+  .drag-handle {
+    width: 154px;
+    height: 154px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    color: $white;
+    p {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+    }
+    i {
+      line-height: 21px;
+      font-weight: 300;
+    }
+  }
+
+  .drag-handle {
+    &.grabbing {
+      cursor: grabbing;
+    }
+  }
+
   .room-card-wrapper {
     display: flex;
     gap: 50px;
@@ -609,6 +672,12 @@
     .room-card {
       &:nth-child(even) {
         margin-top: 80px;
+      }
+      @include rmaxwd(1199) {
+        margin-top: 80px;
+        &:nth-child(even) {
+          margin-top: 0;
+        }
       }
     }
     .slick-slide {

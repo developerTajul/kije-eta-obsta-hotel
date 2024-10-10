@@ -34927,6 +34927,12 @@ body.admin-bar .header-area.style-7 {
   text-wrap: nowrap;
   transform: translate(-8%, -33%);
 }
+@media (max-width: 1700px) {
+  .banner-text p {
+    font-size: 170px;
+    transform: translate(0, -33%);
+  }
+}
 
 .slider-area {
   overflow: hidden;
@@ -40692,6 +40698,12 @@ body.admin-bar .header-area.style-7 {
   text-wrap: nowrap;
   transform: translate(-8%, -33%);
 }
+@media (max-width: 1700px) {
+  .banner-text p {
+    font-size: 170px;
+    transform: translate(0, -33%);
+  }
+}
 
 .page-breadcrumb-area {
   padding-top: 215px;
@@ -44579,6 +44591,64 @@ ul.children {
   background-color: #886942;
 }
 
+.room_and_suites {
+  background-color: #f8f5f0;
+  /* Animation for drag left */
+  /* Animation for drag right */
+  /* Reset transform */
+}
+.room_and_suites .room-card-slider-container {
+  position: relative;
+}
+.room_and_suites .drag-btn-wrapper {
+  position: absolute;
+  bottom: 84px;
+  left: 50%;
+  transform: translateY(-50%);
+  cursor: grab;
+  z-index: 100;
+}
+.room_and_suites .drag-left {
+  transform: rotateY(10deg) scale(1.05); /* Slight tilt and scale for left drag */
+  transition: transform 0.3s ease;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2); /* Shadow to enhance the effect */
+}
+.room_and_suites .drag-right {
+  transform: rotateY(-10deg) scale(1.05); /* Slight tilt and scale for right drag */
+  transition: transform 0.3s ease;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); /* Shadow to enhance the effect */
+}
+.room_and_suites .room-card {
+  transition: transform 0.3s ease; /* Smooth transition back to normal */
+}
+.room_and_suites .drag-handle {
+  width: 154px;
+  height: 154px;
+  background-color: #aa8453;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  color: #ffffff;
+}
+.room_and_suites .drag-handle p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+.room_and_suites .drag-handle i {
+  line-height: 21px;
+  font-weight: 300;
+}
+.room_and_suites .drag-handle.grabbing {
+  cursor: grabbing;
+}
 .room_and_suites .room-card-wrapper {
   display: flex;
   gap: 50px;
@@ -44590,6 +44660,14 @@ ul.children {
 }
 .room_and_suites .room-card-wrapper .room-card:nth-child(even) {
   margin-top: 80px;
+}
+@media (max-width: 1199px) {
+  .room_and_suites .room-card-wrapper .room-card {
+    margin-top: 80px;
+  }
+  .room_and_suites .room-card-wrapper .room-card:nth-child(even) {
+    margin-top: 0;
+  }
 }
 .room_and_suites .room-card-wrapper .slick-slide {
   margin: 0 12px;
@@ -48782,6 +48860,9 @@ ul.children {
   height: 656px;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .room-card:hover .booking-btn {
   visibility: visible;
