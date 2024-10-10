@@ -377,6 +377,22 @@
   }
 }
 
+.slider-area {
+  padding-bottom: 60px;
+  .checknow-form {
+    padding-top: 170px;
+    @include lg {
+      padding-top: 0px;
+    }
+    @include md {
+      padding-top: 100px;
+    }
+    @include sm {
+      padding-top: 40px;
+    }
+  }
+}
+
 // About Us Area
 .about-us-area {
   &.style-1 {

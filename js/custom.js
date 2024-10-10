@@ -267,7 +267,7 @@
         {
           breakpoint: 767,
           settings: {
-            autoplay: true,
+            autoplay: false,
           },
         },
       ],

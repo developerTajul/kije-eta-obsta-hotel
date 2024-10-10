@@ -1,5 +1,4 @@
 .checknow-form {
-  margin-top: 150px;
   .inner-wrapper {
     padding: 20px;
     background-color: rgba(63, 63, 63, 0.5);
@@ -7,6 +6,7 @@
   }
   form {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 34px;
     padding: 30px;
@@ -42,7 +42,7 @@
         display: inline-block;
       }
 
-      .date-container input[type="date"] {
+      .date-container input[type='date'] {
         // padding-left: 35px; /* Space for the icon */
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -56,16 +56,16 @@
         transform: translateY(-50%);
         color: $white;
       }
-      input[type="date"]::-webkit-calendar-picker-indicator {
+      input[type='date']::-webkit-calendar-picker-indicator {
         display: none;
         -webkit-appearance: none;
       }
 
-      input[type="date"]::-moz-calendar-picker-indicator {
+      input[type='date']::-moz-calendar-picker-indicator {
         display: none;
       }
 
-      input[type="date"]::-ms-clear {
+      input[type='date']::-ms-clear {
         display: none;
       }
     }
@@ -87,7 +87,7 @@
     }
 
     .select-container::after {
-      content: "\f078"; /* FontAwesome down arrow */
+      content: '\f078'; /* FontAwesome down arrow */
       font-family: $font-awesome;
       position: absolute;
       right: 20px;

@@ -2,7 +2,7 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
-  height: 999px;
+  height: auto;
   .shape {
     position: absolute;
     bottom: 50px;
@@ -63,15 +63,18 @@
       padding-top: 10%;
     }
     @include xl {
-      padding-top: 80px;
+      padding-top: 180px;
+    }
+    @include md {
+      padding-top: 150px;
     }
 
-    @media only screen and (min-width: 768px) and (max-width: 1199px) {
-      height: 620px;
-    }
+    // @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    //   height: 620px;
+    // }
 
     @include sm {
-      padding: 80px 0;
+      padding-top: 100px;
       height: unset;
     }
 
@@ -89,12 +92,9 @@
     .slider-content-wrapper {
       position: relative;
       z-index: 99;
-      margin-top: 63px;
-      margin-right: 50px;
-      margin-left: -2px;
 
       @include sm {
-        padding-top: 0;
+        padding-top: 50px;
         padding-bottom: 50px;
       }
 
@@ -228,10 +228,11 @@
       display: flex;
       align-items: center;
       gap: 20px;
-      margin-bottom: 58px;
       position: relative;
       z-index: 1;
-
+      @include sm {
+        justify-content: center;
+      }
       .simple-btn {
         padding: 14px 24px;
         font-family: $body-font;
@@ -300,7 +301,7 @@
       }
 
       @include rmaxwd(1199) {
-        height: 450px;
+        // height: 450px;
         right: unset;
 
         .slider-image-inner {
@@ -312,27 +313,8 @@
           }
         }
       }
-
-      @include rmaxwd(991) {
-        height: 200px;
-      }
-
-      @include rmaxwd(767) {
-        height: 180px; // Adjust height for mobile
-        .slider-image-inner {
-          width: 60px; // Make the inner image smaller on mobile
-          height: 40px;
-        }
-        right: unset;
-        text-align: center; // Center align the image on smaller screens
-      }
-
-      @include rmaxwd(575) {
-        height: 150px; // Further reduce height for very small screens
-        .slider-image-inner {
-          width: 50px; // Smaller inner image size for mobile
-          height: 35px;
-        }
+      @include md {
+        margin-top: 50px;
       }
     }
   }
@@ -424,7 +406,7 @@
       position: absolute;
       top: 50%;
       right: 178px;
-      transform: translateY(-50%);
+      transform: translateY(0%);
       z-index: 2;
       flex-direction: column;
       margin-bottom: 0;
@@ -446,24 +428,21 @@
       }
 
       @include rmaxwd(991) {
-        gap: 20px; // Adjust gap for smaller screens
-        bottom: 80px; // Adjust bottom position
+        gap: 20px;
+        bottom: 0;
       }
 
       @include rmaxwd(767) {
-        gap: 15px; // Further reduce the gap for mobile
-        bottom: 60px;
-        top: unset;
-        left: 50%;
-        right: unset;
-        transform: translateX(-50%); // Center align on smaller screens
+        gap: 15px;
+        margin-top: 0;
+        transform: translateY(100%);
       }
 
       @include rmaxwd(575) {
-        gap: 10px; // Further reduce the gap for very small devices
+        gap: 10px;
         bottom: 40px;
-        flex-direction: row; // Keep row layout for small screens
-        position: static; // Relative position on mobile
+        flex-direction: row;
+        position: static;
         left: 0;
         right: 0;
         justify-content: center;
