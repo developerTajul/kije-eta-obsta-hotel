@@ -168,5 +168,9 @@
       font-size: 170px;
       transform: translate(0, -33%);
     }
+    @include rmaxwd(1199) {
+      font-size: 120px;
+      transform: translate(0, -33%);
+    }
   }
 }

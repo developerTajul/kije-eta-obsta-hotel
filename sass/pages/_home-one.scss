@@ -669,6 +669,9 @@
     padding-left: 40px;
     position: relative;
     margin-top: -196px;
+    @include lg {
+      margin-top: -100px;
+    }
     .room-card {
       &:nth-child(even) {
         margin-top: 80px;
@@ -700,7 +703,6 @@
 
 // Service area
 .service-area {
-  padding: 100px 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -827,17 +829,18 @@
 // About-us area
 .about-us-area {
   &.style-2 {
-    @include md {
-      padding: 100px 0px !important;
-    }
-    @include sm {
-      padding: 80px 0px !important;
-    }
     .counter-card-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 76px;
+      @include xl {
+        gap: 40px;
+      }
+      @include rmaxwd(1199) {
+        justify-content: start;
+        margin-top: 30px;
+      }
     }
     .about-image-card {
       position: relative;
@@ -847,6 +850,9 @@
         top: 50%;
         transform: translateX(65%);
         z-index: 1;
+        @include rmaxwd(1399) {
+          transform: translateX(11%);
+        }
       }
       .inner-wrapper {
         position: relative;
@@ -875,6 +881,9 @@
     }
     .about-info-card {
       margin-top: 50px;
+      @include rmaxwd(1399) {
+        margin-top: 0;
+      }
     }
   }
 }

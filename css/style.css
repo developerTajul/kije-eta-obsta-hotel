@@ -34933,6 +34933,12 @@ body.admin-bar .header-area.style-7 {
     transform: translate(0, -33%);
   }
 }
+@media (max-width: 1199px) {
+  .banner-text p {
+    font-size: 120px;
+    transform: translate(0, -33%);
+  }
+}
 
 .slider-area {
   overflow: hidden;
@@ -36437,6 +36443,11 @@ body.admin-bar .header-area.style-7 {
   z-index: 2;
   border: 1px solid transparent;
   transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .info-card.style-1 {
+    padding: 20px 30px;
+  }
 }
 .info-card.style-1 .content .title {
   color: #ffffff;
@@ -40704,6 +40715,12 @@ body.admin-bar .header-area.style-7 {
     transform: translate(0, -33%);
   }
 }
+@media (max-width: 1199px) {
+  .banner-text p {
+    font-size: 120px;
+    transform: translate(0, -33%);
+  }
+}
 
 .page-breadcrumb-area {
   padding-top: 215px;
@@ -44658,6 +44675,11 @@ ul.children {
   position: relative;
   margin-top: -196px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .room_and_suites .room-card-wrapper {
+    margin-top: -100px;
+  }
+}
 .room_and_suites .room-card-wrapper .room-card:nth-child(even) {
   margin-top: 80px;
 }
@@ -44686,7 +44708,6 @@ ul.children {
 }
 
 .service-area {
-  padding: 100px 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44799,21 +44820,22 @@ ul.children {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-us-area.style-2 {
-    padding: 100px 0px !important;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-us-area.style-2 {
-    padding: 80px 0px !important;
-  }
-}
 .about-us-area.style-2 .counter-card-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 76px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-us-area.style-2 .counter-card-wrapper {
+    gap: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .about-us-area.style-2 .counter-card-wrapper {
+    justify-content: start;
+    margin-top: 30px;
+  }
 }
 .about-us-area.style-2 .about-image-card {
   position: relative;
@@ -44824,6 +44846,11 @@ ul.children {
   top: 50%;
   transform: translateX(65%);
   z-index: 1;
+}
+@media (max-width: 1399px) {
+  .about-us-area.style-2 .about-image-card .right-bar {
+    transform: translateX(11%);
+  }
 }
 .about-us-area.style-2 .about-image-card .inner-wrapper {
   position: relative;
@@ -44850,6 +44877,11 @@ ul.children {
 }
 .about-us-area.style-2 .about-info-card {
   margin-top: 50px;
+}
+@media (max-width: 1399px) {
+  .about-us-area.style-2 .about-info-card {
+    margin-top: 0;
+  }
 }
 
 .feature-and-facilities.style-1 .inner-wrapper {

@@ -892,7 +892,7 @@
           settings: {
             autoplay: true,
             slidesToShow: 2,
-            arrows: true,
+            arrows: false,
             variableWidth: false,
             speed: 1500,
           },
@@ -902,7 +902,7 @@
           settings: {
             autoplay: true,
             slidesToShow: 2,
-            arrows: true,
+            arrows: false,
             variableWidth: false,
             speed: 1500,
           },
@@ -912,7 +912,7 @@
           settings: {
             autoplay: true,
             slidesToShow: 1,
-            arrows: true,
+            arrows: false,
             variableWidth: false,
             speed: 1500,
           },
