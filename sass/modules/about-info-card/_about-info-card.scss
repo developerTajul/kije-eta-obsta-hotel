@@ -1,8 +1,4 @@
 .about-info-card {
-
-  .btn-wrapper {
-    margin-top: 40px;
-  }
   &.style-1 {
     margin-top: 72px;
     margin-left: 3px;
@@ -41,7 +37,6 @@
 
       .list-item-wrapper {
         gap: 30px;
-
       }
     }
     .btn-wrapper {
@@ -51,7 +46,7 @@
   &.style-4 {
     margin-top: 103px;
     margin-right: 54px;
-    @include xl{
+    @include xl {
       margin: 0;
     }
     @include lg {
@@ -64,9 +59,9 @@
     @include sm {
       margin: 0;
     }
-    .btn-wrapper{
-      @include rmaxwd(1399){
-        margin-top:  20px;
+    .btn-wrapper {
+      @include rmaxwd(1399) {
+        margin-top: 20px;
       }
     }
     .about-info-content {
@@ -116,7 +111,6 @@
         .desc {
           margin-bottom: 0;
         }
-
       }
 
       .btn-wrapper {
@@ -128,7 +122,7 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-      @include rmaxwd(1399){
+      @include rmaxwd(1399) {
         gap: 10px;
       }
 
@@ -136,11 +130,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 0;
-
-
       }
-
     }
   }
-
 }

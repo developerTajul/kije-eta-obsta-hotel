@@ -419,10 +419,21 @@
         }
       }
     }
+    .about-info-card {
+      @include xl {
+        padding-left: 40px;
+      }
+      @include rmaxwd(1199) {
+        margin-top: 40px;
+      }
+    }
     .icon-card-wrapper {
       display: flex;
       gap: 70px;
       align-items: center;
+      @include xl {
+        gap: 40px;
+      }
     }
     .btn-wrapper {
       .inner-wrapper {

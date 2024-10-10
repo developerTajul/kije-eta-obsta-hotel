@@ -1,5 +1,4 @@
 .about-info-card {
-
   &.style-1 {
     .about-info-content {
       .sec-content {
@@ -16,7 +15,7 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-      @include lg{
+      @include lg {
         gap: 0;
       }
       .section-title {
