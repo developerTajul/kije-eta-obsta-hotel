@@ -59,7 +59,9 @@
     z-index: 2;
     overflow: hidden;
     padding-top: 238px;
-
+    @include lg {
+      padding-top: 10%;
+    }
     @include xl {
       padding-top: 80px;
     }
@@ -277,12 +279,7 @@
     .slider-image {
       position: relative;
       height: 300px;
-      //z-index: 2;
-      // animation: MoveUpDown 2s linear infinite alternate;
-      // text-align: right;
 
-      //right: -110px;
-      //top: 20px;
       .slider-image-inner {
         width: 90px;
         height: 57px;
@@ -293,16 +290,49 @@
         transform: translateY(-50%);
       }
 
-      @include sm {
-        animation: none;
-        //margin-bottom: -150px;
-        right: unset;
-        text-align: center;
-      }
-
       @include rmaxwd(1799) {
         width: auto;
         margin-top: inherit;
+        right: 20%;
+      }
+      @include xl {
+        right: 10%;
+      }
+
+      @include rmaxwd(1199) {
+        height: 450px;
+        right: unset;
+
+        .slider-image-inner {
+          width: 100%;
+          height: 300px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      @include rmaxwd(991) {
+        height: 200px;
+      }
+
+      @include rmaxwd(767) {
+        height: 180px; // Adjust height for mobile
+        .slider-image-inner {
+          width: 60px; // Make the inner image smaller on mobile
+          height: 40px;
+        }
+        right: unset;
+        text-align: center; // Center align the image on smaller screens
+      }
+
+      @include rmaxwd(575) {
+        height: 150px; // Further reduce height for very small screens
+        .slider-image-inner {
+          width: 50px; // Smaller inner image size for mobile
+          height: 35px;
+        }
       }
     }
   }
@@ -392,12 +422,15 @@
       gap: 30px;
       flex-direction: column;
       position: absolute;
-      top: 346px;
+      top: 50%;
       right: 178px;
       transform: translateY(-50%);
       z-index: 2;
       flex-direction: column;
       margin-bottom: 0;
+      @include rmaxwd(1800) {
+        right: 5%;
+      }
 
       @include rmaxwd(1199) {
         position: relative;
@@ -410,6 +443,30 @@
         right: unset;
         transform: none;
         padding: 0;
+      }
+
+      @include rmaxwd(991) {
+        gap: 20px; // Adjust gap for smaller screens
+        bottom: 80px; // Adjust bottom position
+      }
+
+      @include rmaxwd(767) {
+        gap: 15px; // Further reduce the gap for mobile
+        bottom: 60px;
+        top: unset;
+        left: 50%;
+        right: unset;
+        transform: translateX(-50%); // Center align on smaller screens
+      }
+
+      @include rmaxwd(575) {
+        gap: 10px; // Further reduce the gap for very small devices
+        bottom: 40px;
+        flex-direction: row; // Keep row layout for small screens
+        position: static; // Relative position on mobile
+        left: 0;
+        right: 0;
+        justify-content: center;
       }
 
       li {
@@ -444,9 +501,11 @@
           button {
             width: 5px;
             height: 5px;
+
             &:before {
               display: none;
             }
+
             @include transition;
           }
         }
