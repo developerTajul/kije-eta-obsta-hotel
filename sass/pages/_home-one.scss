@@ -736,6 +736,7 @@
     width: 100%;
     margin: 0 auto;
     margin-top: -96px;
+    overflow: hidden;
     .slick-list {
       overflow: visible;
     }
@@ -778,6 +779,9 @@
       position: absolute;
       right: 50px;
       top: 66px;
+      @include rmaxwd(991) {
+        right: 0;
+      }
     }
   }
 }
@@ -904,6 +908,12 @@
       height: 100%;
       background: rgba(49, 43, 43, 0.8);
       z-index: 1;
+    }
+    .content-wrapper {
+      padding-left: 80px;
+      @include sm {
+        padding-left: 30px;
+      }
     }
     .section-title {
       .sec-content {

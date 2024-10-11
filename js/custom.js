@@ -426,7 +426,7 @@
           breakpoint: 991,
           settings: {
             autoplay: true,
-            slidesToShow: 2,
+            slidesToShow: 1,
             arrows: true,
             variableWidth: false,
             speed: 1500,

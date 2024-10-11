@@ -168,9 +168,16 @@
       font-size: 170px;
       transform: translate(0, -33%);
     }
+    @include rmaxwd(1399) {
+      font-size: 140px;
+      transform: translate(0, -23%);
+    }
     @include rmaxwd(1199) {
       font-size: 120px;
       transform: translate(0, -33%);
+    }
+    @include md {
+      font-size: 80px;
     }
   }
 }

@@ -2,9 +2,13 @@
   position: relative;
   background-color: $gray-100;
   top: 0;
-  width: 450px;
-  height: 656px;
+  max-width: 450px;
+  max-height: 656px;
   @include transition;
+  @include md {
+    width: auto;
+    height: auto;
+  }
   &:hover {
     .image {
       &:before {
@@ -21,6 +25,7 @@
   .image-wrapper {
     overflow: hidden;
     position: relative;
+    height: 100%;
     .overlay {
       background: rgba(49, 43, 43, 0.7);
       position: absolute;
@@ -47,6 +52,9 @@
     z-index: 2;
     position: absolute;
     bottom: 0;
+    @include lg {
+      padding: 30px;
+    }
 
     .title {
       font-size: 30px;

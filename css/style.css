@@ -34933,10 +34933,21 @@ body.admin-bar .header-area.style-7 {
     transform: translate(0, -33%);
   }
 }
+@media (max-width: 1399px) {
+  .banner-text p {
+    font-size: 140px;
+    transform: translate(0, -23%);
+  }
+}
 @media (max-width: 1199px) {
   .banner-text p {
     font-size: 120px;
     transform: translate(0, -33%);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-text p {
+    font-size: 80px;
   }
 }
 
@@ -40715,10 +40726,21 @@ body.admin-bar .header-area.style-7 {
     transform: translate(0, -33%);
   }
 }
+@media (max-width: 1399px) {
+  .banner-text p {
+    font-size: 140px;
+    transform: translate(0, -23%);
+  }
+}
 @media (max-width: 1199px) {
   .banner-text p {
     font-size: 120px;
     transform: translate(0, -33%);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-text p {
+    font-size: 80px;
   }
 }
 
@@ -42704,9 +42726,15 @@ ul.children {
   position: relative;
   background-color: #f2f2f2;
   top: 0;
-  width: 450px;
-  height: 656px;
+  max-width: 450px;
+  max-height: 656px;
   transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-member-card {
+    width: auto;
+    height: auto;
+  }
 }
 .team-member-card:hover .image:before {
   height: 250%;
@@ -42720,6 +42748,7 @@ ul.children {
 .team-member-card .image-wrapper {
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 .team-member-card .image-wrapper .overlay {
   background: rgba(49, 43, 43, 0.7);
@@ -42746,6 +42775,11 @@ ul.children {
   z-index: 2;
   position: absolute;
   bottom: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-member-card .content-wrapper {
+    padding: 30px;
+  }
 }
 .team-member-card .content-wrapper .title {
   font-size: 30px;
@@ -44737,6 +44771,7 @@ ul.children {
   width: 100%;
   margin: 0 auto;
   margin-top: -96px;
+  overflow: hidden;
 }
 .testimonial-area .testimonial-slider .slick-list {
   overflow: visible;
@@ -44770,6 +44805,11 @@ ul.children {
   position: absolute;
   right: 50px;
   top: 66px;
+}
+@media (max-width: 991px) {
+  .team-area.style-1 .shape {
+    right: 0;
+  }
 }
 
 .feature-area.style-1 {
@@ -44897,6 +44937,14 @@ ul.children {
   height: 100%;
   background: rgba(49, 43, 43, 0.8);
   z-index: 1;
+}
+.feature-and-facilities.style-1 .content-wrapper {
+  padding-left: 80px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .feature-and-facilities.style-1 .content-wrapper {
+    padding-left: 30px;
+  }
 }
 .feature-and-facilities.style-1 .section-title .sec-content .short-title {
   color: #aa8453;
@@ -45076,6 +45124,24 @@ ul.children {
   color: #aa8453;
   font-size: 30px;
   margin-left: 5px;
+}
+
+.testing-area .info-card {
+  padding: 60px 80px 60px 80px;
+  border: 1px dashed rgba(34, 34, 34, 0.2);
+  border-radius: 5px;
+}
+.testing-area .info-card h4,
+.testing-area .info-card p {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.testing-area .info-card p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: #808287;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
