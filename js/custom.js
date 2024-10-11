@@ -246,6 +246,17 @@
     /*
        Slider
        ============================*/
+    $('.slider-wrapper').on('init', function (event, slick) {
+      // Modify the slick dots after they are initialized
+      $('.slick-dots li button').each(function (index) {
+        $(this).html(
+          '<img src="images/hero-section/v-2/dot-img-' +
+            (index + 1) +
+            '.jpg" alt="Dot image">' +
+            (index + 1)
+        );
+      });
+    });
     $('.slider-wrapper').slick({
       slidesToShow: 1,
       infinite: true,

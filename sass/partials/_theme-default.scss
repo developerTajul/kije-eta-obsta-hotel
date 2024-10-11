@@ -259,7 +259,7 @@ input.theme-btn {
   position: relative;
   color: $white;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     width: 100%;
@@ -552,7 +552,9 @@ input.theme-btn {
 }
 
 // Elementor Default Padding
-.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+.elementor-column-gap-default
+  > .elementor-column
+  > .elementor-element-populated {
   padding: 0 12px !important;
 }
 
@@ -568,5 +570,16 @@ input.theme-btn {
   }
   @include xl {
     max-width: 1140px !important;
+  }
+}
+
+.custom-container {
+  max-width: 1628px;
+  margin: 0 auto;
+  @include rmaxwd(1700) {
+    max-width: 1500px;
+  }
+  @include xl {
+    max-width: 1400px;
   }
 }

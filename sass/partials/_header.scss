@@ -1,138 +1,136 @@
 .header-area {
-  &.style-1 {
-    position: fixed;
-    width: 100%;
-    z-index: 99;
-    .header-menu-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  .header-menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
-      .search-btn-with-btn {
-        margin-left: unset;
+    .search-btn-with-btn {
+      margin-left: unset;
 
+      @include rmaxwd(1199) {
+        display: none;
+      }
+
+      @include rmaxwd(1399) {
+        margin-right: 0;
+      }
+      .btn-wrapper {
         @include rmaxwd(1199) {
           display: none;
         }
-
-        @include rmaxwd(1399) {
-          margin-right: 0;
-        }
-        .btn-wrapper {
-          @include rmaxwd(1199) {
-            display: none;
-          }
-        }
       }
     }
   }
 }
-.header-top {
-  background-color: $primary-color;
-  display: flex;
-  align-items: center;
-  gap: 5px 20px;
-  justify-content: space-between;
-  padding: 4px 40px;
-  flex-wrap: wrap;
+// .header-top {
+//   background-color: $primary-color;
+//   display: flex;
+//   align-items: center;
+//   gap: 5px 20px;
+//   justify-content: space-between;
+//   padding: 4px 40px;
+//   flex-wrap: wrap;
 
-  @include rmaxwd(991) {
-    display: none;
-  }
+//   @include rmaxwd(991) {
+//     display: none;
+//   }
 
-  .header-top-content {
-    display: flex;
-    align-items: center;
-    gap: 5px 30px;
-    flex-wrap: wrap;
-  }
+//   .header-top-content {
+//     display: flex;
+//     align-items: center;
+//     gap: 5px 30px;
+//     flex-wrap: wrap;
+//   }
 
-  .header-top-slogan {
-    color: $white;
-  }
-  .header-top-info {
-    display: flex;
-    gap: 0 24px;
-    @include rmaxwd(1199) {
-      justify-content: space-between;
-      width: 100%;
-    }
-    @include rmaxwd(991) {
-      padding-bottom: 10px;
-    }
-  }
-  .header-contact-info {
-    display: flex;
-    align-items: center;
-    gap: 0 24px;
-    padding: 6px 0;
-    flex-wrap: wrap;
+//   .header-top-slogan {
+//     color: $white;
+//   }
+//   .header-top-info {
+//     display: flex;
+//     gap: 0 24px;
+//     @include rmaxwd(1199) {
+//       justify-content: space-between;
+//       width: 100%;
+//     }
+//     @include rmaxwd(991) {
+//       padding-bottom: 10px;
+//     }
+//   }
+//   .header-contact-info {
+//     display: flex;
+//     align-items: center;
+//     gap: 0 24px;
+//     padding: 6px 0;
+//     flex-wrap: wrap;
 
-    span {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      color: $white;
-      font-size: 16px;
-      font-weight: 400;
-      font-family: $body-font;
+//     span {
+//       display: flex;
+//       align-items: center;
+//       gap: 24px;
+//       color: $white;
+//       font-size: 16px;
+//       font-weight: 400;
+//       font-family: $body-font;
 
-      &:first-child {
-        &:before {
-          display: none;
-        }
-      }
-      &:before {
-        background-color: rgb(255, 255, 255);
-        opacity: 0.361;
-        width: 1px;
-        display: inline-flex;
-        height: 12px;
-        content: '';
+//       &:first-child {
+//         &:before {
+//           display: none;
+//         }
+//       }
+//       &:before {
+//         background-color: rgb(255, 255, 255);
+//         opacity: 0.361;
+//         width: 1px;
+//         display: inline-flex;
+//         height: 12px;
+//         content: '';
 
-        @include sm {
-          display: none;
-        }
-      }
-      &.contact-info-item {
-        gap: 0 10px !important;
-      }
-      a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: $white;
-        font-size: 16px;
-        font-weight: 400;
-        font-family: $body-font;
-      }
-    }
-  }
-  .social-profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-end;
+//         @include sm {
+//           display: none;
+//         }
+//       }
+//       &.contact-info-item {
+//         gap: 0 10px !important;
+//       }
+//       a {
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+//         color: $white;
+//         font-size: 16px;
+//         font-weight: 400;
+//         font-family: $body-font;
+//       }
+//     }
+//   }
+//   .social-profile {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+//     justify-content: flex-end;
 
-    .social-profile-title {
-      color: $white;
-    }
-    a {
-      font-size: 16px;
-      color: $white;
-      transition: 0.3s;
-      transform: scale(1);
-      background-color: transparent;
+//     .social-profile-title {
+//       color: $white;
+//     }
+//     a {
+//       font-size: 16px;
+//       color: $white;
+//       transition: 0.3s;
+//       transform: scale(1);
+//       background-color: transparent;
 
-      &:hover {
-        @include transition;
-        transform: scale(1.4);
-        color: $white;
-      }
-    }
-  }
-}
+//       &:hover {
+//         @include transition;
+//         transform: scale(1.4);
+//         color: $white;
+//       }
+//     }
+//   }
+// }
 
 // Start Header Nav
 .header-menu-area {

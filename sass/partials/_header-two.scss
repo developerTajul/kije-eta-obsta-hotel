@@ -1,140 +1,190 @@
-
 .header-area {
   &.style-2 {
-    display: flex;
-    align-items: center;
-    position: relative;
+    // position: relative;
+    // @include transition;
+    // .logo-wrapper {
+    //   position: relative;
+    //   z-index: 9999;
+    //   height: 120px;
+    //   display: flex;
+    //   align-items: center;
+    //   background-color: $black;
+    //   //clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+    //   margin-left: -200px;
+    //   margin-bottom: -20px;
+    //   @include sm{
+    //     height: 100px;
+    //     margin-bottom: 0;
+    //   }
+    //   &:before {
+    //     position: absolute;
+    //     content: "";
+    //     width: 9999px;
+    //     right: 0;
+    //     background-color: $black;
+    //     height: 100%;
+    //   }
 
-    .logo-wrapper {
-      position: relative;
-      z-index: 9999;
-      height: 120px;
-      display: flex;
-      align-items: center;
+    //   &:after {
+    //     position: absolute;
+    //     content: "";
+    //     top: 0;
+    //     right: -70px;
+    //     z-index: -1;
+    //     height: 100%;
+    //     border-left: 70px solid $black;
+    //     border-bottom: 120px solid transparent;
+    //     @include sm{
+    //       border-bottom: 100px solid transparent;
+    //     }
+    //   }
+    //   @include rmaxwd(1399) {
+    //     margin-left: 0;
+    //   }
+    // }
+    // .header-menu-wrapper {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+
+    //   .search-btn-with-btn {
+    //     margin-left: unset;
+    //     margin-right: -200px;
+
+    //     @include rmaxwd(991) {
+    //       display: none;
+    //     }
+
+    //     @include rmaxwd(1399) {
+    //       margin-right: 0;
+    //     }
+    //     .btn-wrapper {
+    //       @include rmaxwd(1199) {
+    //         display: none;
+    //       }
+    //     }
+    //   }
+    // }
+
+    // // Start Header Nav
+    // .header-menu-area {
+    //   padding: 0 300px;
+
+    //   @include rmaxwd(1399) {
+    //     padding: 0;
+    //   }
+
+    //   &.sticky_menu {
+    //     .logo-wrapper{
+    //       height: 100px;
+    //       margin-bottom: 0;
+    //       &:after{
+    //         border-bottom: 100px solid transparent;
+    //       }
+    //     }
+    //     .main-menu {
+    //       ul {
+    //         li {
+    //           a {
+    //             color: $black;
+    //             @include transition;
+
+    //             &:hover {
+    //               color: $primary-color;
+    //             }
+    //           }
+    //           ul {
+    //             li {
+    //               a {
+    //                 &:hover {
+    //                   color: $white;
+    //                 }
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    //   .main-menu {
+    //     ul {
+    //       li {
+    //         a {
+    //           color: $black;
+    //           @include transition;
+    //           padding: 35px 24px;
+
+    //           &:hover {
+    //             color: $primary-color;
+    //           }
+    //         }
+    //         ul {
+    //           li {
+    //             a {
+    //               padding: 10px 20px;
+
+    //               &:hover {
+    //                 color: $white;
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    .header-menu-area {
       background-color: $black;
-      //clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
-      margin-left: -200px;
-      margin-bottom: -20px;
-      @include sm{
-        height: 100px;
-        margin-bottom: 0;
-      }
-      &:before {
-        position: absolute;
-        content: "";
-        width: 9999px;
-        right: 0;
-        background-color: $black;
-        height: 100%;
-      }
-
-
-      &:after {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: -70px;
-        z-index: -1;
-        height: 100%;
-        border-left: 70px solid $black;
-        border-bottom: 120px solid transparent;
-        @include sm{
-          border-bottom: 100px solid transparent;
+      .header-top {
+        padding: 32px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        .inner-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        p {
+          margin-bottom: 0;
+        }
+        .address {
+          color: $primary-color;
+          .title {
+            color: $white;
+          }
+        }
+        .booking-btn {
+          .content {
+            p {
+              color: $white;
+            }
+            a {
+              color: $primary-color;
+            }
+          }
         }
       }
-      @include rmaxwd(1399) {
-        margin-left: 0;
-      }
+    }
+    .main-menu ul li a {
+      padding: 38px 24px;
     }
     .header-menu-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .search-btn-with-btn {
-        margin-left: unset;
-        margin-right: -200px;
-
-        @include rmaxwd(991) {
-          display: none;
-        }
-
-        @include rmaxwd(1399) {
-          margin-right: 0;
-        }
-        .btn-wrapper {
-          @include rmaxwd(1199) {
-            display: none;
-          }
+      border-bottom: none;
+    }
+    .search-btn-with-btn {
+      gap: 30px;
+      .btn-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        i {
+          color: $primary-color;
         }
       }
     }
-
-    // Start Header Nav
-    .header-menu-area {
-      padding: 0 300px;
-
-      @include rmaxwd(1399) {
-        padding: 0;
-      }
-
-      &.sticky_menu {
-        .logo-wrapper{
-          height: 100px;
-          margin-bottom: 0;
-          &:after{
-            border-bottom: 100px solid transparent;
-          }
-        }
-        .main-menu {
-          ul {
-            li {
-              a {
-                color: $black;
-                @include transition;
-
-                &:hover {
-                  color: $primary-color;
-                }
-              }
-              ul {
-                li {
-                  a {
-                    &:hover {
-                      color: $white;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      .main-menu {
-        ul {
-          li {
-            a {
-              color: $black;
-              @include transition;
-              padding: 35px 24px;
-
-              &:hover {
-                color: $primary-color;
-              }
-            }
-            ul {
-              li {
-                a {
-                  padding: 10px 20px;
-
-                  &:hover {
-                    color: $white;
-                  }
-                }
-              }
-            }
-          }
-        }
+    .select-container {
+      select {
+        background: transparent;
+        color: $white;
       }
     }
   }

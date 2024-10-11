@@ -3,6 +3,8 @@
   position: relative;
   z-index: 2;
   height: auto;
+  padding-top: 238px;
+
   .shape {
     position: absolute;
     bottom: 50px;
@@ -58,7 +60,6 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
-    padding-top: 238px;
     @include lg {
       padding-top: 10%;
     }

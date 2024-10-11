@@ -444,28 +444,28 @@
       }
     }
   }
-  .booking-btn {
-    display: flex;
-    align-items: center;
-    gap: 21px;
-    .content {
-      p {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 2.7px;
-        color: $gray-800;
-        margin-bottom: 4px;
-      }
-      a {
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 34px; /* 141.667% */
-        letter-spacing: 2.4px;
-        color: $black;
-      }
+}
+.booking-btn {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  .content {
+    p {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.7px;
+      color: $gray-800;
+      margin-bottom: 4px;
+    }
+    a {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 34px; /* 141.667% */
+      letter-spacing: 2.4px;
+      color: $black;
     }
   }
 }

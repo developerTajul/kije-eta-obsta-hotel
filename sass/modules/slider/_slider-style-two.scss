@@ -1,256 +1,88 @@
 .slider-area {
   &.style-2 {
-    @include sm {
-      padding-bottom: 0;
-      height: 1078px;
+    padding-bottom: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(49, 43, 43, 0.65);
     }
-
-    @include md {
-      padding-bottom: 80px;
+    .shape {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: unset;
+      right: unset;
     }
-    @include xl{
-      padding-bottom: 80px;
+    .shape-two {
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
-    @include lg{
-      padding-bottom: 60px;
-    }
-
-    .slider-bg {
-      @include rmaxwd(1199){
-        background-color: $gray-100;
+    .slider-outer-wrapper {
+      position: relative;
+      .shape {
+        position: absolute;
+        top: 0;
+        left: 0;
       }
-      @include rwd(1400) {
-        width: 725px;
-      }
     }
-
     .slider-wrapper {
-      .next-btn,
-      .prev-btn {
-        @include rmaxwd(1399) {
-          top: unset;
-          bottom: 0;
-        }
-        @include rmaxwd(1399){
-          transform: translate(0, 100%);
-        }
-
-        @include rmaxwd(991) {
-          display: none !important;
-        }
-
-        i {
-          @include rmaxwd(1199) {
-            transform: unset;
-             color: $black;
-          }
-          @include xl{
-            color: $white;
-          }
-        }
-      }
-
-      .next-btn {
-        bottom: 38%;
-        @include xl {
-          left: unset;
-          right: 112px;
-          bottom: 0;
-        }
-
-        @include lg {
-          left: unset;
-          right: 112px;
-          bottom: 0;
-        }
-
-        @include md {
-          left: unset;
-          right: 112px;
-        }
-      }
-
-      .prev-btn {
-        @include xl {
-          right: 21%;
-          left: unset;
-          bottom: 0;
-        }
-
-        @include lg {
-          right: 30%;
-          left: unset;
-        }
-
-        @include md {
-          right: 30%;
-          left: unset;
-        }
-      }
-
-      .slick-dots {
-        margin-top: 0;
-        padding-left: 0;
-        gap: 10px;
-        padding-right: 3px;
-        margin-bottom: 6px;
-        position: absolute; 
-        @include xl {
-          flex-direction: row;
-          top: unset;
-          bottom: -17px;
-          transform: translate(-100%, 100%);
-          right: 120px;
-        }
-
-        @include lg {
-          flex-direction: row;
-          top: unset;
-          bottom: -17px;
-          transform: translate(-100%, 100%);
-          right: 136px;
-        }
-
-        @include rmaxwd(991) {
-          top: unset;
-          bottom: 0;
-          bottom: -24px;
+      .single-slider {
+        padding-top: 90px;
+        .slider-content-wrapper {
+          position: absolute;
+          top: 50%;
           left: 50%;
-          transform: translate(-50%, 100%);
+          transform: translate(-50%, -50%);
+          .slider-content {
+            .slider-short-title {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              letter-spacing: 9px;
+              text-transform: uppercase;
+            }
+            .slider-title {
+              text-transform: capitalize;
+            }
+          }
         }
-        li{
-          border: none;
-          outline: none;
-          // background-color: $white;
-          opacity: 0.2;
-          @include rmaxwd(991){
-            opacity: 0.6;
+      }
+      .slick-dots {
+        right: 50%;
+        top: unset;
+        bottom: 42px;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        transform: translate(50%, 0);
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          button {
+            width: 108px;
+            height: 108px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
-          button{
-            background-color: #D9D9D9;
-            @include rmaxwd(991){
-              background-color: $black;
-            }
-            @include lg{
-              background-color: $text-color;
-            }
-            &:before{
-              display: none;
-            }
-          }
-
           &.slick-active {
-            background-color: $white;
-            opacity: 1; 
-            button{
-              background-color: $white;
-              @include lg{
-                background-color: $black;
-              }
-              @include rmaxwd(991){
-                background-color: $black;
-              }
-              &:before{
-                background-color: transparent;
-              }
+            button {
+              width: 100px;
+              height: 100px;
             }
-          }
-        }
-      }
-    }
-
-    .single-slider {
-      @include md {
-        height: auto;
-      }
-      
-      @include sm {
-        padding-top: 0;
-        padding-bottom: 30px;
-      }
-      @include xl{
-        padding-top: 0;
-      }
-
-      .slider-content-wrapper {
-        @include rmaxwd(1199) {
-          margin: 0;
-        }
-        @include sm{
-          padding-bottom: 0;
-          margin-top: 30px;
-        }
-
-        .slider-content {
-          .foundation-text {
-            h1 {
-              @include lg {
-                font-size: 121px;
-              }
-
-              @include sm {
-                font-size: 78px;
-              }
-              @include xs {
-                font-size: 68px;
-              }
-            }
-          }
-
-          .slider-short-title,
-          .slider-title,
-          .slider-short-desc {
-            @include xl {
-              color: $white;
-            }
-            
-          }
-          .slider-title {
-            @include sm {
-              margin-bottom: 20px;
-            }
-          }
-          .slider-short-desc {
-            @include xs {
-              margin-bottom: 50px;
-            }
-          }
-
-          .slider-btn-wrapper {
-            .theme-btn {
-              @include xl {
-                color: $white;
-              }
-            }
-          }
-          .slider-btn-wrapper {
-            @include xs {
-              margin-bottom: 40px;
-              justify-content: center;
-            }
-          }
-
-          .foundation-text {
-            h1 {
-              @include rmaxwd(1399) {
-                -webkit-text-stroke: 2px $black;
-              }
-              @include xl{
-                -webkit-text-stroke: 2px $white;
-              }
-            }
-          }
-        }
-      }
-
-      .slider-image {
-        @include md {
-          margin-top: 30px;
-        }
-
-        .slider-image-inner {
-          @include rmaxwd(1399) {
-            margin-right: 0;
           }
         }
       }
