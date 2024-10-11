@@ -14,6 +14,25 @@
     opacity: 0.25;
     margin-top: 30px;
   }
+  .square-shape {
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg) translate(-20%, -50%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    .inner {
+      width: 40px;
+      height: 40px;
+      background-color: $primary-color;
+      flex-shrink: 0;
+    }
+  }
 
   .footer-sec {
     padding-top: 80px;

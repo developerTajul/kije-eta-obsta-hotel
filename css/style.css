@@ -34912,6 +34912,7 @@ body.admin-bar .header-area.style-7 {
 
 .banner-text {
   position: relative;
+  overflow: hidden;
 }
 .banner-text p {
   -webkit-text-stroke-width: 1px;
@@ -34945,9 +34946,10 @@ body.admin-bar .header-area.style-7 {
     transform: translate(0, -33%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .banner-text p {
     font-size: 80px;
+    transform: translate(0, -15%);
   }
 }
 
@@ -37229,6 +37231,10 @@ body.admin-bar .header-area.style-7 {
 
 .about-image-card.style-3 .image-wrapper {
   position: relative;
+}
+.about-image-card.style-3 .image-wrapper .main-img img {
+  width: 100%;
+  height: 100%;
 }
 .about-image-card.style-3 .image-wrapper .main-img .shape {
   position: absolute;
@@ -40705,6 +40711,7 @@ body.admin-bar .header-area.style-7 {
 
 .banner-text {
   position: relative;
+  overflow: hidden;
 }
 .banner-text p {
   -webkit-text-stroke-width: 1px;
@@ -40738,9 +40745,10 @@ body.admin-bar .header-area.style-7 {
     transform: translate(0, -33%);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .banner-text p {
     font-size: 80px;
+    transform: translate(0, -15%);
   }
 }
 
@@ -44524,6 +44532,11 @@ ul.children {
 .booking-area {
   position: relative;
 }
+@media (max-width: 991px) {
+  .booking-area {
+    padding-top: 0;
+  }
+}
 .booking-area .shape-wrapper {
   background-color: #f8f5f0;
   position: absolute;
@@ -44538,6 +44551,11 @@ ul.children {
   bottom: 0;
   right: 0;
 }
+@media (max-width: 1399px) {
+  .booking-area .shape-wrapper {
+    bottom: 0;
+  }
+}
 .booking-area .shape-2 {
   position: absolute;
   bottom: 0;
@@ -44549,6 +44567,11 @@ ul.children {
   align-items: center;
   gap: 24px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .booking-area .contact-info {
+    padding-bottom: 16px;
+  }
+}
 .booking-area .contact-info .icon {
   width: 69px;
   height: 69px;
@@ -44557,6 +44580,7 @@ ul.children {
   align-items: center;
   justify-content: center;
   background-color: #aa8453;
+  flex-shrink: 0;
 }
 .booking-area .contact-info .desc {
   font-size: 30px;
@@ -44641,6 +44665,27 @@ ul.children {
 .booking-area .booking-form form .submit-btn:hover {
   background-color: #886942;
 }
+@media (max-width: 1199px) {
+  .booking-area .about-us-area {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1399px) {
+  .booking-area .about-us-area .about-info-card {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-area .section-title {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-area .blog-card {
+    margin-top: 30px;
+  }
+}
 
 .room_and_suites {
   background-color: #f8f5f0;
@@ -44712,6 +44757,11 @@ ul.children {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .room_and_suites .room-card-wrapper {
     margin-top: -100px;
+  }
+}
+@media (max-width: 991px) {
+  .room_and_suites .room-card-wrapper {
+    margin-top: -40px;
   }
 }
 .room_and_suites .room-card-wrapper .room-card:nth-child(even) {
@@ -44914,9 +44964,6 @@ ul.children {
   position: absolute;
   right: 0;
   transform: translate(50%, -50%);
-}
-.about-us-area.style-2 .about-info-card {
-  margin-top: 50px;
 }
 @media (max-width: 1399px) {
   .about-us-area.style-2 .about-info-card {
@@ -47973,6 +48020,25 @@ ul.children {
   opacity: 0.25;
   margin-top: 30px;
 }
+.footer .square-shape {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg) translate(-20%, -50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.footer .square-shape .inner {
+  width: 40px;
+  height: 40px;
+  background-color: #aa8453;
+  flex-shrink: 0;
+}
 .footer .footer-sec {
   padding-top: 80px;
 }
@@ -49128,6 +49194,10 @@ ul.children {
 .blog-card .image-wrapper {
   position: relative;
 }
+.blog-card .image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
 .blog-card .image-wrapper .overlay {
   width: 100%;
   height: 100%;
@@ -49151,6 +49221,17 @@ ul.children {
   box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
   transition: all 0.5s ease-out;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .blog-card .content-wrapper .title-wrapper {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-card .content-wrapper .title-wrapper .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .blog-card .content-wrapper .desc {
   margin-bottom: 0;
   font-size: 16px;
@@ -49168,7 +49249,7 @@ ul.children {
   left: 0;
   bottom: 0;
   display: inline-flex;
-  transform: rotate(-90deg) translate(26%, -153%);
+  transform: rotate(-90deg) translate(26%, -156%);
   width: 128px;
 }
 .blog-card .content-wrapper .read-more a {

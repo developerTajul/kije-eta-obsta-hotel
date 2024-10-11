@@ -469,8 +469,12 @@
     }
   }
 }
+// Booking area
 .booking-area {
   position: relative;
+  @include rmaxwd(991) {
+    padding-top: 0;
+  }
   .shape-wrapper {
     background-color: #f8f5f0;
     position: absolute;
@@ -484,6 +488,9 @@
       bottom: 0;
       right: 0;
     }
+    @include rmaxwd(1399) {
+      bottom: 0;
+    }
   }
   .shape-2 {
     position: absolute;
@@ -495,6 +502,9 @@
     display: flex;
     align-items: center;
     gap: 24px;
+    @include md {
+      padding-bottom: 16px;
+    }
     .icon {
       width: 69px;
       height: 69px;
@@ -503,6 +513,7 @@
       align-items: center;
       justify-content: center;
       background-color: $primary-color;
+      flex-shrink: 0;
     }
     .desc {
       font-size: 30px;
@@ -594,6 +605,30 @@
       }
     }
   }
+  .about-us-area {
+    @include rmaxwd(1199) {
+      margin-top: 30px;
+    }
+    .about-info-card {
+      @include rmaxwd(1399) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+// Blog area
+.blog-area {
+  .section-title {
+    @include md {
+      margin-bottom: 0;
+    }
+  }
+  .blog-card {
+    @include md {
+      margin-top: 30px;
+    }
+  }
 }
 
 // Room and suites
@@ -671,6 +706,9 @@
     margin-top: -196px;
     @include lg {
       margin-top: -100px;
+    }
+    @include rmaxwd(991) {
+      margin-top: -40px;
     }
     .room-card {
       &:nth-child(even) {
@@ -884,7 +922,6 @@
       }
     }
     .about-info-card {
-      margin-top: 50px;
       @include rmaxwd(1399) {
         margin-top: 0;
       }

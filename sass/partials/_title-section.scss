@@ -151,6 +151,7 @@
 }
 .banner-text {
   position: relative;
+  overflow: hidden;
   p {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(102, 102, 102, 0.7);
@@ -176,8 +177,9 @@
       font-size: 120px;
       transform: translate(0, -33%);
     }
-    @include md {
+    @include rmaxwd(991) {
       font-size: 80px;
+      transform: translate(0, -15%);
     }
   }
 }
