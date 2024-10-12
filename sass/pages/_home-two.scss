@@ -1,78 +1,32 @@
-.feature-area {
-  &.style-2 {
-    padding-top: 118px;
-    padding-bottom: 120px;
-
-    @include md {
-      padding: 100px 0;
-    }
-    @include sm {
-      padding: 80px 0;
-    }
-
+// Video-popup-area
+.video-popup-area {
+  &.style-1 {
     .section-title {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      // margin-bottom: 40px;
-      gap: 0;
-    }
-  }
-  &.style-3 {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    position: relative;
-
-    @include md {
-      padding: 100px 0;
-    }
-    @include sm {
-      padding: 80px 0;
-    }
-
-    .feature-bg {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-    }
-
-    .section-title {
-      margin-bottom: 60px;
-      @include md {
-        margin-bottom: 40px;
-      }
-      @include sm {
-        margin-bottom: 40px;
-      }
-
-      &.two-column {
-        @include sm {
-          gap: 10px;
-        }
-        @include md {
-          gap: 10px;
-        }
-        @include lg {
-          gap: 10px;
+      .para {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        color: $primary-color;
+        span {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 29px;
+          color: $black;
         }
       }
-
-      .title {
-        margin-bottom: 0;
-        @include lg {
-          font-size: 42px;
-        }
-      }
-      .sec-desc {
-        margin-right: -3px;
-        @include rwd(1400) {
-          width: 525px;
-        }
-        @include lg {
-          margin-bottom: 0;
-          width: 420px;
-        }
+    }
+    .gift-card {
+      padding: 60px 88px;
+      padding-top: 82px;
+      background-color: $black;
+      border-left: 12px solid $primary-color;
+      position: relative;
+      .shape {
+        position: absolute;
+        bottom: 20px;
+        right: 60px;
       }
     }
   }

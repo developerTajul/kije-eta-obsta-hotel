@@ -2,8 +2,6 @@
   position: relative;
   overflow: hidden;
 
-  
-
   .video-popup-image {
     img {
       width: 100%;
@@ -21,7 +19,13 @@
       width: 155px;
       height: 155px;
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-      background-color: $primary-color;
+      background: linear-gradient(202deg, #c1975d 13.04%, #5b472c 85.96%);
+      display: inline-block;
+      padding: 15px;
+      border-radius: 50%; // Makes the button round
+      position: relative;
+      width: 60px; // Set width for the button container
+      height: 60px; // Set height for the button container
       border-radius: 50%;
       background-size: cover;
       background-repeat: no-repeat;
