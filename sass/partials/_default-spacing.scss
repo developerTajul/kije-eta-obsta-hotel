@@ -1,36 +1,5 @@
 $max-spacing: 350;
 
-// Breakpoint mixins
-@mixin xs {
-  @media only screen and (min-width: 0px) and (max-width: 576px) {
-    @content;
-  }
-}
-
-@mixin sm {
-  @media only screen and (min-width: 577px) and (max-width: 767px) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    @content;
-  }
-}
-
-@mixin lg {
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    @content;
-  }
-}
-
-@mixin xl {
-  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    @content;
-  }
-}
-
 // Generate exact margin and padding utilities for all devices
 @for $i from 0 through $max-spacing {
   // Exact positive margin classes

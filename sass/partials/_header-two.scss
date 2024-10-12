@@ -2,9 +2,42 @@
   &.style-2 {
     .header-menu-area {
       background-color: $black;
+      &.sticky_menu {
+        .header-top {
+          visibility: hidden;
+          opacity: 0;
+          height: 0;
+          padding: 0;
+          @include transition;
+        }
+        .header-menu-wrapper {
+          .hamburger-left {
+            &.hide {
+              display: none;
+              visibility: hidden;
+              opacity: 0;
+              height: 0;
+              width: 0;
+              transform: translateX(-100%);
+              @include transition;
+            }
+          }
+        }
+      }
       .header-top {
         padding: 32px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        @include rmaxwd(991) {
+          padding: 20px 0;
+        }
+        @include sm {
+          display: none;
+        }
+        .logo-wrapper {
+          @include rmaxwd(991) {
+            display: none;
+          }
+        }
         .inner-wrapper {
           display: flex;
           align-items: center;
@@ -36,6 +69,25 @@
     }
     .header-menu-wrapper {
       border-bottom: none;
+      @include sm {
+        padding: 12px 0;
+        height: 104px;
+      }
+      .hamburger-left {
+        @include rmaxwd(991) {
+          display: none;
+        }
+      }
+      .logo-wrapper {
+        visibility: hidden;
+        opacity: 0;
+        @include transition;
+        @include rmaxwd(991) {
+          visibility: visible;
+          opacity: 1;
+          @include transition;
+        }
+      }
     }
     .search-btn-with-btn {
       gap: 30px;
