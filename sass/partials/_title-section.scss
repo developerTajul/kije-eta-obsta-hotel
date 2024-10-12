@@ -139,6 +139,16 @@
     color: $gray;
   }
   &.style-2 {
+    justify-content: center;
+    .sec-content {
+      align-items: center;
+      text-align: center;
+    }
+    .title {
+      margin-bottom: 0;
+    }
+  }
+  &.style-3 {
     display: unset;
     .short-title {
       color: $primary-color;
