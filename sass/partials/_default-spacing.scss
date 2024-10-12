@@ -1,5 +1,35 @@
-// Define maximum spacing value
 $max-spacing: 350;
+
+// Breakpoint mixins
+@mixin xs {
+  @media only screen and (min-width: 0px) and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media only screen and (min-width: 577px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    @content;
+  }
+}
 
 // Generate exact margin and padding utilities for all devices
 @for $i from 0 through $max-spacing {
@@ -56,5 +86,96 @@ $max-spacing: 350;
 
   .mr-n#{$i} {
     margin-right: -#{$i}px;
+  }
+
+  // Responsive margin and padding classes
+  @include xs {
+    .mt-xs-#{$i} {
+      margin-top: #{$i}px;
+    }
+    .mb-xs-#{$i} {
+      margin-bottom: #{$i}px;
+    }
+    .ml-xs-#{$i} {
+      margin-left: #{$i}px;
+    }
+    .mr-xs-#{$i} {
+      margin-right: #{$i}px;
+    }
+    .p-xs-#{$i} {
+      padding: #{$i}px;
+    }
+  }
+
+  @include sm {
+    .mt-sm-#{$i} {
+      margin-top: #{$i}px;
+    }
+    .mb-sm-#{$i} {
+      margin-bottom: #{$i}px;
+    }
+    .ml-sm-#{$i} {
+      margin-left: #{$i}px;
+    }
+    .mr-sm-#{$i} {
+      margin-right: #{$i}px;
+    }
+    .p-sm-#{$i} {
+      padding: #{$i}px;
+    }
+  }
+
+  @include md {
+    .mt-md-#{$i} {
+      margin-top: #{$i}px;
+    }
+    .mb-md-#{$i} {
+      margin-bottom: #{$i}px;
+    }
+    .ml-md-#{$i} {
+      margin-left: #{$i}px;
+    }
+    .mr-md-#{$i} {
+      margin-right: #{$i}px;
+    }
+    .p-md-#{$i} {
+      padding: #{$i}px;
+    }
+  }
+
+  @include lg {
+    .mt-lg-#{$i} {
+      margin-top: #{$i}px;
+    }
+    .mb-lg-#{$i} {
+      margin-bottom: #{$i}px;
+    }
+    .ml-lg-#{$i} {
+      margin-left: #{$i}px;
+    }
+    .mr-lg-#{$i} {
+      margin-right: #{$i}px;
+    }
+    .p-lg-#{$i} {
+      padding: #{$i}px;
+    }
+  }
+
+  @include xl {
+    .mt-xl-#{$i} {
+      margin-top: #{$i}px;
+    }
+    .mb-xl-#{$i} {
+      margin-bottom: #{$i}px;
+    }
+    .ml-xl-#{$i} {
+      margin-left: #{$i}px;
+    }
+    .mr-xl-#{$i} {
+      margin-right: #{$i}px;
+    }
+    .p-xl-#{$i} {
+      padding: #{$i}px;
+    }
   }
 }

@@ -1,7 +1,19 @@
 // Video-popup-area
 .video-popup-area {
   &.style-1 {
+    .video-popup-card {
+      height: 100%;
+      .video-popup-image {
+        height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+    }
     .section-title {
+      @include rmaxwd(991) {
+        margin-top: 30px;
+      }
       .para {
         font-size: 20px;
         font-style: normal;
@@ -23,10 +35,35 @@
       background-color: $black;
       border-left: 12px solid $primary-color;
       position: relative;
+      @include rmaxwd(1399) {
+        height: 360px;
+      }
       .shape {
         position: absolute;
         bottom: 20px;
         right: 60px;
+        @include xl {
+          right: 20px;
+        }
+      }
+      .section-title {
+        .sec-desc {
+          br {
+            @include rmaxwd(1399) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .image-wrapper {
+      @include rmaxwd(1399) {
+        margin-top: 30px;
+        height: 360px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }
