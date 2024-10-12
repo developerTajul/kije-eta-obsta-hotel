@@ -64661,26 +64661,29 @@ body.admin-bar .header-area.style-7 {
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 0;
-  color: #ffffff;
+  color: transparent;
   text-wrap: nowrap;
-  transform: translate(-8%, -33%);
+  transform: translate(-8%, -15%);
+}
+.banner-text p span {
+  color: #ffffff;
 }
 @media (max-width: 1700px) {
   .banner-text p {
     font-size: 170px;
-    transform: translate(0, -33%);
+    transform: translate(0, -15%);
   }
 }
 @media (max-width: 1399px) {
   .banner-text p {
     font-size: 140px;
-    transform: translate(0, -23%);
+    transform: translate(0, -15%);
   }
 }
 @media (max-width: 1199px) {
   .banner-text p {
     font-size: 120px;
-    transform: translate(0, -33%);
+    transform: translate(0, -15%);
   }
 }
 @media (max-width: 991px) {
@@ -70334,26 +70337,29 @@ body.admin-bar .header-area.style-7 {
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 0;
-  color: #ffffff;
+  color: transparent;
   text-wrap: nowrap;
-  transform: translate(-8%, -33%);
+  transform: translate(-8%, -15%);
+}
+.banner-text p span {
+  color: #ffffff;
 }
 @media (max-width: 1700px) {
   .banner-text p {
     font-size: 170px;
-    transform: translate(0, -33%);
+    transform: translate(0, -15%);
   }
 }
 @media (max-width: 1399px) {
   .banner-text p {
     font-size: 140px;
-    transform: translate(0, -23%);
+    transform: translate(0, -15%);
   }
 }
 @media (max-width: 1199px) {
   .banner-text p {
     font-size: 120px;
-    transform: translate(0, -33%);
+    transform: translate(0, -15%);
   }
 }
 @media (max-width: 991px) {
@@ -74372,6 +74378,11 @@ ul.children {
   position: relative;
   margin-top: -196px;
 }
+@media (max-width: 1700px) {
+  .room_and_suites .room-card-wrapper {
+    margin-top: -100px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .room_and_suites .room-card-wrapper {
     margin-top: -100px;
@@ -74729,6 +74740,42 @@ ul.children {
 .video-popup-area.style-1 .image-wrapper img {
   width: 100%;
   height: 100%;
+}
+
+.room_and_suites.style-2 {
+  position: relative;
+  overflow: hidden;
+}
+.room_and_suites.style-2 .bg-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.room_and_suites.style-2 .banner-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(50px, 50px);
+}
+.room_and_suites.style-2 .banner-text p {
+  transform: none;
+}
+.room_and_suites.style-2 .room-card-slider-container {
+  position: relative;
+}
+.room_and_suites.style-2 .room-card-wrapper-two {
+  margin-top: 0;
+  padding-left: 250px;
+}
+.room_and_suites.style-2 .room-card-wrapper-two .room-card {
+  margin-top: 0;
+}
+.room_and_suites.style-2 .room-card-wrapper-two .slick-slide {
+  margin: 0;
+}
+.room_and_suites.style-2 .room-card-wrapper-two .slick-track {
+  margin: 0;
+  margin-left: -70px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
@@ -78620,24 +78667,26 @@ ul.children {
   background-position: center;
   background-repeat: no-repeat;
 }
-.room-card:hover .booking-btn {
+.room-card:hover .booking-btn, .room-card.slick-center .booking-btn {
   visibility: visible;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.5s ease-out;
 }
-.room-card:hover .content-wrapper {
+.room-card:hover .content-wrapper, .room-card.slick-center .content-wrapper {
   height: 50%;
   bottom: 0;
   -webkit-clip-path: polygon(50% 0, 50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
           clip-path: polygon(50% 0, 50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   transition: all 0.5s ease-out;
 }
-.room-card:hover .content-wrapper .inner-wrapper {
+.room-card:hover .content-wrapper .inner-wrapper, .room-card.slick-center .content-wrapper .inner-wrapper {
   bottom: 30px;
   transition: all 0.5s ease-out;
 }
-.room-card:hover .content-wrapper .inner-wrapper .rating {
+.room-card:hover .content-wrapper .inner-wrapper .rating, .room-card.slick-center .content-wrapper .inner-wrapper .rating {
   visibility: visible;
   opacity: 1;
   padding-top: 16px;
@@ -78651,42 +78700,13 @@ ul.children {
   transition: height 0.5s ease-out;
   -webkit-clip-path: none;
           clip-path: none;
-  transition: all 0.5s ease-out;
-}
-.room-card .content-wrapper .inner-wrapper {
-  position: absolute;
-  width: 80%;
-  overflow: hidden;
-  bottom: 0;
-  transition: all 0.5s ease-out;
-}
-.room-card .booking-btn {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  visibility: hidden;
-  opacity: 0;
-  z-index: 5;
-  transition: all 0.5s ease-out;
-}
-.room-card .booking-btn a {
-  width: 102px;
-  height: 102px;
-  border-radius: 50%;
-  background-color: #aa8453;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.room-card .content-wrapper {
   color: #ffffff;
   width: 100%;
   background: rgba(34, 34, 34, 0.75);
   padding-left: 60px;
   position: absolute;
   overflow: visible;
+  transition: all 0.5s ease-out;
 }
 .room-card .content-wrapper .inner-wrapper {
   position: absolute;
@@ -78755,6 +78775,26 @@ ul.children {
   line-height: normal;
   letter-spacing: 3px;
 }
+.room-card .booking-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  transition: all 0.5s ease-out;
+}
+.room-card .booking-btn a {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  background-color: #aa8453;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .room-card .image-wrapper {
   position: absolute;
   width: 100%;
@@ -78763,6 +78803,40 @@ ul.children {
 .room-card .image-wrapper img {
   width: 100%;
   height: 100%;
+}
+
+.room-card.style-2 {
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+}
+.room-card.style-2 .count {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  z-index: 1;
+}
+.room-card.style-2 .count p {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.4);
+  font-family: "Gilda Display";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: transparent;
+}
+.room-card.style-2 .content-wrapper {
+  background-color: #222;
+}
+.room-card.style-2 .content-wrapper .inner-wrapper .rating .desc i {
+  color: #aa8453;
+}
+.room-card.style-2 .content-wrapper .inner-wrapper .rating .stars i {
+  color: #aa8453;
+}
+.room-card.style-2:hover .content-wrapper, .room-card.style-2.slick-center .content-wrapper {
+  background: rgba(34, 34, 34, 0.75);
 }
 
 .blog-card {

@@ -7,7 +7,8 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  &:hover {
+  &:hover,
+  &.slick-center {
     .booking-btn {
       visibility: visible;
       opacity: 1;
@@ -19,6 +20,7 @@
       height: 50%;
       bottom: 0;
       clip-path: polygon(50% 0, 50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
+      backdrop-filter: blur(10px);
       @include transition;
 
       .inner-wrapper {
@@ -41,46 +43,13 @@
     bottom: 0;
     transition: height 0.5s ease-out;
     clip-path: none;
-    @include transition;
-
-    .inner-wrapper {
-      position: absolute;
-      width: 80%;
-      overflow: hidden;
-      bottom: 0;
-      @include transition;
-    }
-  }
-
-  .booking-btn {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    visibility: hidden;
-    opacity: 0;
-    z-index: 5;
-    @include transition;
-
-    a {
-      width: 102px;
-      height: 102px;
-      border-radius: 50%;
-      background-color: $primary-color;
-      color: $white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  .content-wrapper {
     color: $white;
     width: 100%;
     background: rgba(34, 34, 34, 0.75);
     padding-left: 60px;
     position: absolute;
     overflow: visible;
+    @include transition;
 
     .inner-wrapper {
       position: absolute;
@@ -88,7 +57,6 @@
       overflow: hidden;
       bottom: 0;
       @include transition;
-
       .title {
         font-family: $heading-font;
         color: $white;
@@ -156,6 +124,28 @@
           }
         }
       }
+    }
+  }
+
+  .booking-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    @include transition;
+
+    a {
+      width: 102px;
+      height: 102px;
+      border-radius: 50%;
+      background-color: $primary-color;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 

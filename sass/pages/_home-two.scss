@@ -69,6 +69,45 @@
   }
 }
 
+// Room and suites style-2
+.room_and_suites {
+  &.style-2 {
+    position: relative;
+    overflow: hidden;
+    .bg-image {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .banner-text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translate(50px, 50px);
+      p {
+        transform: none;
+      }
+    }
+    .room-card-slider-container {
+      position: relative;
+    }
+    .room-card-wrapper-two {
+      margin-top: 0;
+      padding-left: 250px;
+      .room-card {
+        margin-top: 0;
+      }
+      .slick-slide {
+        margin: 0;
+      }
+      .slick-track {
+        margin: 0;
+        margin-left: -70px;
+      }
+    }
+  }
+}
+
 .video-popup-area {
   &.style-2 {
     .video-popup-image {

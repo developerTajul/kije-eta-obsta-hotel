@@ -1,0 +1,46 @@
+.room-card {
+  &.style-2 {
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    .count {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      z-index: 1;
+      p {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.4);
+        font-family: 'Gilda Display';
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: transparent;
+      }
+    }
+    .content-wrapper {
+      background-color: $black;
+      .inner-wrapper {
+        .rating {
+          .desc {
+            i {
+              color: $primary-color;
+            }
+          }
+          .stars {
+            i {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+    &:hover,
+    &.slick-center {
+      .content-wrapper {
+        background: rgba(34, 34, 34, 0.75);
+      }
+    }
+  }
+}

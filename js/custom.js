@@ -968,6 +968,57 @@
       $('.slick-active').removeClass('drag-left drag-right');
     });
 
+    // Room and suites
+    $('.room-card-wrapper-two').slick({
+      slidesToShow: 4,
+      infinite: true,
+      autoplay: false,
+      draggable: true,
+      arrows: false,
+      slidesToScroll: 1,
+      loop: true,
+      dots: false,
+      variableWidth: true,
+      centerMode: true,
+      speed: 1500,
+      rtl: false,
+      prevArrow:
+        "<button type='button' class='room-card-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='room-card-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            autoplay: true,
+            slidesToShow: 2,
+            arrows: false,
+            variableWidth: false,
+            speed: 1500,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            autoplay: true,
+            slidesToShow: 2,
+            arrows: false,
+            variableWidth: false,
+            speed: 1500,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            autoplay: true,
+            slidesToShow: 1,
+            arrows: false,
+            variableWidth: false,
+            speed: 1500,
+          },
+        },
+      ],
+    });
     /*
         Counter Js
         ============================*/
