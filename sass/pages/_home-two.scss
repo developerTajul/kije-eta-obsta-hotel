@@ -231,15 +231,6 @@
   &.style-2 {
     position: relative;
     background-color: #312b2beb;
-    // &:before {
-    //   content: '';
-    //   width: 100%;
-    //   height: 100%;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   background-color: #312b2b8c;
-    // }
     .bg-image {
       position: absolute;
       top: 0;
@@ -250,6 +241,13 @@
       img {
         width: 100%;
         height: 100%;
+      }
+    }
+    .testimonial-card {
+      &.style-2 {
+        @include rmaxwd(991) {
+          margin-top: 30px;
+        }
       }
     }
   }
@@ -305,6 +303,18 @@
           padding-top: 60px;
         }
       }
+    }
+  }
+}
+
+// Brand logo slider
+.brand-slider-area {
+  .client-logo-slider-wrapper {
+    .slick-slide {
+      margin: 0 12px;
+    }
+    .slick-track {
+      margin-left: -12px;
     }
   }
 }
