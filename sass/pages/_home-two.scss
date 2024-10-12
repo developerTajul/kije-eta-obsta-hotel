@@ -120,6 +120,10 @@
       }
       p {
         transform: none;
+        @include md {
+          font-size: 100px;
+          transform: translate(0, 10%);
+        }
       }
     }
     .room-card-slider-container {
@@ -147,6 +151,15 @@
           margin-left: 110px;
         }
       }
+    }
+  }
+}
+
+// Service-area style-2
+.service-area {
+  &.style-2 {
+    &:before {
+      display: none;
     }
   }
 }

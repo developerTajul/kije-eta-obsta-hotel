@@ -2,42 +2,40 @@
   position: relative;
 }
 .info-card {
-  &.style-1 {
-    padding: 22px 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 5px;
-    background: rgba(49, 43, 43, 0.7);
-    position: relative;
-    z-index: 2;
-    border: 1px solid transparent;
+  padding: 22px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  background: rgba(49, 43, 43, 0.7);
+  position: relative;
+  z-index: 2;
+  border: 1px solid transparent;
+  @include transition;
+  @include lg {
+    padding: 20px 30px;
+  }
+  .content {
+    .title {
+      color: $white;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 150% */
+    }
+    p {
+      color: $white;
+      color: $gray;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      margin-bottom: 0;
+      margin-top: 3px;
+    }
+  }
+  &:hover {
     @include transition;
-    @include lg {
-      padding: 20px 30px;
-    }
-    .content {
-      .title {
-        color: $white;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px; /* 150% */
-      }
-      p {
-        color: $white;
-        color: $gray;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 29px;
-        margin-bottom: 0;
-        margin-top: 3px;
-      }
-    }
-    &:hover {
-      @include transition;
-      border-color: rgba(255, 255, 255, 0.25);
-    }
+    border-color: rgba(255, 255, 255, 0.25);
   }
 }
