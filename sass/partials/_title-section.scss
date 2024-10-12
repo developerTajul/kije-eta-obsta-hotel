@@ -139,13 +139,18 @@
     color: $gray;
   }
   &.style-2 {
-    justify-content: center;
-    .sec-content {
-      align-items: center;
-      text-align: center;
+    display: unset;
+    .short-title {
+      color: $primary-color;
     }
-    .title {
-      margin-bottom: 0;
+    .title,
+    .sec-desc {
+      color: $white;
+      br {
+        @include rmaxwd(1399) {
+          display: none;
+        }
+      }
     }
   }
 }

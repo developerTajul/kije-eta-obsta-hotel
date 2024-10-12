@@ -6,7 +6,7 @@ $breakpoints: (
   // Medium devices (tablet)
   'lg': 992px,
   // Large devices (desktop)
-  'xl': 1200px // Extra-large devices,,,,,,,,,,,,,
+  'xl': 1200px // Extra-large devices,,,,,,,,,,,,,,,
 );
 
 // Scaling factors for responsiveness (you can adjust these)
@@ -17,10 +17,10 @@ $scaling-factors: (
   // 100% of base spacing on medium devices (default)
   'lg': 0.8,
   // 125% of base spacing on large devices
-  'xl': 1 // 150% of base spacing on extra-large devices,,,,,,,,,,,,,
+  'xl': 1 // 150% of base spacing on extra-large devices,,,,,,,,,,,,,,,
 );
 // Define maximum spacing value
-$max-spacing: 150;
+$max-spacing: 250;
 
 // Generate exact combined margin and padding utilities
 @for $i from 0 through $max-spacing {

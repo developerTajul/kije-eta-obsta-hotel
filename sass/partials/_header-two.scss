@@ -22,6 +22,10 @@
               @include transition;
             }
           }
+          .logo-wrapper {
+            visibility: visible;
+            opacity: 1;
+          }
         }
       }
       .header-top {
