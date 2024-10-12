@@ -28,6 +28,9 @@
         line-height: normal;
         letter-spacing: 2.1px;
         width: 290px;
+        @include md {
+          width: auto;
+        }
       }
       label {
         color: $white;
@@ -49,7 +52,7 @@
         appearance: none;
       }
 
-      .date-container .fa-calendar-alt {
+      .date-container i {
         position: absolute;
         right: 10px;
         top: 50%;
@@ -95,6 +98,35 @@
       transform: translateY(-50%);
       pointer-events: none;
       color: $white;
+    }
+  }
+
+  &.styel-2 {
+    .inner-wrapper {
+      backdrop-filter: blur(0);
+      .date-container {
+        i {
+          color: #a19292;
+        }
+      }
+    }
+    form {
+      background-color: $white;
+      .input-wrapper {
+        background-color: rgba(255, 255, 255, 0.2);
+        label {
+          color: $gray;
+        }
+        input,
+        select {
+          background-color: #f6f6f6;
+        }
+      }
+      .select-container {
+        &:after {
+          color: #a19292;
+        }
+      }
     }
   }
 }

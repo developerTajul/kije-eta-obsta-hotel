@@ -395,53 +395,43 @@
 
 // About Us Area
 .about-us-area {
-  &.style-1 {
-    @include md {
-      padding: 100px 0;
-    }
-
+  .section-title {
     @include sm {
-      padding: 80px 0;
+      gap: 0;
     }
-
-    .section-title {
-      @include sm {
-        gap: 0;
+    .title {
+      @include xl {
+        margin-bottom: 10px;
       }
-      .title {
+      br {
         @include xl {
-          margin-bottom: 10px;
-        }
-        br {
-          @include xl {
-            display: none;
-          }
+          display: none;
         }
       }
     }
-    .about-info-card {
-      @include xl {
-        padding-left: 40px;
-      }
-      @include rmaxwd(1199) {
-        margin-top: 40px;
-      }
+  }
+  .about-info-card {
+    @include xl {
+      padding-left: 40px;
     }
-    .icon-card-wrapper {
-      display: flex;
-      gap: 70px;
-      align-items: center;
-      @include xl {
-        gap: 40px;
-      }
+    @include rmaxwd(1199) {
+      margin-top: 40px;
     }
-    .btn-wrapper {
-      .inner-wrapper {
-        display: inline-flex;
-        gap: 46px;
-        padding-top: 45px;
-        border-top: 1px solid $border-color;
-      }
+  }
+  .icon-card-wrapper {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    @include xl {
+      gap: 40px;
+    }
+  }
+  .btn-wrapper {
+    .inner-wrapper {
+      display: inline-flex;
+      gap: 46px;
+      padding-top: 45px;
+      border-top: 1px solid $border-color;
     }
   }
 }

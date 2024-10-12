@@ -101,7 +101,7 @@ h1 {
 h2 {
   font-size: 48px;
   line-height: 60px;
-  font-weight: 700;
+  font-weight: 7 0;
 }
 
 h3 {
@@ -76569,11 +76569,6 @@ body.admin-bar .header-area.style-7 {
   flex-direction: column;
   gap: 40px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-info-card.style-2 .about-info-content {
-    gap: 0;
-  }
-}
 .about-info-card.style-2 .about-info-content .section-title {
   gap: 0;
 }
@@ -83262,52 +83257,42 @@ ul.children {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-us-area.style-1 {
-    padding: 100px 0;
-  }
-}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-us-area.style-1 {
-    padding: 80px 0;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .about-us-area.style-1 .section-title {
+  .about-us-area .section-title {
     gap: 0;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .about-us-area.style-1 .section-title .title {
+  .about-us-area .section-title .title {
     margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .about-us-area.style-1 .section-title .title br {
+  .about-us-area .section-title .title br {
     display: none;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .about-us-area.style-1 .about-info-card {
+  .about-us-area .about-info-card {
     padding-left: 40px;
   }
 }
 @media (max-width: 1199px) {
-  .about-us-area.style-1 .about-info-card {
+  .about-us-area .about-info-card {
     margin-top: 40px;
   }
 }
-.about-us-area.style-1 .icon-card-wrapper {
+.about-us-area .icon-card-wrapper {
   display: flex;
   gap: 70px;
   align-items: center;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .about-us-area.style-1 .icon-card-wrapper {
+  .about-us-area .icon-card-wrapper {
     gap: 40px;
   }
 }
-.about-us-area.style-1 .btn-wrapper .inner-wrapper {
+.about-us-area .btn-wrapper .inner-wrapper {
   display: inline-flex;
   gap: 46px;
   padding-top: 45px;
@@ -84043,6 +84028,11 @@ ul.children {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .price-area.style-1 {
+    padding-bottom: 200px;
+  }
+}
 .price-area.style-1:before {
   content: "";
   background-color: rgba(49, 43, 43, 0.8);
@@ -84090,6 +84080,63 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .price-area.style-1 .price-card-wrapper .price-card {
     position: relative;
+  }
+}
+
+.checknow-form.styel-2 {
+  transform: translateY(-50%);
+}
+
+.about-us-area.style-2 {
+  position: relative;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-us-area.style-2 {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-us-area.style-2 {
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-us-area.style-2 {
+    padding-bottom: 60px;
+  }
+}
+.about-us-area.style-2 .bg-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 1900px) {
+  .about-us-area.style-2 .bg-image {
+    display: none;
+  }
+}
+.about-us-area.style-2 .about-image-card .main-img {
+  width: auto;
+  height: auto;
+  max-height: 431px;
+}
+.about-us-area.style-2 .about-image-card .main-img img {
+  height: auto;
+  max-height: 431px;
+}
+@media (min-width: 1900px) {
+  .about-us-area.style-2 .about-info-card.style-2 {
+    padding-left: 150px;
+  }
+}
+@media (min-width: 1900px) {
+  .about-us-area.style-2 .about-info-card.style-2 .about-info-content {
+    gap: 60px;
+  }
+}
+@media (min-width: 1900px) {
+  .about-us-area.style-2 .btn-wrapper .inner-wrapper {
+    padding-top: 60px;
   }
 }
 
@@ -87904,6 +87951,12 @@ ul.children {
   letter-spacing: 2.1px;
   width: 290px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .checknow-form form .input-wrapper input,
+  .checknow-form form .input-wrapper select {
+    width: auto;
+  }
+}
 .checknow-form form .input-wrapper label {
   color: #ffffff;
   font-size: 16px;
@@ -87921,7 +87974,7 @@ ul.children {
   -moz-appearance: none;
   appearance: none;
 }
-.checknow-form form .input-wrapper .date-container .fa-calendar-alt {
+.checknow-form form .input-wrapper .date-container i {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -87961,6 +88014,29 @@ ul.children {
   transform: translateY(-50%);
   pointer-events: none;
   color: #ffffff;
+}
+.checknow-form.styel-2 .inner-wrapper {
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+}
+.checknow-form.styel-2 .inner-wrapper .date-container i {
+  color: #a19292;
+}
+.checknow-form.styel-2 form {
+  background-color: #ffffff;
+}
+.checknow-form.styel-2 form .input-wrapper {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.checknow-form.styel-2 form .input-wrapper label {
+  color: #808287;
+}
+.checknow-form.styel-2 form .input-wrapper input,
+.checknow-form.styel-2 form .input-wrapper select {
+  background-color: #f6f6f6;
+}
+.checknow-form.styel-2 form .select-container:after {
+  color: #a19292;
 }
 
 .room-card {

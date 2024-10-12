@@ -171,6 +171,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @include xl {
+      padding-bottom: 200px;
+    }
     &:before {
       content: '';
       background-color: rgba(49, 43, 43, 0.8);
@@ -216,6 +219,66 @@
   }
 }
 
+// Checknow form style-2
+.checknow-form {
+  &.styel-2 {
+    transform: translateY(-50%);
+  }
+}
+
+// About us area style-2
+.about-us-area {
+  &.style-2 {
+    position: relative;
+    @include lg {
+      padding-bottom: 100px;
+    }
+    @include md {
+      padding-bottom: 80px;
+    }
+    @include sm {
+      padding-bottom: 60px;
+    }
+    .bg-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      @include rmaxwd(1900) {
+        display: none;
+      }
+    }
+    .about-image-card {
+      .main-img {
+        width: auto;
+        height: auto;
+        max-height: 431px;
+        img {
+          height: auto;
+          max-height: 431px;
+        }
+      }
+    }
+    .about-info-card {
+      &.style-2 {
+        @include rwd(1900) {
+          padding-left: 150px;
+        }
+        .about-info-content {
+          @include rwd(1900) {
+            gap: 60px;
+          }
+        }
+      }
+    }
+    .btn-wrapper {
+      .inner-wrapper {
+        @include rwd(1900) {
+          padding-top: 60px;
+        }
+      }
+    }
+  }
+}
 .video-popup-area {
   &.style-2 {
     .video-popup-image {

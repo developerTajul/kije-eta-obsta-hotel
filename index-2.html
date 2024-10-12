@@ -730,7 +730,7 @@
 
     <!--- Price Area Start !-->
     <div
-      class="price-area style-1 background-gray py-100"
+      class="price-area style-1 background-gray pt-100 pb-156"
       style="background-image: url(images/section-bg/price-area.jpg)">
       <div class="container">
         <div class="section-title style-2 mb-0">
@@ -762,11 +762,11 @@
                 <div class="price">
                   <h1 class="price-heading">
                     <span class="currency">$</span>
-                    19
+                    85
                     <span class="price-time">/night</span>
                   </h1>
                   <div class="card-title">
-                    <p class="title">Basic plan</p>
+                    <p class="title">Small Suit</p>
                   </div>
                 </div>
                 <div class="list-wrapper">
@@ -812,11 +812,11 @@
                 <div class="price">
                   <h1 class="price-heading">
                     <span class="currency">$</span>
-                    19
+                    105
                     <span class="price-time">/night</span>
                   </h1>
                   <div class="card-title">
-                    <p class="title">Basic plan</p>
+                    <p class="title">Single Room</p>
                   </div>
                 </div>
                 <div class="list-wrapper">
@@ -857,6 +857,153 @@
       </div>
     </div>
     <!--- Price Area End !-->
+    <!-- Checknow form start -->
+    <div class="checknow-form styel-2">
+      <div class="container">
+        <div class="inner-wrapper">
+          <form action="/submit-checkin" method="POST">
+            <!-- Check-In Date -->
+            <div class="input-wrapper">
+              <label for="checkin">Check-In:</label>
+              <div class="date-container">
+                <i class="fas fa-calendar-alt"></i>
+                <input type="date" id="checkin" name="checkin" required />
+              </div>
+            </div>
+
+            <!-- Check-Out Date -->
+            <div class="input-wrapper">
+              <label for="checkout">Check-Out:</label>
+              <div class="date-container">
+                <i class="fas fa-calendar-alt"></i>
+                <input type="date" id="checkout" name="checkout" required />
+              </div>
+            </div>
+
+            <!-- Room Selection -->
+            <div class="input-wrapper">
+              <label for="room">Room:</label>
+              <div class="select-container">
+                <select id="room" name="room" required>
+                  <option value="" disabled selected>Select your room</option>
+                  <option value="101">Room 101</option>
+                  <option value="102">Room 102</option>
+                  <option value="201">Room 201</option>
+                  <option value="202">Room 202</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Check In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Checknow form end -->
+
+    <!-- About Us Area Start !-->
+    <div class="about-us-area style-2 pb-120">
+      <div class="bg-image">
+        <img src="images/section-bg/about-us-2.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 col-md-8">
+            <div class="about-image-card style-1">
+              <div class="image-wrapper">
+                <!-- images module -->
+                <div class="main-img">
+                  <img
+                    src="images/image-card/about-us-2.png"
+                    alt="about card img" />
+                </div>
+                <div class="content">
+                  <h3 class="title mt-44">
+                    A Luxurious Way to Meet the Capitals of Europe
+                  </h3>
+                  <p class="desc mt-25 mb-0">
+                    Nunc id massa ante. Suspendisse sit amet neque euismod,
+                    convallis quam eget, dignissim massa. Aliquam blandit risus
+                    purus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 col-xl-8 col-lg-6">
+            <div class="about-info-card style-2">
+              <div class="about-info-content">
+                <!-- heading -->
+                <div class="section-title mb-0">
+                  <div class="sec-content">
+                    <h5 class="short-title">Hotel Facility</h5>
+                    <h2 class="title">
+                      Enjoy Food and Even better hospitality
+                    </h2>
+
+                    <p class="sec-desc">
+                      Proin efficitur, mauris vel condimentum pulvinar, velit
+                      orci consectetur ligula, eget egestas magna mi ut arcu.
+                      Phasellus nec odio orci. Nunc id massa ante. Suspendisse
+                      sit amet neque euismod, convallis quam eget, dignissim
+                      massa. Aliquam blandit risus purus, in congue nunc
+                      venenatis id. Pellentesque habitant morbi tristique
+                      senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="icon-card-wrapper">
+                  <div class="icon-card style-1">
+                    <div class="image">
+                      <img
+                        src="images/icon/info-card/food-covered.svg"
+                        alt="" />
+                    </div>
+
+                    <div class="content">
+                      <h3 class="info-title">
+                        The Best
+                        <br />
+                        Restaurants
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="icon-card style-1">
+                    <div class="image">
+                      <img src="images/icon/info-card/juice.svg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3 class="info-title">
+                        The Best
+                        <br />
+                        Coctail bar
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-wrapper">
+                  <div class="inner-wrapper">
+                    <a href="#" class="theme-btn style-2">Know about us</a>
+                    <div class="booking-btn">
+                      <div class="image">
+                        <img src="images/icon/clock.png" />
+                      </div>
+                      <div class="content">
+                        <p>Booking Now</p>
+                        <a href="#">123456789</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Us Area End !-->
 
     <!-- Feature Area Start-->
     <div class="feature-area style-5 py-120 background-gray">
@@ -960,7 +1107,7 @@
     <!-- About Us Area Start !-->
     <div class="about-us-area style-3 background-gray">
       <div class="container">
-        <div class="row gy-5">
+        <div class="row">
           <div class="col-lg-7 col-xl-7 col-xxl-6">
             <div class="about-image-card style-3">
               <div class="main-img-wrapper">
