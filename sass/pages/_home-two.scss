@@ -385,6 +385,88 @@
     }
   }
 }
+
+// subscribe-area
+.subscribe-area {
+  &.style-1 {
+    max-height: 621px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .subscribe-form-widget {
+      height: 651px;
+      background-color: $black;
+      padding: 0 74px;
+      margin-top: -30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      @include sm {
+        margin-top: 0;
+        padding: 0 15px;
+      }
+      .short-title {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5.4px;
+        text-transform: uppercase;
+        color: $primary-color;
+      }
+      .title {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        color: $white;
+        br {
+          @include rmaxwd(1700) {
+            display: none;
+          }
+        }
+      }
+      .mc4wp-form-fields {
+        flex-direction: column;
+        border-radius: 0;
+        gap: 10px;
+        margin-top: 60px;
+
+        @include sm {
+          justify-content: center;
+        }
+      }
+      .single-field {
+        input {
+          border: none;
+          border-bottom: 1px solid #5c5c5c;
+          background: transparent;
+          color: $black;
+          padding: 27px 0;
+          width: 391px;
+          text-align: center;
+        }
+      }
+      .submit-btn {
+        padding: 7px 43px;
+        color: $white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29px;
+        border: 1px solid transparent;
+        &:hover {
+          background-color: $black;
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
 .video-popup-area {
   &.style-2 {
     .video-popup-image {
@@ -509,66 +591,6 @@
           }
         }
       }
-    }
-  }
-}
-
-.subscribe-area {
-  padding-top: 82px;
-  padding-bottom: 93px;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-
-  @include sm {
-    padding: 80px 0;
-  }
-
-  .section-title {
-    margin-bottom: 40px;
-
-    .title {
-      margin-bottom: 14px;
-    }
-    .desc {
-      @include xs {
-        padding: 0 15px;
-      }
-    }
-  }
-
-  .desc {
-    margin-bottom: 0;
-    padding: 0 70px;
-  }
-
-  .subscribe-form-widget {
-    padding: 0 74px;
-    margin-top: -6px;
-    @include sm {
-      margin-top: 0;
-      padding: 0 15px;
-    }
-    .mc4wp-form-fields {
-      border-radius: 0;
-      gap: 10px;
-
-      @include sm {
-        justify-content: center;
-      }
-    }
-    .single-field {
-      input {
-        border: 1px solid #e3e3e3;
-        color: $black;
-        padding: 0 20px;
-      }
-    }
-    .submit-btn {
-      padding: 14px 24px;
-      color: $white;
-      font-weight: 700;
-      line-height: 32px;
-      letter-spacing: 1.28px;
     }
   }
 }
