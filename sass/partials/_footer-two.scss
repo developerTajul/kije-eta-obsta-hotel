@@ -1,111 +1,135 @@
 .footer {
-  .widget-menu-wrapper{
+  .widget-menu-wrapper {
     padding-left: 50px;
     padding-right: 30px;
-    @include rmaxwd(991){
+    @include rmaxwd(991) {
       padding-left: 0;
     }
-    @include lg{
+    @include lg {
       padding-left: 12px;
     }
-    @media only screen and (min-width: 992px) and (max-width: 1399px){
+    @media only screen and (min-width: 992px) and (max-width: 1399px) {
       padding-right: 0;
     }
-    @include xl{
+    @include xl {
       padding-right: 0;
     }
   }
   &.style-2 {
-    .footer-widget-info {
-      .extra-info {
-        margin-top: 20px;
-        .time-slot {
-          margin-bottom: 0;
-        }
-      }
-    }
-    .footer-widget-info p,
-    .footer-widget.widget_nav_menu li a,
-    .footer-bottom-menu ul li a,
-    .footer-bottom-area .copyright-text p {
+    .footer-widget-title {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+      border-bottom: 1px solid $primary-color;
       color: $white;
+      display: inline;
     }
-    .footer-widget.widget_nav_menu li a,
-    .footer-bottom-menu ul li a {
-      &:hover {
-        color: $primary-color;
+    .footer-contact {
+      .contact {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        i {
+          color: $primary-color;
+          font-size: 20px;
+        }
+        span {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px;
+          color: $white;
+        }
       }
     }
-    .footer-bottom-area .copyright-text p a {
-      color: #8f939b;
-      font-weight: 700;
-      &:hover {
-        color: $primary-color;
-      }
-    }
-    .footer-bottom-menu {
-      display: flex;
-      flex-grow: 1;
-      justify-content: end;
-
-      @include rmaxwd(991) {
-        justify-content: start;
-      }
-    }
-    .copyright-text {
-      @include rmaxwd(991) {
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-    }
-    // Social Share
     .footer-widget {
-      .social-profile {
+      .desc {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29px;
+        color: $white;
+      }
+      .contact-info {
+        font-family: $heading-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        color: $white;
+        span,
         a {
-          color: unset;
-          background-color: transparent;
-          i {
-            color: $white;
-          }
-          &:hover {
-            i {
-              color: $primary-color;
-            }
-          }
+          color: $primary-color;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 34px;
         }
       }
-      &.widget_nav_menu {
-        li {
-          a {
-            &:before {
-              display: none;
-            }
-          }
-        }
+    }
+    .footer-bottom-wrapper {
+      padding-top: 26px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+  // Instagram Widget
+  .widget-instagram-feed {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 12px;
+    width: 240px;
+
+    @media only screen and (min-width: 992px) and (max-width: 1280px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include rmaxwd(767) {
+      grid-template-columns: repeat(2, 1fr);
+      width: auto !important;
+    }
+    .single-instagram-feed {
+      width: 177px;
+      height: 129px;
+      overflow: hidden;
+      position: relative;
+      flex-shrink: 0;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(34, 34, 34, 0.8);
+        visibility: hidden;
+        opacity: 0;
+        @include transition;
       }
-      .footer-widget-contact {
-        p {
-          margin-bottom: 0;
+      .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        opacity: 0;
+        @include transition;
+      }
+      &:hover {
+        &:before {
+          visibility: visible;
+          opacity: 1;
+          @include transition;
         }
-        .footer-contact {
-          ul {
-            li {
-              align-items: start;
-              .contact-icon {
-                // margin-top: 8px;
-              }
-              .contact-text{
-                a,span{
-                  color: #ffffffb3;
-                }
-              }
-            }
-          }
+        .icon {
+          visibility: visible;
+          opacity: 1;
+          @include transition;
         }
       }
     }
   }
-  
   .subscribe-form-widget {
     &.style-2 {
       .mc4wp-form-fields {

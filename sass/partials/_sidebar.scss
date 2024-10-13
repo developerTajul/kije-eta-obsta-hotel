@@ -16,16 +16,16 @@
   background-color: $gray-100;
   padding: 40px;
   margin-bottom: 40px;
-  @include sm{
+  @include sm {
     padding: 20px;
   }
-  @include md{
+  @include md {
     padding: 30px;
   }
-  @include lg{
+  @include lg {
     padding: 20px;
   }
-  @include xl{
+  @include xl {
     padding: 30px;
   }
   &:last-child {
@@ -130,7 +130,7 @@
           color: $text-color;
 
           &:before {
-            content: "\f274";
+            content: '\f274';
             font-family: $font-awesome;
             padding-right: 8px;
           }
@@ -258,7 +258,6 @@
       }
     }
   }
-
 
   /* Tagcloud Widget */
   .tagcloud,
@@ -508,7 +507,7 @@
   .wp-block-rss__item-publish-date,
   .rss-date {
     &:before {
-      content: "\f274";
+      content: '\f274';
       font-family: $font-awesome;
       padding-right: 8px;
     }
@@ -517,7 +516,7 @@
   .wp-block-latest-posts__post-author,
   .wp-block-rss__item-author {
     &:before {
-      content: "\f007";
+      content: '\f007';
       font-family: $font-awesome;
       padding-right: 8px;
     }
@@ -537,7 +536,7 @@
       margin-bottom: 10px;
       border: 0;
       align-items: center;
-      @include lg{
+      @include lg {
         gap: 10px;
       }
       &:hover {
@@ -635,7 +634,7 @@
             font-size: 15px;
             line-height: normal;
           }
-          @include lg{
+          @include lg {
             font-size: 14px;
             line-height: normal;
           }
@@ -648,47 +647,6 @@
   }
 }
 
-// Instagram Widget
-.widget-instagram-feed {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 12px;
-  width: 240px;
-
-  @media only screen and (min-width: 992px) and (max-width: 1280px){
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include rmaxwd(767) {
-    grid-template-columns: repeat(2, 1fr);
-    width: auto !important;
-  }
-  .single-instagram-feed {
-    border-radius: 6px;
-    width: 72px;
-    height: 72px;
-    overflow: hidden;
-    position: relative;
-    flex-shrink: 0;
-
-    &:hover {
-      img {
-        transform: scale(1.1);
-        @include transition;
-      }
-    }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: scale(1);
-      @include transition;
-    }
-  }
-}
 // Widget Promotion
 .widget_promotion {
   padding-top: 50px;

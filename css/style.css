@@ -337,6 +337,12 @@ input.theme-btn.style-2:after {
 input.theme-btn.style-3 {
   background-color: #aa8453;
   color: #ffffff;
+  border-color: transparent;
+}
+.theme-btn.style-3:after,
+.wp-block-loginout a.style-3:after,
+input.theme-btn.style-3:after {
+  background-color: transparent;
 }
 
 .simple-btn {
@@ -80743,48 +80749,6 @@ body.admin-bar .header-area.style-7 {
   color: #aa8453;
 }
 
-.widget-instagram-feed {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 12px;
-  width: 240px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1280px) {
-  .widget-instagram-feed {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 767px) {
-  .widget-instagram-feed {
-    grid-template-columns: repeat(2, 1fr);
-    width: auto !important;
-  }
-}
-.widget-instagram-feed .single-instagram-feed {
-  border-radius: 6px;
-  width: 72px;
-  height: 72px;
-  overflow: hidden;
-  position: relative;
-  flex-shrink: 0;
-}
-.widget-instagram-feed .single-instagram-feed:hover img {
-  transform: scale(1.1);
-  transition: all 0.5s ease-out;
-}
-.widget-instagram-feed .single-instagram-feed img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: scale(1);
-  transition: all 0.5s ease-out;
-}
-
 .widget_promotion {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -85762,66 +85726,114 @@ ul.children {
     padding-right: 0;
   }
 }
-.footer.style-2 .footer-widget-info .extra-info {
-  margin-top: 20px;
-}
-.footer.style-2 .footer-widget-info .extra-info .time-slot {
-  margin-bottom: 0;
-}
-.footer.style-2 .footer-widget-info p,
-.footer.style-2 .footer-widget.widget_nav_menu li a,
-.footer.style-2 .footer-bottom-menu ul li a,
-.footer.style-2 .footer-bottom-area .copyright-text p {
+.footer.style-2 .footer-widget-title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  border-bottom: 1px solid #aa8453;
   color: #ffffff;
+  display: inline;
 }
-.footer.style-2 .footer-widget.widget_nav_menu li a:hover,
-.footer.style-2 .footer-bottom-menu ul li a:hover {
-  color: #aa8453;
-}
-.footer.style-2 .footer-bottom-area .copyright-text p a {
-  color: #8f939b;
-  font-weight: 700;
-}
-.footer.style-2 .footer-bottom-area .copyright-text p a:hover {
-  color: #aa8453;
-}
-.footer.style-2 .footer-bottom-menu {
+.footer.style-2 .footer-contact .contact {
   display: flex;
-  flex-grow: 1;
-  justify-content: end;
+  align-items: center;
+  gap: 12px;
 }
-@media (max-width: 991px) {
-  .footer.style-2 .footer-bottom-menu {
-    justify-content: start;
-  }
+.footer.style-2 .footer-contact .contact i {
+  color: #aa8453;
+  font-size: 20px;
 }
-@media (max-width: 991px) {
-  .footer.style-2 .copyright-text {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-}
-.footer.style-2 .footer-widget .social-profile a {
-  color: unset;
-  background-color: transparent;
-}
-.footer.style-2 .footer-widget .social-profile a i {
+.footer.style-2 .footer-contact .contact span {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
   color: #ffffff;
 }
-.footer.style-2 .footer-widget .social-profile a:hover i {
+.footer.style-2 .footer-widget .desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: #ffffff;
+}
+.footer.style-2 .footer-widget .contact-info {
+  font-family: "Gilda Display", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+}
+.footer.style-2 .footer-widget .contact-info span,
+.footer.style-2 .footer-widget .contact-info a {
   color: #aa8453;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
 }
-.footer.style-2 .footer-widget.widget_nav_menu li a:before {
-  display: none;
+.footer.style-2 .footer-bottom-wrapper {
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.footer.style-2 .footer-widget .footer-widget-contact p {
-  margin-bottom: 0;
+.footer .widget-instagram-feed {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 12px;
+  width: 240px;
 }
-.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li {
-  align-items: start;
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  .footer .widget-instagram-feed {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a, .footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span {
-  color: rgba(255, 255, 255, 0.7019607843);
+@media (max-width: 767px) {
+  .footer .widget-instagram-feed {
+    grid-template-columns: repeat(2, 1fr);
+    width: auto !important;
+  }
+}
+.footer .widget-instagram-feed .single-instagram-feed {
+  width: 177px;
+  height: 129px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+.footer .widget-instagram-feed .single-instagram-feed:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.footer .widget-instagram-feed .single-instagram-feed .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.footer .widget-instagram-feed .single-instagram-feed:hover:before {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+.footer .widget-instagram-feed .single-instagram-feed:hover .icon {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
 }
 .footer .subscribe-form-widget.style-2 .mc4wp-form-fields {
   border-color: rgb(199, 199, 225);

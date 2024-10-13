@@ -303,6 +303,10 @@ input.theme-btn {
   &.style-3 {
     background-color: $primary-color;
     color: $white;
+    border-color: transparent;
+    &:after {
+      background-color: transparent;
+    }
   }
 }
 
