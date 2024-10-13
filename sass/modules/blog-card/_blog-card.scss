@@ -123,4 +123,68 @@
       }
     }
   }
+  &.style-2 {
+    .image-wrapper {
+      width: 570px;
+      height: 310px;
+    }
+    .content-wrapper {
+      position: relative;
+      padding: 0;
+      .title-wrapper {
+        margin-left: 0;
+        margin-top: 25px;
+        .desc {
+          visibility: visible;
+          opacity: 1;
+          height: auto;
+          margin-top: 25px;
+        }
+      }
+      .read-more {
+        position: relative;
+        transform: none;
+        margin-top: 25px;
+      }
+    }
+  }
+  &.style-3 {
+    .content-wrapper {
+      max-width: 430px;
+      max-height: 273px;
+      background: #323232;
+      padding: 45px;
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      .title-wrapper {
+        margin-left: 0;
+        margin-top: 0;
+        background-color: transparent;
+        box-shadow: none;
+        .desc {
+          visibility: visible;
+          opacity: 1;
+          height: auto;
+          margin-top: 15px;
+        }
+        .user-meta {
+          padding: 0;
+          background-color: transparent;
+          position: relative;
+          transform: none;
+          ul {
+            li {
+              span {
+                color: $white;
+              }
+              i {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
