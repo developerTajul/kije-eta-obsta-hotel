@@ -117,6 +117,8 @@
     line-height: 29px;
     color: $gray-800;
     margin-bottom: 0;
+    position: relative;
+    z-index: 2;
     .theme-btn {
       background-color: transparent;
       color: $black;

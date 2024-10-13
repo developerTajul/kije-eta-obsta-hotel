@@ -505,10 +505,10 @@
     });
 
     /*
-        Testimonial Slider
+        Project Card Slider
         ============================*/
-    $('#testimonial_style_three').slick({
-      slidesToShow: 1,
+    $('.project-slider').slick({
+      slidesToShow: 2,
       infinite: true,
       autoplay: true,
       draggable: true,
@@ -518,107 +518,10 @@
       dots: false,
       speed: 1500,
       rtl: false,
-      responsive: [
-        {
-          breakpoint: 1023,
-          settings: {
-            autoplay: true,
-            slidesToShow: 1,
-            arrows: true,
-          },
-        },
-      ],
-    });
-
-    $('#testimonial_three_prev_btn').on('click', function (e) {
-      e.preventDefault();
-      $('#testimonial_style_three .slick-prev').trigger('click');
-    });
-    $('#testimonial_three_next_btn').on('click', function (e) {
-      e.preventDefault();
-      $('#testimonial_style_three .slick-next').trigger('click');
-    });
-
-    /*
-        Testimonial Slider
-        ============================*/
-    $('#testimonial_style_four').slick({
-      slidesToShow: 3,
-      infinite: true,
-      autoplay: false,
-      draggable: true,
-      arrows: false,
-      slidesToScroll: 1,
-      loop: true,
-      dots: true,
-      speed: 1500,
-      variableWidth: true,
-      centerMode: true,
-      rtl: false,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-
-    /*
-        Testimonial Slider
-        ============================*/
-    $('#testimonial_style_five').slick({
-      slidesToShow: 2,
-      infinite: true,
-      autoplay: true,
-      draggable: true,
-      arrows: false,
-      slidesToScroll: 1,
-      loop: true,
-      dots: false,
-      speed: 1500,
-      variableWidth: true,
-      rtl: false,
-      responsive: [
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 1,
-            variableWidth: true,
-            centerMode: true,
-          },
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            variableWidth: false,
-          },
-        },
-      ],
-    });
-
-    /*
-        Project Card Slider
-        ============================*/
-    $('#project_card_slider').slick({
-      slidesToShow: 3,
-      infinite: true,
-      autoplay: true,
-      draggable: true,
-      arrows: false,
-      slidesToScroll: 1,
-      loop: true,
-      dots: true,
-      speed: 1500,
-      rtl: false,
+      prevArrow:
+        "<button type='button' class='project-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='project-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
       responsive: [
         {
           breakpoint: 1200,

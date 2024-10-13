@@ -1,12 +1,13 @@
 .image-card {
   background-color: $white;
-  &:hover{
-      .image {
-        img{
-          transform: scale(1.03);
-          @include transition;
-        }
-      }
+  position: relative;
+  max-width: 450px;
+  max-height: 506px;
+  &:hover {
+    .content-wrapper {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   .image {
     position: relative;
@@ -14,7 +15,7 @@
 
     img {
       width: 100%;
-      transform: scale(1.0);
+      transform: scale(1);
       @include transition;
     }
     .icon {
@@ -47,28 +48,64 @@
     }
   }
   .content-wrapper {
-    padding: 30px 40px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    @include lg{
+    justify-content: end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 43, 43, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    @include transition;
+    text-align: center;
+
+    @include lg {
       padding: 30px 24px;
     }
-    
+    .content {
+      padding: 45px 55px;
+      border-top: 1px solid #878080;
+      border-bottom: 1px solid #878080;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: -20px;
+        width: 1px;
+        height: calc(100% + 40px);
+        background: #878080;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        right: 20px;
+        bottom: -20px;
+        width: 1px;
+        height: calc(100% + 40px);
+        background: #878080;
+      }
+    }
 
     .title {
-      font-size: 24px;
+      color: $white;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
       line-height: 30px;
-      font-weight: 700;
-      margin: 0;
-      color: $secondary-color;
       transition: all 0.6s ease;
     }
-    .content {
-      p {
-        margin-bottom: 0;
-      }
-      
+    .desc {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      color: $white;
     }
   }
 }

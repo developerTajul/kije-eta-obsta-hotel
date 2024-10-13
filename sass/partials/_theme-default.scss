@@ -300,6 +300,10 @@ input.theme-btn {
       background-color: $secondary-color;
     }
   }
+  &.style-3 {
+    background-color: $primary-color;
+    color: $white;
+  }
 }
 
 .simple-btn {
