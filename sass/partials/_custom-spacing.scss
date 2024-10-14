@@ -1,23 +1,26 @@
 // Define breakpoints
 $breakpoints: (
+  'xs': 575px,
   'sm': 576px,
   // Small devices (mobile)
   'md': 768px,
   // Medium devices (tablet)
   'lg': 992px,
   // Large devices (desktop)
-  'xl': 1200px // Extra-large devices,,,,,,,,,,,,,,,
+  'xl': 1200px // Extra-large devices,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Scaling factors for responsiveness (you can adjust these)
 $scaling-factors: (
+  'xs': 0.5,
   'sm': 0.666,
   // 75% of base spacing on small devices
   'md': 0.6,
   // 100% of base spacing on medium devices (default)
   'lg': 0.8,
   // 125% of base spacing on large devices
-  'xl': 1 // 150% of base spacing on extra-large devices,,,,,,,,,,,,,,,
+  'xl': 1
+    // 150% of base spacing on extra-large devices,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 // Define maximum spacing value
 $max-spacing: 250;
@@ -50,29 +53,50 @@ $max-spacing: 250;
 
   // Responsive variations
   @each $breakpoint, $size in $breakpoints {
-    @media (min-width: #{$size}) {
-      // Adjust for combined margin-top and margin-bottom
-      .my-#{$i} {
-        margin-top: #{$i * map-get($scaling-factors, $breakpoint)}px;
-        margin-bottom: #{$i * map-get($scaling-factors, $breakpoint)}px;
+    @if $breakpoint == 'xs' {
+      @media (max-width: #{$size}) {
+        .my-#{$i} {
+          margin-top: #{$i * map-get($scaling-factors, $breakpoint)}px;
+          margin-bottom: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        }
+        .mx-#{$i} {
+          margin-left: #{$i * map-get($scaling-factors, $breakpoint)}px;
+          margin-right: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        }
+        .py-#{$i} {
+          padding-top: #{$i * map-get($scaling-factors, $breakpoint)}px;
+          padding-bottom: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        }
+        .px-#{$i} {
+          padding-left: #{$i * map-get($scaling-factors, $breakpoint)}px;
+          padding-right: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        }
       }
+    } @else {
+      @media (min-width: #{$size}) {
+        // Adjust for combined margin-top and margin-bottom
+        .my-#{$i} {
+          margin-top: #{$i * map-get($scaling-factors, $breakpoint)}px;
+          margin-bottom: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        }
 
-      // Adjust for combined margin-left and margin-right
-      .mx-#{$i} {
-        margin-left: #{$i * map-get($scaling-factors, $breakpoint)}px;
-        margin-right: #{$i * map-get($scaling-factors, $breakpoint)}px;
-      }
+        // Adjust for combined margin-left and margin-right
+        .mx-#{$i} {
+          margin-left: #{$i * map-get($scaling-factors, $breakpoint)}px;
+          margin-right: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        }
 
-      // Adjust for combined padding-top and padding-bottom
-      .py-#{$i} {
-        padding-top: #{$i * map-get($scaling-factors, $breakpoint)}px;
-        padding-bottom: #{$i * map-get($scaling-factors, $breakpoint)}px;
-      }
+        // Adjust for combined padding-top and padding-bottom
+        .py-#{$i} {
+          padding-top: #{$i * map-get($scaling-factors, $breakpoint)}px;
+          padding-bottom: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        }
 
-      // Adjust for combined padding-left and padding-right
-      .px-#{$i} {
-        padding-left: #{$i * map-get($scaling-factors, $breakpoint)}px;
-        padding-right: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        // Adjust for combined padding-left and padding-right
+        .px-#{$i} {
+          padding-left: #{$i * map-get($scaling-factors, $breakpoint)}px;
+          padding-right: #{$i * map-get($scaling-factors, $breakpoint)}px;
+        }
       }
     }
   }

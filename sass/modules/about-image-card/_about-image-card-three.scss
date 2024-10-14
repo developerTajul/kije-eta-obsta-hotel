@@ -2,6 +2,11 @@
   &.style-3 {
     .image-wrapper {
       position: relative;
+      @include rmaxwd(991) {
+        max-width: 600px;
+        max-height: 400px;
+        overflow: hidden;
+      }
       .main-img {
         img {
           width: 100%;
