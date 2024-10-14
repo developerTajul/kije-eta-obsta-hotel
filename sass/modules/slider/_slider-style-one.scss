@@ -60,19 +60,6 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
-    @include lg {
-      padding-top: 10%;
-    }
-    @include xl {
-      padding-top: 180px;
-    }
-    @include md {
-      padding-top: 150px;
-    }
-
-    // @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    //   height: 620px;
-    // }
 
     @include sm {
       padding-top: 100px;
@@ -320,7 +307,8 @@
     }
   }
 
-  .slider-wrapper {
+  .slider-wrapper,
+  .slider-wrapper-two {
     // Active Slider Animate
     .slick-active .slider-short-title,
     .slick-active .slider-title,
@@ -407,10 +395,11 @@
       position: absolute;
       top: 50%;
       right: 178px;
-      transform: translateY(0%);
+      transform: translateY(-50%);
       z-index: 2;
       flex-direction: column;
-      margin-bottom: 0;
+      margin: 0;
+      padding: 0;
       @include rmaxwd(1800) {
         right: 5%;
       }

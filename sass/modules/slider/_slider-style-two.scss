@@ -35,7 +35,7 @@
         left: 0;
       }
     }
-    .slider-wrapper {
+    .slider-wrapper-two {
       .single-slider-wrapper {
         @include rmaxwd(991) {
           padding-top: 90px;
@@ -101,6 +101,8 @@
           align-items: center;
           justify-content: center;
           border-radius: 50%;
+          width: 108px;
+          height: 108px;
           button {
             width: 108px;
             height: 108px;

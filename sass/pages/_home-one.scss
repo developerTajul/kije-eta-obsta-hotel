@@ -669,6 +669,10 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: grab;
     color: $white;
+    @include rmaxwd(991) {
+      width: 120px;
+      height: 120px;
+    }
     p {
       font-size: 20px;
       font-style: normal;
