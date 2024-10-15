@@ -766,6 +766,32 @@
     p {
       transform: translate(-10%, -17%);
       letter-spacing: 32px;
+
+      @include rmaxwd(1700) {
+        transform: translate(0%, -17%);
+        letter-spacing: 23px;
+      }
+      @include rmaxwd(1200) {
+        transform: translate(-5%, -15%);
+        letter-spacing: 24px;
+      }
+
+      // Max width for 992px (tablet)
+      @include rmaxwd(992) {
+        transform: translate(-3%, -12%);
+        letter-spacing: 20px;
+      }
+
+      // Max width for 768px (small tablet)
+      @include rmaxwd(768) {
+        transform: translate(0, -10%);
+        letter-spacing: 16px;
+      }
+      @include sm {
+        transform: translate(-0%, -10%);
+        letter-spacing: 8px;
+        font-size: 60px;
+      }
     }
   }
   .testimonial-slider {
@@ -775,6 +801,15 @@
     margin: 0 auto;
     margin-top: -96px;
     overflow: hidden;
+    @include rmaxwd(1699) {
+      margin-top: -60px;
+    }
+    @include rmaxwd(1399) {
+      margin-top: -30px;
+    }
+    @include sm {
+      margin-top: -10px;
+    }
     .slick-list {
       overflow: visible;
     }

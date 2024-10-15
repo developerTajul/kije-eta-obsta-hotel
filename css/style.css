@@ -77245,6 +77245,7 @@ ol li a:hover {
 
 .header-area {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 99;
 }
@@ -78404,7 +78405,6 @@ body.admin-bar .header-area.style-7 {
 
 .banner-text {
   position: relative;
-  overflow: hidden;
 }
 .banner-text p {
   -webkit-text-stroke-width: 1px;
@@ -78444,7 +78444,7 @@ body.admin-bar .header-area.style-7 {
 @media (max-width: 991px) {
   .banner-text p {
     font-size: 80px;
-    transform: translate(0, -15%);
+    transform: translate(0, -10%);
   }
 }
 
@@ -84058,7 +84058,6 @@ body.admin-bar .header-area.style-7 {
 
 .banner-text {
   position: relative;
-  overflow: hidden;
 }
 .banner-text p {
   -webkit-text-stroke-width: 1px;
@@ -84098,13 +84097,12 @@ body.admin-bar .header-area.style-7 {
 @media (max-width: 991px) {
   .banner-text p {
     font-size: 80px;
-    transform: translate(0, -15%);
+    transform: translate(0, -10%);
   }
 }
 
 .page-breadcrumb-area {
-  padding-top: 215px;
-  padding-bottom: 125px;
+  padding-top: 232px;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
@@ -84114,9 +84112,28 @@ body.admin-bar .header-area.style-7 {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .page-breadcrumb-area {
-    padding-top: 168px;
-    padding-bottom: 100px;
+    padding-top: 104px;
   }
+}
+.page-breadcrumb-area .shape {
+  position: absolute;
+  top: 232px;
+  left: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-breadcrumb-area .shape {
+    top: 204px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .page-breadcrumb-area .shape {
+    top: 104px;
+  }
+}
+.page-breadcrumb-area .shape-two {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .page-overlay {
@@ -84133,12 +84150,11 @@ body.admin-bar .header-area.style-7 {
 .page-heading h3,
 .page-heading .page-title {
   font-family: "Gilda Display", serif;
-  font-size: 48px;
   color: #ffffff;
-  margin-bottom: 0;
-  text-transform: capitalize;
-  line-height: initial;
-  font-weight: 600;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   text-align: center;
 }
 @media (max-width: 375px) {
@@ -84153,15 +84169,6 @@ body.admin-bar .header-area.style-7 {
   .page-heading .page-title {
     font-size: 42px;
     line-height: 52px;
-  }
-}
-
-.breadcrumb-wrapper {
-  padding: 0px;
-}
-@media (max-width: 1199px) {
-  .breadcrumb-wrapper {
-    padding: 0;
   }
 }
 
@@ -84192,11 +84199,13 @@ body.admin-bar .header-area.style-7 {
 }
 .breadcrumb-list ul li a {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-  text-transform: capitalize;
-  line-height: 29px;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  color: #ffffff;
   margin-bottom: 0;
   transition: all 0.5s ease-out;
 }
@@ -87750,6 +87759,37 @@ ul.children {
   transform: translate(-10%, -17%);
   letter-spacing: 32px;
 }
+@media (max-width: 1700px) {
+  .testimonial-area .banner-text p {
+    transform: translate(0%, -17%);
+    letter-spacing: 23px;
+  }
+}
+@media (max-width: 1200px) {
+  .testimonial-area .banner-text p {
+    transform: translate(-5%, -15%);
+    letter-spacing: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .testimonial-area .banner-text p {
+    transform: translate(-3%, -12%);
+    letter-spacing: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial-area .banner-text p {
+    transform: translate(0, -10%);
+    letter-spacing: 16px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-area .banner-text p {
+    transform: translate(0%, -10%);
+    letter-spacing: 8px;
+    font-size: 60px;
+  }
+}
 .testimonial-area .testimonial-slider {
   position: relative;
   max-width: 1160px;
@@ -87757,6 +87797,21 @@ ul.children {
   margin: 0 auto;
   margin-top: -96px;
   overflow: hidden;
+}
+@media (max-width: 1699px) {
+  .testimonial-area .testimonial-slider {
+    margin-top: -60px;
+  }
+}
+@media (max-width: 1399px) {
+  .testimonial-area .testimonial-slider {
+    margin-top: -30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-area .testimonial-slider {
+    margin-top: -10px;
+  }
 }
 .testimonial-area .testimonial-slider .slick-list {
   overflow: visible;
