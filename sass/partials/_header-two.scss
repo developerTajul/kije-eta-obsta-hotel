@@ -68,8 +68,19 @@
         }
       }
     }
-    .main-menu ul li a {
-      padding: 38px 24px;
+    .main-menu {
+      > ul {
+        li a {
+          padding: 38px 24px;
+        }
+        ul {
+          li {
+            a {
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
     }
     .header-menu-wrapper {
       border-bottom: none;

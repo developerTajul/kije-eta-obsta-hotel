@@ -77693,8 +77693,11 @@ ol li a:hover {
 .header-area.style-2 .header-menu-area .header-top .booking-btn .content a {
   color: #aa8453;
 }
-.header-area.style-2 .main-menu ul li a {
+.header-area.style-2 .main-menu > ul li a {
   padding: 38px 24px;
+}
+.header-area.style-2 .main-menu > ul ul li a {
+  padding: 10px 20px;
 }
 .header-area.style-2 .header-menu-wrapper {
   border-bottom: none;
