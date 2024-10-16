@@ -636,7 +636,7 @@
     left: 50%;
     transform: translateY(-50%);
     cursor: grab;
-    z-index: 100;
+    z-index: 1;
   }
   /* Animation for drag left */
   .drag-left {

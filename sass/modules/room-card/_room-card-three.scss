@@ -1,0 +1,65 @@
+.room-card {
+  &.style-3 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: auto;
+    height: 342px;
+    &:hover {
+      .content-wrapper {
+        height: 100%;
+        clip-path: none;
+      }
+    }
+    .image-wrapper {
+      position: unset;
+      height: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .content-wrapper {
+      padding: 35px 0;
+      position: unset;
+      background-color: transparent;
+      .inner-wrapper {
+        position: unset;
+        width: auto;
+        .title {
+          color: $black;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 40px;
+        }
+        .price-wrapper {
+          color: $primary-color;
+          .divider {
+            background-color: $primary-color;
+          }
+        }
+        .desc {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 29px;
+          color: $gray;
+          margin-bottom: 0;
+        }
+        .booking-btn {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 2.7px;
+          text-decoration-line: underline;
+          position: unset;
+          visibility: visible;
+          opacity: 1;
+          transform: none;
+          color: $black;
+        }
+      }
+    }
+  }
+}

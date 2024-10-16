@@ -182,7 +182,31 @@
         },
       ],
     });
+    var minRange = $('#minRange');
+    var maxRange = $('#maxRange');
 
+    // Set initial values for min and max price
+    var minPrice = minRange.val();
+    var maxPrice = maxRange.val();
+
+    // Update displayed values
+    $('#minPrice').text('$' + minPrice);
+    $('#maxPrice').text('$' + maxPrice);
+
+    // Update the price values dynamically
+    minRange.on('input', function () {
+      if (parseInt(minRange.val()) > parseInt(maxRange.val())) {
+        minRange.val(maxRange.val());
+      }
+      $('#minPrice').text('$' + minRange.val());
+    });
+
+    maxRange.on('input', function () {
+      if (parseInt(maxRange.val()) < parseInt(minRange.val())) {
+        maxRange.val(minRange.val());
+      }
+      $('#maxPrice').text('$' + maxRange.val());
+    });
     /*
         Portfolio Hover
         ============================*/

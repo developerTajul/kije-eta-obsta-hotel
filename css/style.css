@@ -84214,7 +84214,7 @@ body.admin-bar .header-area.style-7 {
   color: #aa8453;
 }
 .breadcrumb-list ul li:before {
-  content: "\f054";
+  content: "\f068";
   font-size: 12px;
   font-family: "Font Awesome 6 Pro";
   display: inline-flex;
@@ -84325,7 +84325,7 @@ body.admin-bar .header-area.style-7 {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
-  justify-content: center;
+  justify-content: start;
 }
 .basic-pagination ul li,
 .page-links ul li,
@@ -84355,15 +84355,16 @@ body.admin-bar .header-area.style-7 {
   align-items: center;
   justify-content: center;
   color: #222;
-  background-color: rgba(217, 161, 76, 0.1);
-  border-radius: 50%;
-  height: 67px;
-  width: 67px;
+  background-color: #ffffff;
+  width: 45px;
+  height: 49px;
   transition: all 0.5s ease-out;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-family: "Gilda Display", serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  border: 1px solid #808287;
 }
 @media (max-width: 767px) {
   .basic-pagination .page-numbers,
@@ -87635,7 +87636,7 @@ ul.children {
   left: 50%;
   transform: translateY(-50%);
   cursor: grab;
-  z-index: 100;
+  z-index: 1;
 }
 .room_and_suites .drag-left {
   transform: rotateY(10deg) scale(1.05); /* Slight tilt and scale for left drag */
@@ -89299,43 +89300,226 @@ ul.children {
   border-radius: 0;
 }
 
-.process-step-area.style-1 {
-  padding-top: 120px;
-  padding-bottom: 115px;
+.list-page-wrapper .btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 27px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .process-step-area.style-1 {
-    padding-top: 80px;
-    padding-bottom: 15px;
-  }
+.list-page-wrapper .btn-wrapper .list-btn {
+  padding: 14px 20px;
+  border: 1px solid #e2c7c7;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: #222;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .process-step-area.style-1 {
-    padding-top: 100px;
-    padding-bottom: 15px;
-  }
+.list-page-wrapper .btn-wrapper .list-btn:hover {
+  background-color: #aa8453;
+  color: #ffffff;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .process-step-area.style-1 {
-    padding-top: 120px;
-    padding-bottom: 35px;
-  }
+.list-page-wrapper .sidebar {
+  background-color: #f8f5f0;
+  padding: 50px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .process-step-area.style-1 .process-step.style-1 {
-    margin-bottom: 60px;
-  }
+.list-page-wrapper .sidebar .sidebar-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .process-step-area.style-1 .process-step.style-1 {
-    margin-bottom: 80px;
-  }
+.list-page-wrapper .sidebar .sidebar-title .sort-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.4px;
+  text-transform: uppercase;
+  color: #808287;
+  margin-bottom: 0;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .process-step-area.style-1 .process-step.style-1 {
-    margin-bottom: 80px;
-    padding: 0 20px;
-  }
+.list-page-wrapper .sidebar .sidebar-title .title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: #222;
+}
+.list-page-wrapper .sidebar .sidebar-widget {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 8px;
+}
+.list-page-wrapper .sidebar .sidebar-widget label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  text-transform: uppercase;
+  color: #222;
+}
+.list-page-wrapper .sidebar .sidebar-widget select,
+.list-page-wrapper .sidebar .sidebar-widget input {
+  padding: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  background-color: #ffffff;
+}
+.list-page-wrapper .sidebar .sidebar-widget input[type=date] {
+  color: #a19292;
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+.list-page-wrapper .sidebar .sidebar-widget .select-wrapper {
+  position: relative;
+}
+.list-page-wrapper .sidebar .sidebar-widget .select-wrapper select {
+  color: #a19292;
+  display: flex;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-size: 12px;
+  border-radius: 4px;
+}
+.list-page-wrapper .sidebar .sidebar-widget .select-wrapper select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+}
+.list-page-wrapper .sidebar .sidebar-widget .select-wrapper select option:hover {
+  background-color: #e0e0e0;
+}
+.list-page-wrapper .sidebar .sidebar-widget .select-wrapper select select option[disabled] {
+  color: #a19292;
+}
+.list-page-wrapper .sidebar .sidebar-widget .select-wrapper:before {
+  content: "\f107";
+  font-size: 12px;
+  position: absolute;
+  font-family: "Font Awesome 6 Pro";
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.list-page-wrapper .sidebar .sidebar-widget select::-ms-expand {
+  display: none;
+}
+.list-page-wrapper .sidebar .sidebar-widget.price-filter input {
+  padding: 0;
+}
+.list-page-wrapper .sidebar .sidebar-widget.checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.list-page-wrapper .sidebar .sidebar-widget.checkbox .custom-checkbox label {
+  line-height: normal;
+}
+.list-page-wrapper .sidebar .price-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list-page-wrapper .sidebar .price-filter .slider-container {
+  position: relative;
+  width: 100%;
+}
+.list-page-wrapper .sidebar .price-filter .slider-container input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #808287;
+  pointer-events: none;
+}
+.list-page-wrapper .sidebar .price-filter .slider-container input[type=range]:first-of-type {
+  pointer-events: auto;
+}
+.list-page-wrapper .sidebar .price-filter .slider-container input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #aa8453;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+}
+.list-page-wrapper .sidebar .price-filter .slider-container input[type=range]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #a0522d;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.list-page-wrapper .sidebar .price-filter .price-display {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #222;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.list-page-wrapper .sidebar .custom-checkbox {
+  display: flex;
+  align-items: center;
+}
+.list-page-wrapper .sidebar .custom-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.list-page-wrapper .sidebar .custom-checkbox label input[type=checkbox] {
+  display: none;
+}
+.list-page-wrapper .sidebar .custom-checkbox label .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f0e0e0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(190, 167, 167, 0.2);
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.list-page-wrapper .sidebar .custom-checkbox label .checkmark:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #aa8453;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.list-page-wrapper .sidebar .custom-checkbox label input[type=checkbox]:checked + .checkmark {
+  background-color: #ffffff;
+  border-color: #aa8453;
+}
+.list-page-wrapper .sidebar .custom-checkbox label input[type=checkbox]:checked + .checkmark:after {
+  opacity: 1;
 }
 
 .service-details-page {
@@ -90985,6 +91169,69 @@ ul.children {
 }
 .room-card.style-2:hover .content-wrapper, .room-card.style-2.slick-center .content-wrapper {
   background: rgba(34, 34, 34, 0.75);
+}
+
+.room-card.style-3 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: auto;
+  height: 342px;
+}
+.room-card.style-3:hover .content-wrapper {
+  height: 100%;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+.room-card.style-3 .image-wrapper {
+  position: unset;
+  height: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.room-card.style-3 .content-wrapper {
+  padding: 35px 0;
+  position: unset;
+  background-color: transparent;
+}
+.room-card.style-3 .content-wrapper .inner-wrapper {
+  position: unset;
+  width: auto;
+}
+.room-card.style-3 .content-wrapper .inner-wrapper .title {
+  color: #222;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+.room-card.style-3 .content-wrapper .inner-wrapper .price-wrapper {
+  color: #aa8453;
+}
+.room-card.style-3 .content-wrapper .inner-wrapper .price-wrapper .divider {
+  background-color: #aa8453;
+}
+.room-card.style-3 .content-wrapper .inner-wrapper .desc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: #808287;
+  margin-bottom: 0;
+}
+.room-card.style-3 .content-wrapper .inner-wrapper .booking-btn {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-decoration-line: underline;
+  position: unset;
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  color: #222;
 }
 
 .blog-card {

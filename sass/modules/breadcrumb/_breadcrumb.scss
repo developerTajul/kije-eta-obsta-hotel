@@ -62,8 +62,6 @@
     }
   }
 }
-.breadcrumb-wrapper {
-}
 .breadcrumb-list {
   text-align: center;
 
@@ -112,7 +110,7 @@
       }
 
       &:before {
-        content: '\f054';
+        content: '\f068';
         font-size: 12px;
         font-family: $font-awesome;
         display: inline-flex;
