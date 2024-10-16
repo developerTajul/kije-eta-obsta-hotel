@@ -91235,6 +91235,11 @@ ul.children {
   color: #222;
 }
 
+.room-card.styel-4 {
+  max-width: unset;
+  max-height: 527px;
+}
+
 .blog-card {
   position: relative;
   overflow: hidden;
