@@ -65,11 +65,26 @@ table {
   th,
   td {
     background-color: transparent;
-    border: 1px solid #dfe2e9;
-    text-align: center;
-    padding: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 20px 30px;
     transition: 0.3s;
-    color: $text-color;
+    color: $black;
+    font-family: $body-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &.feature-price {
+      color: $gray;
+      span {
+        color: $black;
+      }
+    }
+    i {
+      font-size: 12px;
+      margin-right: 8px;
+      color: $gray;
+    }
 
     &#today {
       background: $primary-color;

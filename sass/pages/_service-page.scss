@@ -241,6 +241,23 @@
         }
       }
     }
+    .price-area {
+      .title {
+        font-family: $body-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      .desc {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0;
+      }
+    }
   }
 }
 // Service Details Page
@@ -315,6 +332,47 @@
             button {
             }
           }
+        }
+      }
+    }
+    .nav-tab {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      li {
+        padding: 14px 20px;
+        border: 1px solid #e2c7c7;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        color: $black;
+        @include transition;
+        &:hover,
+        .active {
+          background-color: $primary-color;
+          color: $white;
+          @include transition;
+        }
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      .single-item {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $black;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        .desc {
+          margin-bottom: 0;
         }
       }
     }
