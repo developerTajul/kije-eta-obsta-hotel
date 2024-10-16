@@ -691,7 +691,18 @@
     /*
        Post Gallery Slider
        ============================*/
-    $('.post-gallery').slick({
+    $('.tab-slider').on('init', function (event, slick) {
+      // Modify the slick dots after they are initialized
+      $('.slick-dots li button').each(function (index) {
+        $(this).html(
+          '<img src="images/room-card/service-details/img-' +
+            (index + 1) +
+            '.jpg" alt="Dot image">' +
+            (index + 1)
+        );
+      });
+    });
+    $('.tab-slider').slick({
       slidesToShow: 1,
       infinite: true,
       autoplay: true,
@@ -699,13 +710,13 @@
       arrows: true,
       slidesToScroll: 1,
       loop: true,
-      dots: false,
+      dots: true,
       speed: 300,
       rtl: false,
       prevArrow:
-        "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+        "<button type='button' class='tab-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
       nextArrow:
-        "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+        "<button type='button' class='tab-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
     });
     /*
        Portfolio Logo Slider

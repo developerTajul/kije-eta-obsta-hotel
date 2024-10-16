@@ -3,4 +3,21 @@
     max-width: unset;
     max-height: 527px;
   }
+  &.styel-5 {
+    max-width: unset;
+    max-height: 527px;
+    &:hover {
+      .content-wrapper {
+        height: 100%;
+        clip-path: none;
+        filter: unset;
+        backdrop-filter: blur(0);
+      }
+    }
+    .content-wrapper {
+      .inner-wrapper {
+        bottom: 30px;
+      }
+    }
+  }
 }

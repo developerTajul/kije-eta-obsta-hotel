@@ -244,30 +244,83 @@
   }
 }
 // Service Details Page
-.service-details-page {
-  padding-top: 120px;
-  padding-bottom: 120px;
-
-  @include sm {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  @include md {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  @include lg {
-    padding-bottom: 120px;
-  }
-
-  .service-details-wrapper {
-    padding-right: 38px;
-    @include rmaxwd(1399) {
-      padding-right: 12px;
+.list-page-wrapper {
+  &.details-page {
+    .tab-slider {
+      position: relative;
+      .tab-btn {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 70px;
+        height: 70px;
+        background-color: rgba(255, 255, 255, 0.5);
+        i {
+          color: $white;
+        }
+        &.prev-btn {
+          left: 0;
+          z-index: 1;
+          border-radius: 0px 35px 35px 0px;
+        }
+        &.next-btn {
+          right: 0;
+          border-radius: 35px 0 0 35px;
+        }
+      }
+      .slick-dots {
+        right: 50%;
+        top: unset;
+        bottom: 42px;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 10px;
+        @include rmaxwd(1199) {
+          bottom: 80px;
+        }
+        @include sm {
+          position: absolute;
+          left: unset;
+          bottom: 42px;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 220px;
+          height: 150px;
+          button {
+            width: 220px;
+            height: 150px;
+            font-size: 0;
+            padding: 0;
+            @include rmaxwd(1199) {
+              width: 60px;
+              height: 60px;
+            }
+            @include sm {
+              width: 30px;
+              height: 30px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          &.slick-active {
+            button {
+            }
+          }
+        }
+      }
     }
   }
-
+}
+.service-details-page {
   .details-content {
     .feature-image {
       overflow: hidden;
