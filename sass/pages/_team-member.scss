@@ -1,33 +1,8 @@
 .team-details-area {
-  padding-top: 130px;
-  padding-bottom: 120px;
-
-  @include sm {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  @include md {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  @include lg {
-    padding-top: 120px;
-  }
   .image-wrapper {
     position: relative;
     img {
       width: 100%;
-    }
-    .social-share {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      background-color: $gray-100;
-      padding: 25px;
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-      border-radius: 33px 0px 0px 0px;
     }
   }
   .team-details-wrapper {
@@ -35,42 +10,99 @@
       margin-top: 30px;
     }
     .main-title {
-      margin-bottom: 10px;
-      font-weight: 700;
-      line-height: 60px;
-      text-transform: capitalize;
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: $black;
       @include rmaxwd(991) {
         margin-bottom: 0;
       }
     }
     .sub-title {
       font-family: $body-font;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 5.4px;
+      text-transform: uppercase;
+    }
+    .social-share {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      a {
+        i {
+          color: $gray;
+        }
+      }
+    }
+    .content {
+      color: $gray;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 30px;
-      margin-bottom: 20px;
-    }
-    .content {
-      color: $text-color;
-      margin-bottom: 30px;
-    }
-    .sort-title {
-      margin-bottom: 20px;
-    }
-    .skill-progress-card {
-      margin-bottom: 30px;
-      display: block;
-      .skill-progressbar {
+      line-height: 29px;
+      @include rmaxwd(1199) {
         margin-bottom: 20px;
       }
     }
+    .sort-title {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 34px;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #666;
+      display: inline-block;
+    }
+    .list-wrapper {
+      @include rmaxwd(1199) {
+        margin-top: 20px;
+      }
+    }
     .list-item-wrapper {
-      .list-item {
-        .icon {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      li {
+        display: flex;
+        gap: 10px;
+        i {
           font-size: 16px;
         }
       }
+    }
+  }
+  .latest-project {
+    @include lg {
+      margin-top: 80px;
+    }
+    @include md {
+      margin-top: 60px;
+    }
+    @include sm {
+      margin-top: 50px;
+    }
+    .image-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      @include rmaxwd(991) {
+        flex-wrap: wrap;
+      }
+    }
+    .desc {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      color: $gray;
     }
   }
 }
