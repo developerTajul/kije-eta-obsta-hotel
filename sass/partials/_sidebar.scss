@@ -13,8 +13,7 @@
 
 /* Widget */
 .widget {
-  background-color: $gray-100;
-  padding: 40px;
+  background-color: #f8f5f0;
   margin-bottom: 40px;
   @include sm {
     padding: 20px;
@@ -34,6 +33,14 @@
   ol,
   ul {
     margin-bottom: 0;
+  }
+  .search-form,
+  ul,
+  .tagcloud,
+  .widget-instagram-feed {
+    padding: 40px;
+    padding-top: 0;
+    padding-left: 40px;
   }
 
   /* Widget Instagram Feed */
@@ -61,9 +68,10 @@
     line-height: 30px;
     font-weight: 700;
     margin-bottom: 26px;
-    color: $black;
+    color: $white;
     position: relative;
-    // margin-top: -4px;
+    padding: 10px 40px;
+    background-color: $black;
 
     //&:before {
     //  width: 4px;
@@ -264,20 +272,23 @@
   .wp-block-tag-cloud {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 2px;
     align-items: center;
 
     a {
-      color: $gray-800;
-      display: inline-block;
+      color: $gray;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-family: $rubik-font;
       font-size: 16px;
-      font-family: $body-font;
+      font-style: normal;
       font-weight: 400;
-      line-height: 1;
-      padding: 12px 14px;
+      line-height: 30px;
       @include transition;
-      //border: 1px solid $white-50;
-      background-color: $white;
+      &:after {
+        content: '/';
+      }
 
       &:hover {
         color: $white;
@@ -295,7 +306,7 @@
   ul,
   ol {
     margin-bottom: 0;
-    padding-left: 0;
+    // padding-left: 0;
 
     li {
       display: block;
@@ -331,9 +342,11 @@
         position: relative;
         display: inline-block;
         text-transform: capitalize;
+        font-family: $rubik-font;
         font-size: 16px;
-        font-family: $body-font;
+        font-style: normal;
         font-weight: 400;
+        line-height: 29px;
         @include transition;
 
         &:hover {
@@ -381,6 +394,7 @@
         text-align: right;
         display: inline-block;
         width: 100%;
+        border-bottom: 1px solid #efe1e1;
 
         &.cat-item {
           text-align: right;
@@ -561,9 +575,8 @@
       .latest-post-thumb {
         flex-shrink: 0;
         overflow: hidden;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
+        width: 70px;
+        height: 70px;
         position: relative;
 
         a {
@@ -586,28 +599,25 @@
         display: flex;
 
         .latest-post-title {
-          margin-bottom: 8px;
-          font-size: 18px;
-          line-height: 27px;
-          color: $black;
           font-family: $heading-font;
-          font-weight: 700;
-
-          @include lg {
-            font-size: 16px;
-            height: 60px;
-            overflow: hidden;
-          }
-
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+          position: relative;
+          color: $black;
+          text-transform: capitalize;
+          padding-right: 20px;
           a {
-            font-size: 18px;
-            line-height: 27px;
-            color: $black;
-            font-weight: 700;
+            font-family: $heading-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
             position: relative;
+            color: $black;
             text-transform: capitalize;
             @include transition;
-            font-family: $heading-font;
 
             @include sm {
               font-size: 16px;
@@ -623,13 +633,14 @@
           }
         }
         .latest-post-meta {
-          font-size: 16px;
+          font-family: $rubik-font;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
           display: flex;
           align-items: center;
-          font-weight: 400;
-          gap: 8px;
-          color: $gray-800;
-          font-family: $body-font;
+          margin-bottom: 8px;
           @include sm {
             font-size: 15px;
             line-height: normal;

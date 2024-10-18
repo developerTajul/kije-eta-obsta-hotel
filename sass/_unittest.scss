@@ -305,11 +305,12 @@ img {
 }
 blockquote {
   overflow: hidden;
-  //padding: 30px 30px 30px 30px !important;
-  margin: 40px 0;
+  margin: 50px 0;
   position: relative;
   z-index: 1;
   padding: 40px 60px !important;
+  background-color: #f8f5f0;
+  border-top: 2px solid $primary-color;
   @include sm {
     padding: 30px !important;
   }
@@ -330,10 +331,10 @@ blockquote {
   //}
   p {
     font-family: $body-font;
-    font-size: 16px;
-    color: $text-color;
-    line-height: 30px;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 45px;
     margin: 0 !important;
     //margin-top: 10px;
     //font-style: italic;
@@ -360,10 +361,10 @@ blockquote {
   }
 }
 
-.wp-block-quote,
-blockquote {
-  border-left: 2px solid $primary-color;
-}
+// .wp-block-quote,
+// blockquote {
+//   border-left: 2px solid $primary-color;
+// }
 .wp-block-pullquote {
   border-top: 2px solid $primary-color !important;
   border-bottom: 2px solid $primary-color !important;

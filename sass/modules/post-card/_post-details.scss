@@ -54,7 +54,7 @@
         flex-direction: column;
       }
       .gallery-image {
-        flex-shrink: 0;
+        overflow: hidden;
         @include sm {
           margin-bottom: 0;
         }
@@ -70,9 +70,12 @@
     }
     blockquote {
       box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-      background-color: #fff;
+
       @include sm {
         padding: 20px;
+      }
+      p {
+        color: $black;
       }
     }
     .single-post-meta {
@@ -129,7 +132,7 @@
         opacity: 0;
         @include transition;
         &:after {
-          content: "";
+          content: '';
           width: 10px;
           height: 10px;
           background-color: #d9a14c;
@@ -166,6 +169,35 @@
     .post-meta {
       margin-bottom: 20px;
       margin-top: -8px;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-family: $body-font;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          color: $black;
+          span {
+            color: $primary-color;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          i {
+            color: $primary-color;
+            font-size: 16px;
+          }
+        }
+      }
     }
     .post-gallery {
       &:hover {

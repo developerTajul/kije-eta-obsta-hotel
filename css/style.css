@@ -76554,10 +76554,12 @@ img.emoji {
 
 blockquote {
   overflow: hidden;
-  margin: 40px 0;
+  margin: 50px 0;
   position: relative;
   z-index: 1;
   padding: 40px 60px !important;
+  background-color: #f8f5f0;
+  border-top: 2px solid #aa8453;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   blockquote {
@@ -76566,10 +76568,10 @@ blockquote {
 }
 blockquote p {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
-  color: #616670;
-  line-height: 30px;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 45px;
   margin: 0 !important;
 }
 blockquote p a {
@@ -76589,11 +76591,6 @@ blockquote footer {
 .wp-block-columns.has-background p,
 .wp-block-columns .has-background p {
   color: #0b6354;
-}
-
-.wp-block-quote,
-blockquote {
-  border-left: 2px solid #aa8453;
 }
 
 .wp-block-pullquote {
@@ -82334,9 +82331,6 @@ body.admin-bar .header-area.style-7 {
   color: #aa8453;
   transition: all 0.5s ease-out;
 }
-.single-post-item .post-content p {
-  margin-top: 17px;
-}
 .single-post-item .post-content h2,
 .single-post-item .post-content h3,
 .single-post-item .post-content h4,
@@ -82372,23 +82366,27 @@ body.admin-bar .header-area.style-7 {
 }
 .single-post-item .blog-post-tag {
   display: inline-flex;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #efe1e1;
+  border-bottom: 1px solid #efe1e1;
 }
 .single-post-item .blog-post-tag span {
-  font-size: 16px;
-  font-weight: 500;
-  display: inline-block;
   font-family: "Gilda Display", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
   color: #0b6354;
   margin-bottom: 0;
   margin-right: 30px;
-  text-transform: uppercase;
   float: left;
   line-height: 24px;
 }
 .single-post-item .blog-post-tag .post-tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   line-height: 0;
 }
@@ -82397,6 +82395,8 @@ body.admin-bar .header-area.style-7 {
   display: inline-block;
   font-size: 18px;
   line-height: 1;
+  border: 1px solid #efe1e1;
+  padding: 10px 20px;
   transition: all 0.5s ease-out;
 }
 .single-post-item .blog-post-tag .post-tag-list a:hover {
@@ -82520,7 +82520,7 @@ body.admin-bar .header-area.style-7 {
   gap: 10px;
 }
 .single-post-item .post-meta span i {
-  color: #d9a14c;
+  color: #aa8453;
   font-size: 18px;
 }
 .single-post-item .post-meta span a {
@@ -83224,7 +83224,7 @@ body.admin-bar .header-area.style-7 {
   }
 }
 .blog-details-wrapper .single-post-item .gallery-image-wrapper .gallery-image {
-  flex-shrink: 0;
+  overflow: hidden;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .blog-details-wrapper .single-post-item .gallery-image-wrapper .gallery-image {
@@ -83241,12 +83241,14 @@ body.admin-bar .header-area.style-7 {
 }
 .blog-details-wrapper .single-post-item blockquote {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-  background-color: #fff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .blog-details-wrapper .single-post-item blockquote {
     padding: 20px;
   }
+}
+.blog-details-wrapper .single-post-item blockquote p {
+  color: #222;
 }
 .blog-details-wrapper .single-post-item .single-post-meta {
   margin-bottom: 0;
@@ -83332,6 +83334,35 @@ body.admin-bar .header-area.style-7 {
 .blog-details-wrapper .single-post-item .post-meta {
   margin-bottom: 20px;
   margin-top: -8px;
+}
+.blog-details-wrapper .single-post-item .post-meta ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+.blog-details-wrapper .single-post-item .post-meta ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #222;
+}
+.blog-details-wrapper .single-post-item .post-meta ul li span {
+  color: #aa8453;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.blog-details-wrapper .single-post-item .post-meta ul li i {
+  color: #aa8453;
+  font-size: 16px;
 }
 .blog-details-wrapper .single-post-item .post-gallery:hover img {
   transform: scale(1) !important;
@@ -84759,8 +84790,7 @@ body.admin-bar .header-area.style-7 {
 
 /* Widget */
 .widget {
-  background-color: #f2f2f2;
-  padding: 40px;
+  background-color: #f8f5f0;
   margin-bottom: 40px;
   /* Widget Instagram Feed */
   /* Widget Title */
@@ -84799,6 +84829,14 @@ body.admin-bar .header-area.style-7 {
 .widget ul {
   margin-bottom: 0;
 }
+.widget .search-form,
+.widget ul,
+.widget .tagcloud,
+.widget .widget-instagram-feed {
+  padding: 40px;
+  padding-top: 0;
+  padding-left: 40px;
+}
 .widget .widget-instagram-feed {
   width: 315px;
 }
@@ -84825,8 +84863,10 @@ body.admin-bar .header-area.style-7 {
   line-height: 30px;
   font-weight: 700;
   margin-bottom: 26px;
-  color: #222;
+  color: #ffffff;
   position: relative;
+  padding: 10px 40px;
+  background-color: #222;
 }
 .widget .wp-block-social-links .wp-social-link {
   padding: 0;
@@ -84994,20 +85034,25 @@ body.admin-bar .header-area.style-7 {
 .widget .wp-block-tag-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 2px;
   align-items: center;
 }
 .widget .tagcloud a,
 .widget .wp-block-tag-cloud a {
-  color: #666;
-  display: inline-block;
+  color: #808287;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
   font-weight: 400;
-  line-height: 1;
-  padding: 12px 14px;
+  line-height: 30px;
   transition: all 0.5s ease-out;
-  background-color: #ffffff;
+}
+.widget .tagcloud a:after,
+.widget .wp-block-tag-cloud a:after {
+  content: "/";
 }
 .widget .tagcloud a:hover,
 .widget .wp-block-tag-cloud a:hover {
@@ -85018,7 +85063,6 @@ body.admin-bar .header-area.style-7 {
 .widget ul,
 .widget ol {
   margin-bottom: 0;
-  padding-left: 0;
   /* Tag Cloud Widget */
 }
 .widget ul li,
@@ -85055,9 +85099,11 @@ body.admin-bar .header-area.style-7 {
   position: relative;
   display: inline-block;
   text-transform: capitalize;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
   font-weight: 400;
+  line-height: 29px;
   transition: all 0.5s ease-out;
   /* RSS Widget */
 }
@@ -85095,6 +85141,7 @@ body.admin-bar .header-area.style-7 {
   text-align: right;
   display: inline-block;
   width: 100%;
+  border-bottom: 1px solid #efe1e1;
 }
 .widget.widget_categories ul li.cat-item, .widget.widget_archive ul li.cat-item {
   text-align: right;
@@ -85278,9 +85325,8 @@ body.admin-bar .header-area.style-7 {
 .widget_latest_post ul li .latest-post-thumb {
   flex-shrink: 0;
   overflow: hidden;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  width: 70px;
+  height: 70px;
   position: relative;
 }
 .widget_latest_post ul li .latest-post-thumb a {
@@ -85303,29 +85349,26 @@ body.admin-bar .header-area.style-7 {
   display: flex;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title {
-  margin-bottom: 8px;
-  font-size: 18px;
-  line-height: 27px;
-  color: #222;
   font-family: "Gilda Display", serif;
-  font-weight: 700;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .widget_latest_post ul li .latest-post-desc .latest-post-title {
-    font-size: 16px;
-    height: 60px;
-    overflow: hidden;
-  }
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  color: #222;
+  text-transform: capitalize;
+  padding-right: 20px;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title a {
-  font-size: 18px;
-  line-height: 27px;
-  color: #222;
-  font-weight: 700;
+  font-family: "Gilda Display", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
   position: relative;
+  color: #222;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
-  font-family: "Gilda Display", serif;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .widget_latest_post ul li .latest-post-desc .latest-post-title a {
@@ -85343,13 +85386,14 @@ body.admin-bar .header-area.style-7 {
   transition: all 0.5s ease-out;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-meta {
-  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: flex;
   align-items: center;
-  font-weight: 400;
-  gap: 8px;
-  color: #666;
-  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 8px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .widget_latest_post ul li .latest-post-desc .latest-post-meta {
@@ -85710,11 +85754,15 @@ body.admin-bar .header-area.style-7 {
 .blog-coment-title .wp-block-comments-title,
 .wp-block-comments h2,
 .wp-block-comments .wp-block-comments-title {
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
   margin-bottom: 0;
   font-weight: 500;
-  margin-top: -10px;
+  border-bottom: 1px solid #efe1e1;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .blog-coment-title h2,
@@ -85893,8 +85941,8 @@ body.admin-bar .header-area.style-7 {
   align-items: center;
   font-size: 16px;
   font-weight: 500;
-  color: #0b6354;
-  border: 1px solid #aa8453;
+  color: #ffffff;
+  background: #aa8453;
   padding: 5px 24px;
   gap: 8px;
   position: absolute;
@@ -85902,7 +85950,7 @@ body.admin-bar .header-area.style-7 {
   right: 0;
 }
 .latest-comments li .comments-box .comments-text .comment-reply-link i {
-  color: #aa8453;
+  color: #ffffff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .latest-comments li .comments-box .comments-text .comment-reply-link {
@@ -85953,18 +86001,7 @@ ul.children {
   width: 100%;
   margin-bottom: 10px;
 }
-.post-comments-title h2 {
-  font-family: "Gilda Display", serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 60px;
-  text-transform: capitalize;
-  color: #222;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.post-comments-title h2 .title {
+.post-comments-title .title {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -85972,12 +86009,12 @@ ul.children {
   color: #222;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .post-comments-title h2 {
+  .post-comments-title .title {
     font-size: 28px;
     margin-bottom: 0px;
   }
 }
-.post-comments-title h2 small {
+.post-comments-title .title small {
   font-size: 16px;
   font-family: "Barlow Condensed", sans-serif;
   color: #aa8453;
@@ -86001,10 +86038,10 @@ ul.children {
 }
 .comment-respond .title {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 40px;
   color: #222;
 }
 .comment-respond .contacts-email,
