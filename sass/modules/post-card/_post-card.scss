@@ -35,7 +35,8 @@
   overflow: hidden;
   margin-bottom: 60px;
   //border: 1px solid $gray-300;
-  box-shadow: 0 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+  box-shadow: 0 2px 6.4px -1px rgba(19, 16, 34, 0.03),
+    0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
 
   &:hover {
     // Post Image
@@ -58,13 +59,13 @@
   }
   .post-content-wrapper {
     padding: 40px;
-    @include lg{
+    @include lg {
       padding: 28px;
     }
     @include sm {
       padding: 20px;
     }
-    @include md{
+    @include md {
       padding: 30px;
     }
     .read-more {
@@ -77,7 +78,7 @@
       gap: 30px;
       background-color: $gray-100;
       padding: 20px;
-      @include sm{
+      @include sm {
         gap: 10px;
       }
       .theme-btn {
@@ -100,7 +101,7 @@
         align-items: center;
         gap: 9px;
         padding-left: 0px;
-        @include sm{
+        @include sm {
           padding-left: 0;
         }
         .icon {
@@ -113,7 +114,6 @@
           font-family: $body-font;
         }
       }
-
     }
   }
   /* Quote Format Post */
@@ -277,6 +277,9 @@
     overflow: hidden;
 
     img {
+      max-width: 920px;
+      width: 100%;
+      max-height: 575px;
       transform: scale(1);
       @include transition;
     }
@@ -372,11 +375,7 @@
       width: 100%;
     }
     .author-img {
-      width: 37px;
-      height: 37px;
       position: relative;
-      border-radius: 50%;
-      overflow: hidden;
 
       img {
         width: 100%;
