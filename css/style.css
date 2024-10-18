@@ -84155,7 +84155,7 @@ body.admin-bar .header-area.style-7 {
 }
 
 .page-overlay {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: rgba(49, 43, 43, 0.65);
   height: 100%;
   left: 0;
   position: absolute;
@@ -84174,6 +84174,8 @@ body.admin-bar .header-area.style-7 {
   font-weight: 400;
   line-height: normal;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 375px) {
   .page-heading h3,
@@ -84190,8 +84192,24 @@ body.admin-bar .header-area.style-7 {
   }
 }
 
+.breadcrumb-wrapper {
+  position: relative;
+}
+.breadcrumb-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(49, 43, 43, 0.6);
+  z-index: 1;
+}
+
 .breadcrumb-list {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .breadcrumb-list ul {
   margin-bottom: 0;
