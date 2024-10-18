@@ -684,6 +684,7 @@
     color: $gray;
   }
   .mc4wp-form-fields {
+    position: relative;
     display: flex;
     background-color: transparent;
     overflow: hidden;
@@ -718,8 +719,8 @@
       padding: 0 20px;
       font-size: 16px;
       width: 100%;
-      background: #322e2e;
-      border: 1px solid #514b4b;
+      background: #f6f6f6;
+      // border: 1px solid #;
       border-right: 0;
     }
 
@@ -747,12 +748,17 @@
 
     *::placeholder {
       color: $gray;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px; /* 145% */
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
   }
 
   .submit-btn {
-    background-color: $primary-color;
-    color: $white;
+    color: $gray;
     cursor: pointer;
     padding: 15px 19px;
     display: flex;
@@ -763,6 +769,14 @@
     font-weight: 900;
     letter-spacing: 0.6px;
     white-space: nowrap;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    height: 100%;
+    i {
+      font-size: 30px;
+    }
     span {
       display: none;
     }

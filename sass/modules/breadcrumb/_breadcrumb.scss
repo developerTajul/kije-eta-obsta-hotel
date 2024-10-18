@@ -62,6 +62,9 @@
 }
 .breadcrumb-wrapper {
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   &:before {
     content: '';
     position: absolute;
