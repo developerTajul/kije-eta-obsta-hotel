@@ -1120,5 +1120,40 @@
       $('.share-group').removeClass('active');
       $('.social-btn-overlay').removeClass('active');
     });
+    // CountDown
+    var countdownTime = {
+      days: 90,
+      hours: 50,
+      minutes: 35,
+      seconds: 10,
+    };
+
+    // Update countdown every second
+    function updateCountdown() {
+      // Decrement seconds
+      countdownTime.seconds--;
+
+      // Adjust for minute/hour/day changes
+      if (countdownTime.seconds < 0) {
+        countdownTime.seconds = 59;
+        countdownTime.minutes--;
+      }
+      if (countdownTime.minutes < 0) {
+        countdownTime.minutes = 59;
+        countdownTime.hours--;
+      }
+      if (countdownTime.hours < 0) {
+        countdownTime.hours = 23;
+        countdownTime.days--;
+      }
+
+      // Update HTML elements
+      $('#days').text(countdownTime.days);
+      $('#hours').text(countdownTime.hours);
+      $('#minutes').text(countdownTime.minutes);
+      $('#seconds').text(countdownTime.seconds);
+    }
+
+    setInterval(updateCountdown, 1000);
   });
 })(jQuery);

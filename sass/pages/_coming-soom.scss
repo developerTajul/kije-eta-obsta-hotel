@@ -1,0 +1,73 @@
+.error-wrapper {
+  &.coming-soon {
+    position: relative;
+    .shape {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .error-content {
+      .error-title {
+        font-family: $body-font;
+        font-size: 250px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: $black;
+        position: relative;
+        display: inline-block;
+        padding: 0 12px;
+        &:before {
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: $gray;
+          font-family: $body-font;
+          font-size: 250px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          color: transparent;
+          content: 'Coming Soon';
+          position: absolute;
+          left: 20px;
+          top: 12px;
+          z-index: -1;
+        }
+      }
+      .countdown-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+      }
+
+      .time-unit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+      }
+
+      .separator {
+        font-size: 2rem;
+        color: #7b7b7b;
+      }
+
+      .number {
+        font-family: $heading-font;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .label {
+        font-family: $body-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 29px; /* 120.833% */
+        text-transform: uppercase;
+      }
+    }
+  }
+}
