@@ -1,12 +1,26 @@
+.contact-page-widget {
+  .map-widget {
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    iframe {
+      height: 100%;
+    }
+  }
+}
 // Contact Form Area
 .contact-form-area {
   position: relative;
-  .shape-1{
+  background-color: #f2f2f2;
+  padding-top: 420px;
+  margin-top: -280px;
+  .shape-1 {
     position: absolute;
     bottom: 0;
     left: 0;
   }
-  .shape-2{
+  .shape-2 {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -17,47 +31,47 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include sm{
+    @include sm {
       padding: 40px 20px;
       flex-direction: column;
       align-items: start;
       gap: 30px;
     }
-    @include md{
+    @include md {
       padding: 40px 30px;
       flex-direction: column;
       align-items: start;
       gap: 30px;
     }
-    @include lg{
+    @include lg {
       padding: 40px 20px;
     }
-    .divider{
+    .divider {
       width: 1px;
       height: 28px;
       background-color: $gray-200;
-      @include rmaxwd(991){
+      @include rmaxwd(991) {
         width: 100%;
         height: 1px;
       }
     }
-    .contact-card{
+    .contact-card {
       display: flex;
       gap: 20px;
-      .icon{
+      .icon {
         margin-top: 8px;
-        i{
+        i {
           font-size: 24px;
           color: $primary-color;
-          @include sm{
+          @include sm {
             font-size: 18px;
           }
-          @include lg{
+          @include lg {
             font-size: 18px;
           }
         }
       }
-      .desc{
+      .desc {
         margin-bottom: 0;
         font-size: 16px;
         font-weight: 400;
@@ -65,11 +79,11 @@
         color: $text-color;
         font-family: $body-font;
       }
-      .info-title{
-        @include sm{
+      .info-title {
+        @include sm {
           font-size: 24px;
         }
-        @include lg{
+        @include lg {
           font-size: 24px;
         }
       }
@@ -83,84 +97,17 @@
     @include rmaxwd(991) {
       margin-top: 50px;
     }
-    .theme-btn{
-      width: 100%;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
   }
-  .image-wrapper{
+  .image-wrapper {
     text-align: right;
     height: 100%;
-    @include lg{
+    @include lg {
     }
-    img{
+    img {
       height: 100%;
-      @include lg{
+      @include lg {
         object-fit: cover;
         height: 100%;
-      }
-    }
-  }
-  .map-widget{
-    padding-left: 20px;
-    height: 100%;
-    @include rmaxwd(991){
-      padding-left: 0;
-    }
-    @include lg{
-      padding-left: 0;  
-    }
-    iframe{
-      height: 100%;
-    }
-  }
-  &.style-2{
-    .post-comments-title{
-      h2,
-      .desc{
-        color: $white;
-      }
-    }
-    .comment-respond {
-      input, 
-      select,
-      textarea{
-        background-color: transparent;
-        color: $white;
-        border-color: $gray !important;
-      }
-      *::placeholder {
-        color: $white;
-      }
-    }
-  }
-  &.style-3{
-    .contact-form-inner{
-      background-color: $gray-100;
-    }
-    .comment-respond{
-      padding: 60px;
-      padding-right: 0;
-      @include sm{
-        padding: 30px;
-        margin-top: 10px;
-      }
-      @include md{
-        padding: 30px;
-      }
-      @include lg{
-        padding: 40px;
-        padding-right: 10px;
-      }
-      .theme-btn{
-        width: auto;
-      }
-    }
-    .map-widget{
-      iframe{
-        border-radius: 0;
       }
     }
   }

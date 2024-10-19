@@ -99,7 +99,7 @@
   .comment-form-cookies-consent {
     display: none;
   }
-  input[type='number'] {
+  input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
@@ -118,7 +118,7 @@
     line-height: 29px;
     background-color: #f6f6f6;
   }
-  input[type='submit'] {
+  input[type="submit"] {
     height: 70px;
     background-color: $primary-color;
     border-color: $primary-color;
@@ -165,7 +165,7 @@
     line-height: 30px;
     background-color: #f6f6f6;
     font-family: $body-font !important;
-    height: 150px;
+    height: 300px;
     margin-bottom: 0;
   }
   input:focus,
