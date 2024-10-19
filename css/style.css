@@ -81773,8 +81773,8 @@ body.admin-bar .header-area.style-7 {
 }
 .slider-area .slider-wrapper .slick-dots li.slick-active button,
 .slider-area .slider-wrapper-two .slick-dots li.slick-active button {
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   transition: all 0.5s ease-out;
 }
 .slider-area .slider-wrapper .slick-dots li.slick-active button:before,
