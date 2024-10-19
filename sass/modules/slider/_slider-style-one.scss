@@ -3,7 +3,7 @@
   position: relative;
   z-index: 2;
   height: auto;
-  padding-top: 238px;
+  padding-top: 275px;
 
   .shape {
     position: absolute;
@@ -274,7 +274,7 @@
         height: 57px;
         overflow: hidden;
         position: absolute;
-        right: 0;
+        right: 30px;
         top: 50%;
         transform: translateY(-50%);
       }
@@ -394,7 +394,7 @@
       flex-direction: column;
       position: absolute;
       top: 50%;
-      right: 178px;
+      right: 15.7%;
       transform: translateY(-50%);
       z-index: 2;
       flex-direction: column;

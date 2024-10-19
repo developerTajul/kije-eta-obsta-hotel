@@ -81288,7 +81288,7 @@ body.admin-bar .header-area.style-7 {
   position: relative;
   z-index: 2;
   height: auto;
-  padding-top: 238px;
+  padding-top: 275px;
 }
 .slider-area .shape {
   position: absolute;
@@ -81560,7 +81560,7 @@ body.admin-bar .header-area.style-7 {
   height: 57px;
   overflow: hidden;
   position: absolute;
-  right: 0;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -81685,7 +81685,7 @@ body.admin-bar .header-area.style-7 {
   flex-direction: column;
   position: absolute;
   top: 50%;
-  right: 178px;
+  right: 15.7%;
   transform: translateY(-50%);
   z-index: 2;
   flex-direction: column;
@@ -83206,6 +83206,8 @@ body.admin-bar .header-area.style-7 {
   z-index: 5;
   width: 500px;
   height: 612px;
+  margin-left: 66px;
+  margin-bottom: 40px;
 }
 @media (max-width: 1550px) {
   .about-image-card.style-1 .image-wrapper .main-img {
@@ -83269,7 +83271,7 @@ body.admin-bar .header-area.style-7 {
 .about-image-card.style-1 .image-wrapper .square-shape {
   position: absolute;
   bottom: -40px;
-  left: -70px;
+  left: 0;
   width: 450px;
   height: 526px;
   border: 1px solid #aa8453;
@@ -90311,7 +90313,7 @@ ul.children {
   padding-bottom: 60px;
 }
 .slider-area .checknow-form {
-  padding-top: 170px;
+  padding-top: 154px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .checknow-form {
@@ -90329,6 +90331,14 @@ ul.children {
   }
 }
 
+.about-us-area {
+  position: relative;
+}
+.about-us-area .outer-shape {
+  position: absolute;
+  left: 117px;
+  top: 70px;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-us-area .section-title {
     gap: 0;

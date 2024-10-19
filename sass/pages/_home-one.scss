@@ -380,7 +380,7 @@
 .slider-area {
   padding-bottom: 60px;
   .checknow-form {
-    padding-top: 170px;
+    padding-top: 154px;
     @include lg {
       padding-top: 0px;
     }
@@ -395,6 +395,12 @@
 
 // About Us Area
 .about-us-area {
+  position: relative;
+  .outer-shape {
+    position: absolute;
+    left: 117px;
+    top: 70px;
+  }
   .section-title {
     @include sm {
       gap: 0;
@@ -552,7 +558,7 @@
           margin-bottom: 10px;
         }
 
-        input[type='date'],
+        input[type="date"],
         select {
           width: 100%;
           padding: 12px;
@@ -746,7 +752,7 @@
   background-position: center;
   position: relative;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
