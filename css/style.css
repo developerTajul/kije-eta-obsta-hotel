@@ -82694,6 +82694,9 @@ body.admin-bar .header-area.style-7 {
     padding: 20px 30px;
   }
 }
+.info-card .icon {
+  height: 60px;
+}
 .info-card .content .title {
   color: #ffffff;
   font-size: 20px;
@@ -84449,6 +84452,7 @@ body.admin-bar .header-area.style-7 {
   gap: 10px;
 }
 .testimonial-card .icon i {
+  font-size: 35px;
   color: #f2c94c;
 }
 .testimonial-card .desc {
@@ -89101,7 +89105,7 @@ ul.children {
   color: #ffffff;
 }
 .team-member-card .social-links a i {
-  font-size: 24px;
+  font-size: 28px;
   color: #ffffff;
 }
 .team-member-card .social-links a:hover {
@@ -90420,7 +90424,7 @@ ul.children {
 .booking-area .shape-wrapper {
   background-color: #f8f5f0;
   position: absolute;
-  bottom: 87px;
+  bottom: 120px;
   right: 0;
   width: 1645px;
   height: 823px;
@@ -90470,7 +90474,7 @@ ul.children {
   color: #808287;
 }
 .booking-area .booking-form {
-  padding: 55px 45px;
+  padding: 65px 45px;
   background-color: #fff;
   box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
   border-radius: 10px;
@@ -90508,7 +90512,7 @@ ul.children {
   width: 100%;
   padding: 12px;
   font-size: 14px;
-  border: 1px solid #f2e2e2;
+  border: 1px solid transparent;
   border-radius: 5px;
   background-color: #f6f6f6;
   color: #616670;
@@ -90572,6 +90576,9 @@ ul.children {
   /* Animation for drag left */
   /* Animation for drag right */
   /* Reset transform */
+}
+.room_and_suites .banner-text {
+  margin-top: -40px;
 }
 .room_and_suites .room-card-slider-container {
   position: relative;
@@ -90742,7 +90749,7 @@ ul.children {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
-  margin-top: -96px;
+  margin-top: -90px;
   overflow: hidden;
 }
 @media (max-width: 1699px) {
@@ -90925,6 +90932,12 @@ ul.children {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.feature-and-facilities.style-1 .inner-wrapper .shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
 .feature-and-facilities.style-1 .overlay {
   position: absolute;
   top: 0;
@@ -90971,6 +90984,7 @@ ul.children {
 .feature-and-facilities.style-1 .btn-wrapper .btn:hover span {
   visibility: visible;
   opacity: 1;
+  transform: rotate(-90deg);
   transition: all 0.5s ease-out;
 }
 .feature-and-facilities.style-1 .btn-wrapper .btn span {

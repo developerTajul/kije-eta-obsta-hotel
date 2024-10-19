@@ -15,6 +15,9 @@
   @include lg {
     padding: 20px 30px;
   }
+  .icon {
+    height: 60px;
+  }
   .content {
     .title {
       color: $white;
