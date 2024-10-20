@@ -25,6 +25,7 @@
           .logo-wrapper {
             visibility: visible;
             opacity: 1;
+            width: auto;
           }
         }
       }
@@ -96,6 +97,7 @@
       .logo-wrapper {
         visibility: hidden;
         opacity: 0;
+        width: 0;
         @include transition;
         @include rmaxwd(991) {
           visibility: visible;

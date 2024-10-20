@@ -1,6 +1,12 @@
 // Video-popup-area
 .video-popup-area {
   &.style-1 {
+    position: relative;
+    .shape {
+      position: absolute;
+      left: 96px;
+      bottom: 140px;
+    }
     .video-popup-card {
       height: 100%;
       .video-popup-image {
@@ -175,7 +181,7 @@
       padding-bottom: 200px;
     }
     &:before {
-      content: '';
+      content: "";
       background-color: rgba(49, 43, 43, 0.8);
       position: absolute;
       left: 0;
@@ -322,6 +328,7 @@
 // Project slider style-1
 .project-area {
   &.style-1 {
+    overflow: hidden;
     .section-title-wrapper {
       position: relative;
       width: 100%;
@@ -330,7 +337,7 @@
       z-index: 2;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: -100%;

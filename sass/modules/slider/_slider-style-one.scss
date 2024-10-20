@@ -274,7 +274,7 @@
         height: 57px;
         overflow: hidden;
         position: absolute;
-        right: 30px;
+        right: 6%;
         top: 50%;
         transform: translateY(-50%);
       }
@@ -291,6 +291,7 @@
       @include rmaxwd(1199) {
         // height: 450px;
         right: unset;
+        display: none;
 
         .slider-image-inner {
           width: 100%;
@@ -394,7 +395,7 @@
       flex-direction: column;
       position: absolute;
       top: 50%;
-      right: 15.7%;
+      right: 14%;
       transform: translateY(-50%);
       z-index: 2;
       flex-direction: column;
