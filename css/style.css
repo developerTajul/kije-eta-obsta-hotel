@@ -91210,6 +91210,26 @@ ul.children {
     margin-left: 110px;
   }
 }
+.room_and_suites.style-2 .room-card-wrapper-two .slick-arrow {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+.room_and_suites.style-2 .room-card-wrapper-two .slick-arrow.next-btn {
+  transform: translate(0%, -100%);
+  margin-left: 5px;
+}
+.room_and_suites.style-2 .room-card-wrapper-two .slick-arrow.prev-btn {
+  margin-right: 5px;
+  background-color: #aa8453;
+  color: #ffffff;
+  transform: translate(-100%, -99%);
+}
 
 .service-area.style-2:before {
   display: none;
@@ -91279,6 +91299,12 @@ ul.children {
 .checknow-form.styel-2 {
   transform: translateY(-50%);
 }
+.checknow-form.styel-2 .inner-wrapper {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.checknow-form.styel-2 .inner-wrapper form {
+  box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
+}
 
 .testimonial-slider-area.style-2 {
   position: relative;
@@ -91295,6 +91321,13 @@ ul.children {
 .testimonial-slider-area.style-2 .bg-image img {
   width: 100%;
   height: 100%;
+}
+.testimonial-slider-area.style-2 .testimonial-card.style-2 {
+  transition: all 0.5s ease-out;
+}
+.testimonial-slider-area.style-2 .testimonial-card.style-2:hover:after {
+  background-color: #aa8453;
+  transition: all 0.5s ease-out;
 }
 @media (max-width: 991px) {
   .testimonial-slider-area.style-2 .testimonial-card.style-2 {
@@ -91371,6 +91404,9 @@ ul.children {
   height: 100%;
   background-color: #ffffff;
   z-index: 2;
+  margin-top: -3px;
+  height: 103%;
+  width: 102%;
 }
 .project-area.style-1 .section-title-wrapper:before {
   content: "";
@@ -91378,7 +91414,7 @@ ul.children {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 100%;
+  height: 103%;
   z-index: 1;
   background-color: #ffffff;
 }
