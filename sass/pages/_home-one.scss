@@ -378,7 +378,7 @@
 }
 
 .slider-area {
-  padding-bottom: 60px;
+  padding-bottom: 75px;
   .checknow-form {
     padding-top: 154px;
     @include lg {
@@ -558,7 +558,7 @@
           margin-bottom: 10px;
         }
 
-        input[type="date"],
+        input[type='date'],
         select {
           width: 100%;
           padding: 12px;
@@ -760,7 +760,7 @@
   background-position: center;
   position: relative;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;

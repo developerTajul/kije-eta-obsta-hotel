@@ -1,9 +1,16 @@
 .team-details-area {
+  position: relative;
   .image-wrapper {
     position: relative;
     img {
       width: 100%;
     }
+  }
+  .outer-shape {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
   }
   .team-details-wrapper {
     @include rmaxwd(991) {
@@ -34,6 +41,7 @@
       gap: 30px;
       a {
         i {
+          font-size: 25px;
           color: $gray;
         }
       }

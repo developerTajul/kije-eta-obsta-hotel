@@ -255,11 +255,6 @@
     padding-left: 0;
   }
 
-  .footer-logo {
-    margin-bottom: 40px;
-    margin-top: -25px;
-  }
-
   // Footer Latest Post
   &.widget_boomdevs-latest-posts-footer {
     margin-top: -5px;
@@ -302,11 +297,9 @@
     }
 
     .footer-logo {
-      margin-bottom: 40px;
       display: inline-block;
-      margin-top: -25px;
-      width: 139px;
-      height: 40px;
+      width: 198px;
+      height: 69px;
 
       a {
         img {
@@ -463,9 +456,10 @@
           span,
           p,
           a {
-            font-size: 16px;
-            line-height: 30px;
+            font-size: 20px;
+            font-style: normal;
             font-weight: 400;
+            line-height: 30px;
             display: inline-block;
             width: 100%;
             margin-bottom: 0;
@@ -676,6 +670,17 @@
 
 .subscribe-form-widget {
   position: relative;
+  &.style-2 {
+    .single-field input {
+      background-color: #f6f6f6;
+    }
+    .submit-btn {
+      background-color: transparent;
+      i {
+        color: $gray;
+      }
+    }
+  }
   .terms-condition {
     font-size: 14px;
     font-style: normal;
@@ -772,10 +777,11 @@
     position: absolute;
     right: 0;
     top: 0;
-    background-color: transparent;
+    background-color: $primary-color;
     height: 100%;
     i {
       font-size: 30px;
+      color: $white;
     }
     span {
       display: none;

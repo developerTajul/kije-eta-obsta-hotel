@@ -277,15 +277,15 @@
         right: 6%;
         top: 50%;
         transform: translateY(-50%);
+
+        @include rmaxwd(1799) {
+          right: 14%;
+        }
       }
 
       @include rmaxwd(1799) {
         width: auto;
         margin-top: inherit;
-        right: 20%;
-      }
-      @include xl {
-        right: 10%;
       }
 
       @include rmaxwd(1199) {

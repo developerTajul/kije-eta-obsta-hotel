@@ -2,7 +2,7 @@
 .video-popup-area {
   &.style-1 {
     position: relative;
-    .shape {
+    .outer-shape {
       position: absolute;
       left: 96px;
       bottom: 140px;
@@ -272,6 +272,18 @@
   &.style-2 {
     position: relative;
     background-color: #312b2beb;
+    @include lg {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    @include md {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @include sm {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     .bg-image {
       position: absolute;
       top: 0;
@@ -282,6 +294,17 @@
       img {
         width: 100%;
         height: 100%;
+      }
+    }
+    .slick-list {
+      // overflow: visible;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .slick-track {
+        margin-left: -12px;
+      }
+      .testimonial-card {
+        margin-left: 12px;
       }
     }
     .testimonial-card {
