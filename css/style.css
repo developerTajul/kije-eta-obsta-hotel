@@ -81217,7 +81217,7 @@ body.admin-bar .header-area.style-7 {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .banner-text p {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
@@ -83164,7 +83164,9 @@ body.admin-bar .header-area.style-7 {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-image-card.style-1 .image-wrapper .main-img {
-    width: 350px;
+    width: 315px;
+    margin-left: 12px;
+    height: 450px;
   }
 }
 .about-image-card.style-1 .image-wrapper .main-img img {
@@ -83177,6 +83179,11 @@ body.admin-bar .header-area.style-7 {
   left: 0;
   transform: rotate(270deg) translate(50%, -200%);
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-image-card.style-1 .image-wrapper .main-img .content {
+    transform: rotate(270deg) translate(50%, 0%);
+  }
+}
 .about-image-card.style-1 .image-wrapper .main-img .content p {
   margin-bottom: 0;
   font-family: "Gilda Display", serif;
@@ -83187,6 +83194,11 @@ body.admin-bar .header-area.style-7 {
   letter-spacing: 5px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--white, #fff);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-image-card.style-1 .image-wrapper .main-img .content p {
+    font-size: 38px;
+  }
 }
 .about-image-card.style-1 .image-wrapper .main-img .shape {
   position: absolute;
@@ -83236,7 +83248,8 @@ body.admin-bar .header-area.style-7 {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-image-card.style-1 .image-wrapper .square-shape {
-    width: 350px;
+    width: 312px;
+    height: 490px;
   }
 }
 
@@ -86938,7 +86951,7 @@ body.admin-bar .header-area.style-7 {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .banner-text p {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
@@ -90340,11 +90353,24 @@ ul.children {
     gap: 10px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-us-area .icon-card-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+}
 .about-us-area .btn-wrapper .inner-wrapper {
   display: inline-flex;
   gap: 46px;
   padding-top: 45px;
   border-top: 1px solid #e0e0e0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-us-area .btn-wrapper .inner-wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .booking-btn {
@@ -94192,12 +94218,23 @@ ul.children {
   gap: 34px;
   padding: 30px;
   background-color: #3f3f3f;
-  /* Custom dropdown arrow */
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .checknow-form form {
+    gap: 20px;
+  }
 }
 .checknow-form form .input-wrapper {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .checknow-form form .input-wrapper {
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+  }
 }
 .checknow-form form .input-wrapper input,
 .checknow-form form .input-wrapper select {
@@ -94212,10 +94249,10 @@ ul.children {
   letter-spacing: 2.1px;
   width: 290px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .checknow-form form .input-wrapper input,
   .checknow-form form .input-wrapper select {
-    width: auto;
+    width: 100%;
   }
 }
 .checknow-form form .input-wrapper label {
@@ -94226,9 +94263,16 @@ ul.children {
   line-height: 29px; /* 181.25% */
   text-transform: uppercase;
 }
-.checknow-form form .input-wrapper .date-container {
+.checknow-form form .input-wrapper .date-container,
+.checknow-form form .input-wrapper .select-container {
   position: relative;
   display: inline-block;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .checknow-form form .input-wrapper .date-container,
+  .checknow-form form .input-wrapper .select-container {
+    width: 100%;
+  }
 }
 .checknow-form form .input-wrapper .date-container input[type=date] {
   -webkit-appearance: none;
@@ -94262,9 +94306,6 @@ ul.children {
   -webkit-appearance: none; /* Remove default dropdown styling */
   -moz-appearance: none;
   appearance: none;
-}
-.checknow-form form .select-container {
-  position: relative;
 }
 .checknow-form form .select-container::after {
   content: "\f078"; /* FontAwesome down arrow */

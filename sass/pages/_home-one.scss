@@ -434,6 +434,11 @@
     @include rmaxwd(991) {
       gap: 10px;
     }
+    @include sm {
+      flex-direction: column;
+      gap: 20px;
+      align-items: start;
+    }
   }
   .btn-wrapper {
     .inner-wrapper {
@@ -441,6 +446,10 @@
       gap: 46px;
       padding-top: 45px;
       border-top: 1px solid $border-color;
+      @include sm {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
     }
   }
 }
