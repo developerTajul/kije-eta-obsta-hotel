@@ -202,5 +202,13 @@
       font-size: 80px;
       transform: translate(0, -10%);
     }
+    @include sm {
+      // transform: translate(-0%, -10%);
+      // letter-spacing: 8px;
+      font-size: 40px;
+    }
+    @include xs {
+      display: none;
+    }
   }
 }

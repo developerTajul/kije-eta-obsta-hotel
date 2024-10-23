@@ -506,6 +506,7 @@
       dots: false,
       speed: 1500,
       rtl: false,
+      // centerMode: true,
       responsive: [
         {
           breakpoint: 1023,

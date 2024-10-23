@@ -724,6 +724,10 @@
     @include rmaxwd(991) {
       margin-top: -40px;
     }
+    @include sm {
+      margin-top: 0;
+      padding-left: 10px;
+    }
     .room-card {
       &:nth-child(even) {
         margin-top: 80px;
@@ -804,7 +808,7 @@
       @include sm {
         transform: translate(-0%, -10%);
         letter-spacing: 8px;
-        font-size: 60px;
+        font-size: 40px;
       }
     }
   }
@@ -868,6 +872,9 @@
       top: 66px;
       @include rmaxwd(991) {
         right: 0;
+      }
+      @include sm {
+        display: none;
       }
     }
   }
@@ -998,6 +1005,9 @@
         top: 0;
         right: 0;
         z-index: 2;
+        @include sm {
+          display: none;
+        }
       }
     }
     .overlay {
