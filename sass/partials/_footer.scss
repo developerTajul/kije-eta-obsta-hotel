@@ -254,24 +254,11 @@
   ul {
     padding-left: 0;
   }
-
-  // Footer Latest Post
-  &.widget_boomdevs-latest-posts-footer {
-    margin-top: -5px;
-  }
-
   // Footer Instagram
   &.zoom-instagram-widget {
     @include rmaxwd(767) {
       margin-bottom: 0;
       margin-top: -10px;
-    }
-  }
-
-  // Footer About Info
-  &.widget_boomdevs_contact_info_widget {
-    @include rmaxwd(767) {
-      margin-bottom: 18px;
     }
   }
 

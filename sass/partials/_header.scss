@@ -422,7 +422,7 @@
 
         &:before {
           position: absolute;
-          content: "\f107";
+          content: '\f107';
           font-family: $font-awesome;
           //transform: rotate(45deg);
           //border: solid $white;
@@ -700,7 +700,7 @@
         }
       }
 
-      input[type="search"] {
+      input[type='search'] {
         margin-top: 0 !important;
         background: transparent !important;
         border: 0 !important;

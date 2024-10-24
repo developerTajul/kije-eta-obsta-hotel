@@ -44,12 +44,19 @@
       @include rmaxwd(1399) {
         height: 360px;
       }
+      @include sm {
+        padding: 40px;
+      }
       .shape {
         position: absolute;
         bottom: 20px;
         right: 60px;
         @include xl {
           right: 20px;
+        }
+        @include sm {
+          right: 12px;
+          bottom: 12px;
         }
       }
       .section-title {
@@ -59,6 +66,9 @@
               display: none;
             }
           }
+        }
+        .theme-btn-wrapper {
+          margin-top: 40px;
         }
       }
     }
@@ -195,6 +205,9 @@
       position: absolute;
       right: 50px;
       top: 80px;
+      @include sm {
+        display: none;
+      }
     }
   }
 }
@@ -208,6 +221,9 @@
     background-position: center;
     @include xl {
       padding-bottom: 200px;
+    }
+    @include sm {
+      padding: 80px 0;
     }
     &:before {
       content: '';
@@ -258,6 +274,9 @@
 .checknow-form {
   &.styel-2 {
     transform: translateY(-50%);
+    @include sm {
+      transform: translateY(-0%);
+    }
     .inner-wrapper {
       background-color: rgba(255, 255, 255, 0.2);
       form {

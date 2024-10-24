@@ -60,6 +60,9 @@
               line-height: normal;
               letter-spacing: 9px;
               text-transform: uppercase;
+              @include sm {
+                letter-spacing: 1px;
+              }
             }
             .slider-title {
               text-transform: capitalize;
@@ -95,7 +98,7 @@
         @include sm {
           position: absolute;
           left: unset;
-          bottom: 42px;
+          bottom: 20px;
         }
         li {
           display: flex;
@@ -104,6 +107,10 @@
           border-radius: 50%;
           width: 100px;
           height: 100px;
+          @include sm {
+            width: 33px;
+            height: 33px;
+          }
           button {
             width: 108px;
             height: 108px;
