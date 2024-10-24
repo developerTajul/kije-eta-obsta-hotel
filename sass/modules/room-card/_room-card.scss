@@ -7,7 +7,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  @include sm {
+    height: 450px;
+    // width: 360px !important;
+  }
   &:hover,
   &.slick-center {
     .booking-btn {
@@ -51,6 +54,9 @@
     position: absolute;
     overflow: visible;
     @include transition;
+    @include sm {
+      padding-left: 30px;
+    }
 
     .inner-wrapper {
       position: absolute;

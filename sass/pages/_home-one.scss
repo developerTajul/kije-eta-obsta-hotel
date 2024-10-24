@@ -513,6 +513,9 @@
     @include md {
       padding-bottom: 16px;
     }
+    @include sm {
+      gap: 12px;
+    }
     .icon {
       width: 69px;
       height: 69px;
@@ -529,6 +532,9 @@
       font-weight: 400;
       line-height: normal;
       color: $gray;
+      @include sm {
+        font-size: 24px;
+      }
     }
   }
   .booking-form {
@@ -536,6 +542,9 @@
     background-color: #fff;
     box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
     border-radius: 10px;
+    @include sm {
+      padding: 24px 0 50px 0;
+    }
     .sub-title {
       font-size: 18px;
       font-style: normal;
@@ -631,6 +640,9 @@
     @include md {
       margin-bottom: 0;
     }
+    @include sm {
+      margin-bottom: 0;
+    }
   }
   .blog-card {
     @include rmaxwd(991) {
@@ -660,6 +672,10 @@
     transform: translateY(-50%);
     cursor: grab;
     z-index: 1;
+    @include sm {
+      display: none;
+      transform: translate(-50%, 0);
+    }
   }
   /* Animation for drag left */
   .drag-left {
@@ -695,6 +711,10 @@
     @include rmaxwd(991) {
       width: 120px;
       height: 120px;
+    }
+    @include sm {
+      width: 100px;
+      height: 100px;
     }
     p {
       font-size: 20px;
@@ -789,6 +809,9 @@
 
 // Testimonial Area
 .testimonial-area {
+  @include sm {
+    padding-top: 54px;
+  }
   .banner-text {
     p {
       transform: translate(-10%, -17%);
@@ -952,6 +975,11 @@
       @include rmaxwd(991) {
         gap: 30px;
       }
+      @include sm {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 0;
+      }
     }
     .about-image-card {
       position: relative;
@@ -1050,6 +1078,10 @@
       display: flex;
       flex-direction: column;
       gap: 25px;
+      @include sm {
+        gap: 15px;
+        margin-top: 100px;
+      }
       .btn {
         color: $white;
         font-family: $heading-font;
@@ -1067,6 +1099,10 @@
             transform: rotate(-90deg);
             @include transition;
           }
+        }
+        @include sm {
+          gap: 15px;
+          font-size: 28px;
         }
         span {
           visibility: hidden;

@@ -82633,6 +82633,11 @@ body.admin-bar .header-area.style-7 {
     padding: 20px 30px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .info-card {
+    padding: 24px;
+  }
+}
 .info-card .icon {
   height: 60px;
 }
@@ -83138,6 +83143,12 @@ body.admin-bar .header-area.style-7 {
   right: 0;
   width: 97px;
   height: 327px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-image-card.style-2 .image-wrapper .main-img .shape {
+    width: 70px;
+    height: 220px;
+  }
 }
 
 .about-image-card.style-1 .image-wrapper {
@@ -90439,6 +90450,11 @@ ul.children {
     padding-bottom: 16px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .booking-area .contact-info {
+    gap: 12px;
+  }
+}
 .booking-area .contact-info .icon {
   width: 69px;
   height: 69px;
@@ -90456,11 +90472,21 @@ ul.children {
   line-height: normal;
   color: #808287;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .booking-area .contact-info .desc {
+    font-size: 24px;
+  }
+}
 .booking-area .booking-form {
   padding: 65px 45px;
   background-color: #fff;
   box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
   border-radius: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .booking-area .booking-form {
+    padding: 24px 0 50px 0;
+  }
 }
 .booking-area .booking-form .sub-title {
   font-size: 18px;
@@ -90548,6 +90574,11 @@ ul.children {
     margin-bottom: 0;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-area .section-title {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 991px) {
   .blog-area .blog-card {
     margin-top: 30px;
@@ -90573,6 +90604,12 @@ ul.children {
   transform: translateY(-50%);
   cursor: grab;
   z-index: 1;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room_and_suites .drag-btn-wrapper {
+    display: none;
+    transform: translate(-50%, 0);
+  }
 }
 .room_and_suites .drag-left {
   transform: rotateY(10deg) scale(1.05); /* Slight tilt and scale for left drag */
@@ -90604,6 +90641,12 @@ ul.children {
   .room_and_suites .drag-handle {
     width: 120px;
     height: 120px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room_and_suites .drag-handle {
+    width: 100px;
+    height: 100px;
   }
 }
 .room_and_suites .drag-handle p {
@@ -90698,6 +90741,11 @@ ul.children {
   margin-top: 46px;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-area {
+    padding-top: 54px;
+  }
+}
 .testimonial-area .banner-text p {
   transform: translate(-10%, -17%);
   letter-spacing: 32px;
@@ -90871,6 +90919,13 @@ ul.children {
     gap: 30px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-us-area.style-2 .counter-card-wrapper {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 0;
+  }
+}
 .about-us-area.style-2 .about-image-card {
   position: relative;
 }
@@ -90967,6 +91022,12 @@ ul.children {
   flex-direction: column;
   gap: 25px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .feature-and-facilities.style-1 .btn-wrapper {
+    gap: 15px;
+    margin-top: 100px;
+  }
+}
 .feature-and-facilities.style-1 .btn-wrapper .btn {
   color: #ffffff;
   font-family: "Gilda Display", serif;
@@ -90985,6 +91046,12 @@ ul.children {
   opacity: 1;
   transform: rotate(-90deg);
   transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .feature-and-facilities.style-1 .btn-wrapper .btn {
+    gap: 15px;
+    font-size: 28px;
+  }
 }
 .feature-and-facilities.style-1 .btn-wrapper .btn span {
   visibility: hidden;
@@ -94351,6 +94418,11 @@ ul.children {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room-card {
+    height: 450px;
+  }
+}
 .room-card:hover .booking-btn, .room-card.slick-center .booking-btn {
   visibility: visible;
   opacity: 1;
@@ -94391,6 +94463,11 @@ ul.children {
   position: absolute;
   overflow: visible;
   transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room-card .content-wrapper {
+    padding-left: 30px;
+  }
 }
 .room-card .content-wrapper .inner-wrapper {
   position: absolute;

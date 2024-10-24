@@ -882,11 +882,12 @@
         {
           breakpoint: 767,
           settings: {
-            autoplay: true,
+            autoplay: false,
             slidesToShow: 1,
             arrows: false,
             variableWidth: false,
             speed: 1500,
+            draggable: true,
           },
         },
       ],

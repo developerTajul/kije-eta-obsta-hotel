@@ -15,6 +15,9 @@
   @include lg {
     padding: 20px 30px;
   }
+  @include sm {
+    padding: 24px;
+  }
   .icon {
     height: 60px;
   }
