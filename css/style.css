@@ -90987,7 +90987,7 @@ ul.children {
   right: 0;
   z-index: 2;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 991px) {
   .feature-and-facilities.style-1 .inner-wrapper .shape {
     display: none;
   }
