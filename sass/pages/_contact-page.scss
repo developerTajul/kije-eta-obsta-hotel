@@ -1,4 +1,8 @@
 .contact-page-widget {
+  @include sm {
+    padding-top: 182px;
+    padding-bottom: 80px;
+  }
   .map-widget {
     display: flex;
     height: 100%;
@@ -15,6 +19,11 @@
   background-color: #f2f2f2;
   padding-top: 420px;
   margin-top: -280px;
+  @include sm {
+    margin-top: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   .shape-1 {
     position: absolute;
     bottom: 0;

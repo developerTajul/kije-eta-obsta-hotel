@@ -92564,6 +92564,12 @@ ul.children {
   }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contact-page-widget {
+    padding-top: 182px;
+    padding-bottom: 80px;
+  }
+}
 .contact-page-widget .map-widget {
   display: flex;
   height: 100%;
@@ -92579,6 +92585,13 @@ ul.children {
   background-color: #f2f2f2;
   padding-top: 420px;
   margin-top: -280px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contact-form-area {
+    margin-top: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 .contact-form-area .shape-1 {
   position: absolute;
