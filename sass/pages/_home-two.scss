@@ -16,6 +16,11 @@
         }
       }
     }
+    .image-wrapper {
+      @include rwd(1700) {
+        height: 459px;
+      }
+    }
     .section-title {
       @include rmaxwd(991) {
         margin-top: 30px;
@@ -273,14 +278,30 @@
 // Checknow form style-2
 .checknow-form {
   &.styel-2 {
-    transform: translateY(-50%);
+    margin-top: -120px;
     @include sm {
       transform: translateY(-0%);
+      margin-top: 0;
     }
     .inner-wrapper {
       background-color: rgba(255, 255, 255, 0.2);
       form {
         box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
+        .input-wrapper,
+        button {
+          flex: 1;
+        }
+        .select-container {
+          width: 100%;
+          .nice-select {
+            height: 49px;
+            padding: 16px 20px;
+            background-color: #f6f6f6;
+            color: #a19292;
+            border-radius: 0;
+            line-height: normal;
+          }
+        }
       }
     }
   }
@@ -380,6 +401,8 @@
         width: auto;
         height: auto;
         max-height: 431px;
+        position: relative;
+        z-index: -1;
         img {
           height: auto;
           max-height: 431px;
@@ -561,6 +584,9 @@
           padding: 27px 0;
           width: 391px;
           text-align: center;
+          @include sm {
+            width: 300px;
+          }
         }
       }
       .submit-btn {

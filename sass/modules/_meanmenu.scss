@@ -22,7 +22,7 @@
 .mean-container .mean-nav ul li a {
   width: 100%;
   padding: 10px 0;
-  color: $secondary-color;
+  color: $black;
   border-top: 1px solid #dfe2e9;
   font-size: 14px;
   text-transform: capitalize;
@@ -37,7 +37,7 @@
   height: 30px;
   width: 30px;
   line-height: 30px;
-  color: $secondary-color;
+  color: $black;
   line-height: 30px;
   top: 0;
   font-weight: 400;
@@ -46,11 +46,11 @@
 .mean-container .mean-nav ul li > a > i {
   display: none;
 }
-.mean-container .mean-nav ul li > a.mean-expand i{
+.mean-container .mean-nav ul li > a.mean-expand i {
   display: inline-block;
 }
 
-.mean-container .mean-nav > ul > li:first-child > a{
+.mean-container .mean-nav > ul > li:first-child > a {
   border-top: 0;
 }
 
@@ -58,13 +58,13 @@
   background-color: $primary-color;
   border-color: $primary-color !important;
 }
-.mean-container .mean-nav ul li.dropdown-opened a.mean-expand.mean-clicked i{
+.mean-container .mean-nav ul li.dropdown-opened a.mean-expand.mean-clicked i {
   color: $white;
 }
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked {
   color: $white;
 }
-.mean-container .mean-nav ul li a.mean-expand.mean-clicked i{
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked i {
   transform: rotate(45deg);
   color: $white;
 }

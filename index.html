@@ -705,7 +705,7 @@
           </div>
         </div>
         <div class="card-wrapper">
-          <div class="row gy-4">
+          <div class="row">
             <div class="col-md-6 col-lg-4">
               <!-- single service-card start -->
               <div class="info-card style-1">
@@ -896,7 +896,7 @@
     <div class="feature-and-facilities style-1">
       <div class="container">
         <div
-          class="inner-wrapper py-80"
+          class="inner-wrapper pt-80 pb-72"
           style="
             background-image: url(images/section-bg/feature-facilities.jpg);
           ">
@@ -914,19 +914,19 @@
                   </div>
                 </div>
                 <div class="btn-wrapper">
-                  <a href="#" class="btn">
+                  <a href="#">
                     #2 Pools
                     <span>
                       <i class="fa-solid fa-arrow-down-long"></i>
                     </span>
                   </a>
-                  <a href="#" class="btn">
+                  <a href="#">
                     #3 Fitness Center
                     <span>
                       <i class="fa-solid fa-arrow-down-long"></i>
                     </span>
                   </a>
-                  <a href="#" class="btn">
+                  <a href="#">
                     #2 Restaurants
                     <span>
                       <i class="fa-solid fa-arrow-down-long"></i>
@@ -1129,22 +1129,28 @@
               <form class="mt-16">
                 <div class="form-group">
                   <label for="checkin">Check In:</label>
-                  <input
-                    type="date"
-                    id="checkin"
-                    name="checkin"
-                    placeholder="13 , April 2024" />
-                  <i class="fa-regular fa-calendar-days"></i>
+                  <div class="date-container">
+                    <i class="fas fa-calendar-alt" id="calendar-icon"></i>
+                    <input
+                      type="date"
+                      class="date-input"
+                      id="checkin"
+                      name="checkin"
+                      required />
+                  </div>
                 </div>
 
                 <div class="form-group">
                   <label for="checkout">Check Out:</label>
-                  <input
-                    type="date"
-                    id="checkout"
-                    name="checkout"
-                    placeholder="13 April 2024" />
-                  <i class="fa-regular fa-calendar-days"></i>
+                  <div class="date-container">
+                    <i class="fas fa-calendar-alt" id="calendar-icon"></i>
+                    <input
+                      type="date"
+                      class="date-input"
+                      id="checkout"
+                      name="checkout"
+                      required />
+                  </div>
                 </div>
 
                 <div class="form-group">
@@ -1156,7 +1162,7 @@
                   </select>
                 </div>
 
-                <button type="submit" class="submit-btn mt-10">
+                <button type="submit" class="submit-btn mt-24">
                   Check Now
                 </button>
               </form>
@@ -1401,7 +1407,7 @@
               </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="footer-widget widget_nav_menu">
+              <div class="footer-widget widget_nav_menu mt-35">
                 <h2 class="footer-widget-title">Get Free Link</h2>
                 <div class="row">
                   <div class="col-md-6">
@@ -1423,7 +1429,7 @@
               </div>
             </div>
             <div class="col-xl-3 col-lg-3">
-              <div class="footer-widget">
+              <div class="footer-widget mt-35">
                 <h2 class="footer-widget-title">Contact</h2>
                 <div class="footer-widget-info">
                   <div class="footer-widget-contact">

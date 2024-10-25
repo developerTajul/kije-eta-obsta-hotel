@@ -10,9 +10,26 @@
     align-items: center;
     gap: 34px;
     padding: 30px;
+    padding-bottom: 40px;
     background-color: #3f3f3f;
     @include sm {
       gap: 20px;
+    }
+    button {
+      @include sm {
+        flex: 1;
+      }
+    }
+    .select-container {
+      width: 100%;
+      .nice-select {
+        height: 49px;
+        padding: 16px 20px;
+        background-color: transparent;
+        color: #a19292;
+        border-radius: 0;
+        line-height: normal;
+      }
     }
     .input-wrapper {
       display: flex;
@@ -34,6 +51,12 @@
         font-weight: 400;
         line-height: normal;
         letter-spacing: 2.1px;
+        width: 290px;
+        @include rmaxwd(991) {
+          width: 100%;
+        }
+      }
+      .nice-select {
         width: 290px;
         @include rmaxwd(991) {
           width: 100%;
@@ -87,6 +110,11 @@
       padding: 7px 40px;
       background-color: $primary-color;
       color: $white;
+      // width: 100%;
+      margin-top: 8px;
+      @include rmaxwd(1199) {
+        margin-top: 0;
+      }
     }
     select {
       padding-right: 30px; /* Add padding for the dropdown arrow */
@@ -95,16 +123,16 @@
       appearance: none;
     }
 
-    .select-container::after {
-      content: '\f078'; /* FontAwesome down arrow */
-      font-family: $font-awesome;
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      pointer-events: none;
-      color: $white;
-    }
+    // .select-container::after {
+    //   content: '\f078'; /* FontAwesome down arrow */
+    //   font-family: $font-awesome;
+    //   position: absolute;
+    //   right: 20px;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   pointer-events: none;
+    //   color: $white;
+    // }
   }
 
   &.styel-2 {

@@ -37,8 +37,8 @@
   }
   .menu-sidebar-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 40px;
+    right: 40px;
 
     .menu-sidebar-close-btn {
       display: inline-flex;
@@ -76,7 +76,7 @@
           display: flex;
           align-items: center;
           gap: 13px;
-          color: $secondary-color;
+          color: $black;
           font-size: 16px;
           font-weight: 400;
           font-family: $body-font;
@@ -89,7 +89,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            color: $secondary-color;
+            color: $black;
             font-size: 16px;
             font-weight: 400;
             font-family: $body-font;
@@ -107,7 +107,7 @@
         padding-top: 20px;
 
         a {
-          color: $secondary-color;
+          color: $black;
           font-size: 22px;
           &:hover {
             color: $primary-color;

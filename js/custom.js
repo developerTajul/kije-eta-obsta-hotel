@@ -989,7 +989,7 @@
        Magnific Popup
        ============================*/
     $('.video-play').magnificPopup({
-      disableOn: 700,
+      // disableOn: 700,
       type: 'iframe',
       mainClass: 'mfp-fade',
       removalDelay: 160,
@@ -1005,7 +1005,7 @@
     /*
        Jquery Nice Select Js
        ============================*/
-    $('select.select_option, select.wpcf7-select').niceSelect();
+    $('select').niceSelect();
 
     /*
        Jquery Tilt Js

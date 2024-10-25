@@ -7,7 +7,7 @@ $breakpoints: (
   // Medium devices (tablet)
   'lg': 992px,
   // Large devices (desktop)
-  'xl': 1200px // Extra-large devices,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  'xl': 1200px // Extra-large devices,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // Scaling factors for responsiveness (you can adjust these)
@@ -20,7 +20,7 @@ $scaling-factors: (
   'lg': 0.8,
   // 125% of base spacing on large devices
   'xl': 1
-    // 150% of base spacing on extra-large devices,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    // 150% of base spacing on extra-large devices,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 // Define maximum spacing value
 $max-spacing: 250;
@@ -99,5 +99,26 @@ $max-spacing: 250;
         }
       }
     }
+  }
+}
+
+.py-140 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  @include xl {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  @include lg {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include md {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include sm {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }

@@ -247,10 +247,6 @@
   margin-bottom: 30px;
   position: relative;
 
-  @include rmaxwd(991) {
-    margin-bottom: 40px;
-  }
-
   ul {
     padding-left: 0;
   }
@@ -287,6 +283,7 @@
       display: inline-block;
       width: 198px;
       height: 69px;
+      margin-bottom: 40px;
 
       a {
         img {

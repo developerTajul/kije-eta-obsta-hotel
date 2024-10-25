@@ -381,14 +381,26 @@
   padding-bottom: 75px;
   .checknow-form {
     padding-top: 154px;
-    @include lg {
-      padding-top: 0px;
-    }
+    // @include lg {
+    //   padding-top: 0px;
+    // }
     @include md {
       padding-top: 100px;
     }
     @include sm {
       padding-top: 40px;
+    }
+    form {
+      .select-container {
+        width: 100%;
+        .nice-select {
+          height: 49px;
+          padding: 16px 20px;
+          background-color: #564848;
+          color: #a19292;
+          border-radius: 0;
+        }
+      }
     }
   }
 }
@@ -400,6 +412,9 @@
     position: absolute;
     left: 117px;
     top: 70px;
+    @include rmaxwd(1700) {
+      display: none;
+    }
   }
   .section-title {
     @include sm {
@@ -418,7 +433,7 @@
   }
   .about-info-card {
     @include xl {
-      padding-left: 40px;
+      padding-left: 60px;
     }
     @include rmaxwd(1199) {
       margin-top: 40px;
@@ -431,12 +446,15 @@
     @include xl {
       gap: 40px;
     }
+    @include lg {
+      gap: 10px;
+    }
     @include rmaxwd(991) {
       gap: 10px;
     }
     @include sm {
       flex-direction: column;
-      gap: 20px;
+      gap: 30px;
       align-items: start;
     }
   }
@@ -480,8 +498,15 @@
 // Booking area
 .booking-area {
   position: relative;
+  @include xl {
+    padding-bottom: 70px;
+  }
+  @include lg {
+    padding-bottom: 70px;
+  }
   @include rmaxwd(991) {
     padding-top: 0;
+    padding-bottom: 80px;
   }
   .shape-wrapper {
     background-color: #f8f5f0;
@@ -491,6 +516,9 @@
     width: 1645px;
     height: 823px;
     z-index: -1;
+    @include rmaxwd(991) {
+      height: 800px;
+    }
     .shape {
       position: absolute;
       bottom: 0;
@@ -544,6 +572,7 @@
     border-radius: 10px;
     @include sm {
       padding: 24px 0 50px 0;
+      box-shadow: none;
     }
     .sub-title {
       font-size: 18px;
@@ -624,7 +653,14 @@
   }
   .about-us-area {
     @include rmaxwd(1199) {
-      margin-top: 30px;
+      margin-top: 70px;
+    }
+    .image-wrapper {
+      .main-img {
+        @include lg {
+          height: 450px;
+        }
+      }
     }
     .about-info-card {
       @include rmaxwd(1399) {
@@ -664,6 +700,7 @@
   }
   .room-card-slider-container {
     position: relative;
+    margin-top: 24px;
   }
   .drag-btn-wrapper {
     position: absolute;
@@ -803,7 +840,13 @@
     z-index: 1;
   }
   .card-wrapper {
-    margin-top: 46px;
+    margin-top: 16px;
+    @include sm {
+      margin-top: 10px;
+    }
+    .info-card {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -813,34 +856,30 @@
     padding-top: 54px;
   }
   .banner-text {
+    text-align: center;
     p {
-      transform: translate(-10%, -17%);
       letter-spacing: 32px;
 
       @include rmaxwd(1700) {
-        transform: translate(0%, -17%);
         letter-spacing: 23px;
       }
       @include rmaxwd(1200) {
-        transform: translate(-5%, -15%);
         letter-spacing: 24px;
       }
 
       // Max width for 992px (tablet)
       @include rmaxwd(992) {
-        transform: translate(-3%, -12%);
         letter-spacing: 20px;
       }
 
       // Max width for 768px (small tablet)
       @include rmaxwd(768) {
-        transform: translate(0, -10%);
         letter-spacing: 16px;
       }
       @include sm {
-        transform: translate(-0%, -10%);
         letter-spacing: 8px;
         font-size: 40px;
+        text-align: center;
       }
     }
   }
@@ -898,6 +937,9 @@
 .team-area {
   &.style-1 {
     position: relative;
+    @include sm {
+      padding-top: 90px;
+    }
     .shape {
       position: absolute;
       right: 50px;
@@ -1082,7 +1124,7 @@
         gap: 15px;
         margin-top: 100px;
       }
-      .btn {
+      a {
         color: $white;
         font-family: $heading-font;
         font-size: 30px;

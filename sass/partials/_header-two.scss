@@ -102,6 +102,7 @@
         @include rmaxwd(991) {
           visibility: visible;
           opacity: 1;
+          width: 100%;
           @include transition;
         }
       }
@@ -118,6 +119,9 @@
       }
     }
     .select-container {
+      .nice-select {
+        width: 80px;
+      }
       select {
         background: transparent;
         color: $white;

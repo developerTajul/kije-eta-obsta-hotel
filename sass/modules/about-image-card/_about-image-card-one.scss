@@ -17,7 +17,7 @@
           height: 500px;
         }
         @include sm {
-          width: 315px;
+          width: auto;
           margin-left: 12px;
           height: 450px;
         }
@@ -50,8 +50,8 @@
         }
         .shape {
           position: absolute;
-          bottom: 0;
-          right: 0;
+          bottom: -1px;
+          right: -1px;
         }
         .video-popup-btn {
           position: absolute;

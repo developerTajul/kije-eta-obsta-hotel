@@ -18,6 +18,18 @@
       color: $black;
       position: relative;
       display: inline-block;
+      @include xl {
+        font-size: 350px;
+      }
+      @include lg {
+        font-size: 250px;
+      }
+      @include md {
+        font-size: 150px;
+      }
+      @include sm {
+        font-size: 100px;
+      }
       &:before {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: $gray;
@@ -32,6 +44,18 @@
         left: 7px;
         top: 12px;
         z-index: -1;
+        @include xl {
+          font-size: 350px;
+        }
+        @include lg {
+          font-size: 250px;
+        }
+        @include md {
+          font-size: 150px;
+        }
+        @include sm {
+          font-size: 100px;
+        }
       }
     }
     .error-subtitle {
