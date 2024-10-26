@@ -475,9 +475,10 @@
           settings: {
             autoplay: true,
             slidesToShow: 1,
-            arrows: true,
+            arrows: false,
             variableWidth: false,
             speed: 1500,
+            dots: true,
           },
         },
       ],
@@ -968,7 +969,7 @@
         {
           breakpoint: 767,
           settings: {
-            autoplay: true,
+            autoplay: false,
             slidesToShow: 1,
             arrows: false,
             variableWidth: false,

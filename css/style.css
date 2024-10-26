@@ -81808,6 +81808,11 @@ body.admin-bar .header-area.style-7 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-2 .slider-wrapper-two .single-slider .slider-content-wrapper {
+    width: 100%;
+  }
+}
 .slider-area.style-2 .slider-wrapper-two .single-slider .slider-content-wrapper .slider-content .slider-short-title {
   font-size: 18px;
   font-style: normal;
@@ -81823,6 +81828,11 @@ body.admin-bar .header-area.style-7 {
 }
 .slider-area.style-2 .slider-wrapper-two .single-slider .slider-content-wrapper .slider-content .slider-title {
   text-transform: capitalize;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-2 .slider-wrapper-two .single-slider .slider-content-wrapper .slider-content .slider-title {
+    font-size: 48px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area.style-2 .slider-wrapper-two .single-slider .image-wrapper {
@@ -82746,6 +82756,11 @@ body.admin-bar .header-area.style-7 {
     height: 100%;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .info-card.style-2.image {
+    height: auto;
+  }
+}
 @media (max-width: 1199px) {
   .info-card.style-2.image img {
     height: 100%;
@@ -83201,8 +83216,8 @@ body.admin-bar .header-area.style-7 {
 }
 .about-image-card.style-2 .image-wrapper .main-img .shape {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -1px;
+  right: -1px;
   width: 97px;
   height: 327px;
 }
@@ -83502,8 +83517,8 @@ body.admin-bar .header-area.style-7 {
 }
 .about-image-card.style-3 .image-wrapper .main-img .shape {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -1px;
+  right: -1px;
   width: 68px;
   height: 237px;
 }
@@ -90908,10 +90923,98 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .testimonial-area .testimonial-slider {
     margin-top: -10px;
+    height: auto;
   }
 }
 .testimonial-area .testimonial-slider .slick-list {
   overflow: visible;
+}
+.testimonial-area .testimonial-slider .slick-dots {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  right: 14%;
+  transform: translateY(-50%);
+  z-index: 2;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1800px) {
+  .testimonial-area .testimonial-slider .slick-dots {
+    right: 5%;
+  }
+}
+@media (max-width: 991px) {
+  .testimonial-area .testimonial-slider .slick-dots {
+    gap: 20px;
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-area .testimonial-slider .slick-dots {
+    gap: 15px;
+    margin-top: 0;
+    transform: translateY(25%);
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-area .testimonial-slider .slick-dots {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .testimonial-area .testimonial-slider .slick-dots {
+    gap: 10px;
+    bottom: 40px;
+    flex-direction: row;
+    position: static;
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area .testimonial-slider .slick-dots {
+    flex-direction: column;
+  }
+}
+.testimonial-area .testimonial-slider .slick-dots li {
+  display: flex;
+  line-height: 0;
+  outline: 1px solid transparent;
+  border: 4px solid transparent;
+  border-radius: 50px;
+  transition: all 0.5s ease-out;
+}
+.testimonial-area .testimonial-slider .slick-dots li button {
+  font-size: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #808287;
+  border-radius: 50px;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.5s ease-out;
+}
+.testimonial-area .testimonial-slider .slick-dots li button:hover {
+  background-color: #ffffff;
+  transition: all 0.5s ease-out;
+}
+.testimonial-area .testimonial-slider .slick-dots li.slick-active {
+  transition: all 0.5s ease-out;
+  outline: 2px solid #ffffff;
+}
+.testimonial-area .testimonial-slider .slick-dots li.slick-active button {
+  width: 10px;
+  height: 10px;
+  transition: all 0.5s ease-out;
+}
+.testimonial-area .testimonial-slider .slick-dots li.slick-active button:before {
+  display: none;
 }
 .testimonial-area .testimonial-slider .testimonial-arrow-btn {
   position: absolute;
@@ -91347,6 +91450,11 @@ ul.children {
     transform: translate(50px, 0);
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room_and_suites.style-2 .banner-text {
+    transform: translate(10%, 0);
+  }
+}
 .room_and_suites.style-2 .banner-text p {
   transform: none;
 }
@@ -91370,6 +91478,11 @@ ul.children {
 }
 .room_and_suites.style-2 .room-card-wrapper-two .room-card {
   margin-top: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room_and_suites.style-2 .room-card-wrapper-two .room-card {
+    height: 550px;
+  }
 }
 .room_and_suites.style-2 .room-card-wrapper-two .slick-slide {
   margin: 0;
@@ -91414,6 +91527,9 @@ ul.children {
 }
 .service-area.style-2:before {
   display: none;
+}
+.service-area.style-2 .card-wrapper .info-card.style-2 {
+  margin-top: 0;
 }
 .service-area.style-2 .shape {
   position: absolute;
@@ -91489,11 +91605,12 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .price-area.style-1 .price-card-wrapper .price-card {
     position: relative;
+    width: 100%;
   }
 }
 
 .checknow-form.styel-2 {
-  margin-top: -120px;
+  margin-top: -80px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .checknow-form.styel-2 {
@@ -91507,9 +91624,22 @@ ul.children {
 .checknow-form.styel-2 .inner-wrapper form {
   box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
 }
-.checknow-form.styel-2 .inner-wrapper form .input-wrapper,
-.checknow-form.styel-2 .inner-wrapper form button {
-  flex: 1;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .checknow-form.styel-2 .inner-wrapper form .input-wrapper,
+  .checknow-form.styel-2 .inner-wrapper form button {
+    flex: 1;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .checknow-form.styel-2 .inner-wrapper form .input-wrapper,
+  .checknow-form.styel-2 .inner-wrapper form button {
+    flex: 1;
+  }
+}
+@media (max-width: 991px) {
+  .checknow-form.styel-2 .inner-wrapper form .date-container {
+    flex: 1;
+  }
 }
 .checknow-form.styel-2 .inner-wrapper form .select-container {
   width: 100%;
@@ -91556,6 +91686,11 @@ ul.children {
 .testimonial-slider-area.style-2 .bg-image img {
   width: 100%;
   height: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-slider-area.style-2 .section-title {
+    margin-bottom: 0;
+  }
 }
 .testimonial-slider-area.style-2 .slick-list {
   padding-top: 40px !important;
@@ -92729,6 +92864,12 @@ ul.children {
 .list-page-wrapper .sidebar {
   background-color: #f8f5f0;
   padding: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .list-page-wrapper .sidebar {
+    margin-top: 60px;
+    padding: 30px;
+  }
 }
 .list-page-wrapper .sidebar .sidebar-title {
   display: flex;
@@ -94753,6 +94894,12 @@ ul.children {
   transform: scaleY(0);
   transition: all 0.5s ease-out;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room-card .content-wrapper .inner-wrapper .rating {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
 .room-card .content-wrapper .inner-wrapper .rating .desc {
   display: flex;
   align-items: center;
@@ -94805,6 +94952,12 @@ ul.children {
   left: 60px;
   z-index: 1;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room-card.style-2 .count {
+    top: 30px;
+    left: 30px;
+  }
+}
 .room-card.style-2 .count p {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.4);
@@ -94843,6 +94996,12 @@ ul.children {
   -webkit-clip-path: none;
           clip-path: none;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room-card.style-3 {
+    flex-direction: column;
+    height: auto;
+  }
+}
 .room-card.style-3 .image-wrapper {
   position: unset;
   height: 100%;
@@ -94854,6 +95013,11 @@ ul.children {
   padding: 35px 0;
   position: unset;
   background-color: transparent;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .room-card.style-3 .content-wrapper {
+    padding: 0;
+  }
 }
 .room-card.style-3 .content-wrapper .inner-wrapper {
   position: unset;

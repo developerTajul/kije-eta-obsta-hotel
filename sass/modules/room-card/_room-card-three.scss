@@ -12,17 +12,27 @@
         clip-path: none;
       }
     }
+    @include sm {
+      flex-direction: column;
+      height: auto;
+    }
     .image-wrapper {
       position: unset;
       height: 100%;
       max-width: 450px;
       border-radius: 10px;
       overflow: hidden;
+      @include sm {
+        // min-height: 200px;
+      }
     }
     .content-wrapper {
       padding: 35px 0;
       position: unset;
       background-color: transparent;
+      @include sm {
+        padding: 0;
+      }
       .inner-wrapper {
         position: unset;
         width: auto;

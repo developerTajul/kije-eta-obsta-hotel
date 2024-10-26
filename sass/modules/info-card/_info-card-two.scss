@@ -14,6 +14,9 @@
       @include rmaxwd(1199) {
         height: 100%;
       }
+      @include sm {
+        height: auto;
+      }
       img {
         @include rmaxwd(1199) {
           height: 100%;

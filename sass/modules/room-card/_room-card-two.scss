@@ -6,6 +6,10 @@
       top: 60px;
       left: 60px;
       z-index: 1;
+      @include sm {
+        top: 30px;
+        left: 30px;
+      }
       p {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: rgba(255, 255, 255, 0.4);

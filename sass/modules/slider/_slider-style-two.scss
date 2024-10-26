@@ -52,6 +52,9 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          @include sm {
+            width: 100%;
+          }
           .slider-content {
             .slider-short-title {
               font-size: 18px;
@@ -66,6 +69,9 @@
             }
             .slider-title {
               text-transform: capitalize;
+              @include sm {
+                font-size: 48px;
+              }
             }
           }
         }

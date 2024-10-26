@@ -142,6 +142,9 @@
       @include rmaxwd(991) {
         transform: translate(50px, 0);
       }
+      @include sm {
+        transform: translate(10%, 0);
+      }
       p {
         transform: none;
         @include md {
@@ -161,6 +164,9 @@
       }
       .room-card {
         margin-top: 0;
+        @include sm {
+          height: 550px;
+        }
       }
       .slick-slide {
         margin: 0;
@@ -205,6 +211,13 @@
     position: relative;
     &:before {
       display: none;
+    }
+    .card-wrapper {
+      .info-card {
+        &.style-2 {
+          margin-top: 0;
+        }
+      }
     }
     .shape {
       position: absolute;
@@ -269,6 +282,7 @@
         }
         @include sm {
           position: relative;
+          width: 100%;
         }
       }
     }
@@ -278,7 +292,7 @@
 // Checknow form style-2
 .checknow-form {
   &.styel-2 {
-    margin-top: -120px;
+    margin-top: -80px;
     @include sm {
       transform: translateY(-0%);
       margin-top: 0;
@@ -287,9 +301,21 @@
       background-color: rgba(255, 255, 255, 0.2);
       form {
         box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
+        .input-wrapper {
+        }
         .input-wrapper,
         button {
-          flex: 1;
+          @include md {
+            flex: 1;
+          }
+          @include sm {
+            flex: 1;
+          }
+        }
+        .date-container {
+          @include rmaxwd(991) {
+            flex: 1;
+          }
         }
         .select-container {
           width: 100%;
@@ -334,6 +360,11 @@
       img {
         width: 100%;
         height: 100%;
+      }
+    }
+    .section-title {
+      @include sm {
+        margin-bottom: 0;
       }
     }
     .slick-list {

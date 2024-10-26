@@ -23,6 +23,10 @@
   .sidebar {
     background-color: #f8f5f0;
     padding: 50px;
+    @include md {
+      margin-top: 60px;
+      padding: 30px;
+    }
     .sidebar-title {
       display: flex;
       flex-direction: column;

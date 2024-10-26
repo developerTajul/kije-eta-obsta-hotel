@@ -115,7 +115,10 @@
         opacity: 0;
         transform: scaleY(0);
         @include transition;
-
+        @include sm {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
         .desc {
           display: flex;
           align-items: center;
