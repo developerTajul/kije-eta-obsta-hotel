@@ -27,12 +27,12 @@
   width: 100%;
 }
 .nice-select:hover {
-  border-color: #005bac;
+  /* border-color: #005bac; */
 }
 .nice-select:active,
 .nice-select.open,
 .nice-select:focus {
-  border-color: #005bac;
+  /* border-color: #005bac; */
 }
 .nice-select:after {
   border-width: 0 5.5px 7px 5.5px;

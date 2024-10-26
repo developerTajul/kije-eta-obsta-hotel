@@ -81265,7 +81265,6 @@ body.admin-bar .header-area.style-7 {
 }
 
 .slider-area {
-  overflow: hidden;
   position: relative;
   z-index: 2;
   height: auto;
@@ -90593,7 +90592,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .booking-area .booking-form {
-    padding: 24px 0 50px 0;
+    padding: 24px 0 0px 0;
     box-shadow: none;
   }
 }
@@ -90898,7 +90897,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .testimonial-area .banner-text p {
     letter-spacing: 8px;
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
   }
 }
@@ -90907,7 +90906,7 @@ ul.children {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
-  margin-top: -90px;
+  margin-top: -65px;
   overflow: hidden;
 }
 @media (max-width: 1699px) {
@@ -90922,7 +90921,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .testimonial-area .testimonial-slider {
-    margin-top: -10px;
+    margin-top: 10px;
     height: auto;
   }
 }
@@ -93854,15 +93853,20 @@ ul.children {
 }
 .footer-widget .footer-widget-info p {
   color: #ffffff;
-  margin-bottom: 40px;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 40px;
 }
 @media (min-width: 1400px) {
   .footer-widget .footer-widget-info p {
     padding-right: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer-widget .footer-widget-info p {
+    margin-bottom: 20px;
   }
 }
 .footer-widget .footer-widget-info .footer-logo {
@@ -93870,6 +93874,11 @@ ul.children {
   width: 198px;
   height: 69px;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer-widget .footer-widget-info .footer-logo {
+    margin-bottom: 20px;
+  }
 }
 .footer-widget .footer-widget-info .footer-logo a img {
   -o-object-fit: cover;
@@ -95129,6 +95138,11 @@ ul.children {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .blog-card .content-wrapper .title-wrapper {
     padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-card .content-wrapper .title-wrapper {
+    padding-bottom: 11px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
