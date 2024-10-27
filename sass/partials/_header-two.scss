@@ -120,7 +120,12 @@
     }
     .select-container {
       .nice-select {
-        width: 80px;
+        width: 60px;
+        background-color: transparent;
+        color: $white;
+        &:after {
+          color: $white;
+        }
       }
       select {
         background: transparent;

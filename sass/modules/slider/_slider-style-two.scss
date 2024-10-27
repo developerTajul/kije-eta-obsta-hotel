@@ -1,7 +1,7 @@
 .slider-area {
   &.style-2 {
     padding-top: 230px;
-    padding-bottom: 130px;
+    padding-bottom: 102px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,11 +22,13 @@
       left: 0;
       bottom: unset;
       right: unset;
+      z-index: 1;
     }
     .shape-two {
       position: absolute;
       bottom: 0;
       left: 0;
+      z-index: 1;
     }
     .slider-outer-wrapper {
       position: relative;
@@ -126,8 +128,8 @@
             height: 33px;
           }
           button {
-            width: 108px;
-            height: 108px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             overflow: hidden;
             position: relative;

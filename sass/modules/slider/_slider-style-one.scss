@@ -473,7 +473,7 @@
 
         &.slick-active {
           @include transition;
-          outline: 2px solid $white;
+          outline: 1px solid $gray;
 
           button {
             width: 10px;

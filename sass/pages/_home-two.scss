@@ -32,6 +32,7 @@
         line-height: 30px;
         color: $primary-color;
         span {
+          font-family: $body-font;
           font-size: 18px;
           font-style: normal;
           font-weight: 500;
@@ -95,6 +96,7 @@
   &.style-2 {
     position: relative;
     overflow: hidden;
+    padding-bottom: 160px;
     @include xl {
       padding-bottom: 120px;
     }

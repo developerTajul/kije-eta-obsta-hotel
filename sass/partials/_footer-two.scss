@@ -84,8 +84,13 @@
 
     @include lg {
       grid-template-columns: repeat(3, 1fr);
+      width: 100%;
     }
-    @include rmaxwd(767) {
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+    }
+    @include sm {
       grid-template-columns: repeat(2, 1fr);
       width: auto !important;
     }

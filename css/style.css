@@ -80540,7 +80540,12 @@ ol li a:hover {
   color: #aa8453;
 }
 .header-area.style-2 .select-container .nice-select {
-  width: 80px;
+  width: 60px;
+  background-color: transparent;
+  color: #ffffff;
+}
+.header-area.style-2 .select-container .nice-select:after {
+  color: #ffffff;
 }
 .header-area.style-2 .select-container select {
   background: transparent;
@@ -81735,7 +81740,7 @@ body.admin-bar .header-area.style-7 {
 .slider-area .slider-wrapper .slick-dots li.slick-active,
 .slider-area .slider-wrapper-two .slick-dots li.slick-active {
   transition: all 0.5s ease-out;
-  outline: 2px solid #ffffff;
+  outline: 1px solid #808287;
 }
 .slider-area .slider-wrapper .slick-dots li.slick-active button,
 .slider-area .slider-wrapper-two .slick-dots li.slick-active button {
@@ -81750,7 +81755,7 @@ body.admin-bar .header-area.style-7 {
 
 .slider-area.style-2 {
   padding-top: 230px;
-  padding-bottom: 130px;
+  padding-bottom: 102px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -81774,11 +81779,13 @@ body.admin-bar .header-area.style-7 {
   left: 0;
   bottom: unset;
   right: unset;
+  z-index: 1;
 }
 .slider-area.style-2 .shape-two {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 .slider-area.style-2 .slider-outer-wrapper {
   position: relative;
@@ -81897,8 +81904,8 @@ body.admin-bar .header-area.style-7 {
   }
 }
 .slider-area.style-2 .slider-wrapper-two .slick-dots li button {
-  width: 108px;
-  height: 108px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -91328,6 +91335,7 @@ ul.children {
   color: #aa8453;
 }
 .video-popup-area.style-1 .section-title .para span {
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -91389,6 +91397,7 @@ ul.children {
 .room_and_suites.style-2 {
   position: relative;
   overflow: hidden;
+  padding-bottom: 160px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .room_and_suites.style-2 {
@@ -94413,9 +94422,16 @@ ul.children {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer .widget-instagram-feed {
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer .widget-instagram-feed {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .footer .widget-instagram-feed {
     grid-template-columns: repeat(2, 1fr);
     width: auto !important;
@@ -94642,6 +94658,21 @@ ul.children {
   display: none;
 }
 
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Firefox */
+input[type=date] {
+  -moz-appearance: textfield;
+}
+
+/* Internet Explorer */
+input[type=date]::-ms-clear {
+  display: none;
+}
+
 .checknow-form .inner-wrapper {
   padding: 20px;
   background-color: rgba(63, 63, 63, 0.5);
@@ -94752,8 +94783,15 @@ ul.children {
   display: none;
   -webkit-appearance: none;
 }
+.checknow-form form .input-wrapper input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
 .checknow-form form .input-wrapper input[type=date]::-moz-calendar-picker-indicator {
   display: none;
+}
+.checknow-form form .input-wrapper input[type=date] {
+  -moz-appearance: textfield;
 }
 .checknow-form form .input-wrapper input[type=date]::-ms-clear {
   display: none;
