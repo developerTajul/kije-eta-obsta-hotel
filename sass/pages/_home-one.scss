@@ -692,6 +692,9 @@
   background-color: #f8f5f0;
   .banner-text {
     margin-top: -40px;
+    @include sm {
+      margin-top: -25px;
+    }
   }
   .section-title {
     // margin-bottom: 60px !important;

@@ -82,8 +82,8 @@
     grid-gap: 12px;
     width: 240px;
 
-    @media only screen and (min-width: 992px) and (max-width: 1280px) {
-      grid-template-columns: repeat(2, 1fr);
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
     }
     @include rmaxwd(767) {
       grid-template-columns: repeat(2, 1fr);
