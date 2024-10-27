@@ -140,15 +140,25 @@
       transform: translate(50px, 50px);
       @include rmaxwd(1399) {
         transform: translate(50px, 30px);
+        color: $white;
       }
       @include rmaxwd(991) {
         transform: translate(50px, 0);
+        display: none;
+        color: $white;
       }
       @include sm {
         transform: translate(6%, 0);
+        display: none;
       }
       p {
         transform: none;
+        @include lg {
+          color: $white;
+        }
+        @include rmaxwd(1866) {
+          color: $white;
+        }
         @include md {
           font-size: 100px;
           transform: translate(0, 10%);
@@ -246,7 +256,7 @@
       padding: 80px 0;
     }
     &:before {
-      content: '';
+      content: "";
       background-color: rgba(49, 43, 43, 0.8);
       position: absolute;
       left: 0;
@@ -373,12 +383,19 @@
       // overflow: visible;
       padding-top: 40px !important;
       padding-bottom: 40px !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
       .slick-track {
-        margin-left: -12px;
+        margin-left: -32px;
         // .slick-slide {
         //   width: calc(100% / 3) !important; /* 3 items should fit the width */
         //   max-width: 33.33%;
         // }
+        .slick-center {
+          &:after {
+            background-color: $primary-color;
+          }
+        }
       }
       .slick-active &:nth-child(2) {
         // Add your custom styles here
@@ -388,7 +405,8 @@
         // Any other styles you want to apply
       }
       .testimonial-card {
-        margin-left: 12px;
+        margin-left: 32px;
+        // min-width: 420px;
       }
     }
     .testimonial-card {
@@ -480,6 +498,13 @@
 .project-area {
   &.style-1 {
     overflow: hidden;
+    position: relative;
+    .outer-shape {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 3;
+    }
     .section-title-wrapper {
       position: relative;
       width: 100%;
@@ -491,7 +516,7 @@
       width: 102%;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: -100%;
@@ -560,11 +585,12 @@
 // subscribe-area
 .subscribe-area {
   &.style-1 {
-    max-height: 621px;
+    min-height: 621px;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
     .subscribe-form-widget {
       max-width: 451px;
       width: 100%;
@@ -578,6 +604,8 @@
       justify-content: center;
       gap: 20px;
       text-align: center;
+      position: absolute;
+      top: 0;
       @include sm {
         padding: 0 15px;
       }
