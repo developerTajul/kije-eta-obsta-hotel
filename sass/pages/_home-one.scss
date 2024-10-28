@@ -379,6 +379,9 @@
 
 .slider-area {
   padding-bottom: 75px;
+  @include sm {
+    padding-bottom: 60px;
+  }
   .checknow-form {
     padding-top: 154px;
     // @include lg {
@@ -605,7 +608,7 @@
           margin-bottom: 10px;
         }
 
-        input[type='date'],
+        input[type="date"],
         select {
           width: 100%;
           padding: 12px;
@@ -833,7 +836,7 @@
   background-position: center;
   position: relative;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1181,6 +1184,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      @include sm {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
       .shape {
         position: absolute;
         top: 0;
@@ -1275,5 +1282,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    @include sm {
+      display: none;
+    }
   }
 }

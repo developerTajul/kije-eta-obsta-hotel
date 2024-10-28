@@ -8,6 +8,9 @@
     @include rmaxwd(991) {
       padding-top: 100px;
     }
+    @include sm {
+      padding-bottom: 60px;
+    }
     .overlay {
       position: absolute;
       width: 100%;
@@ -42,6 +45,9 @@
       .single-slider-wrapper {
         @include rmaxwd(991) {
           padding-top: 90px;
+        }
+        @include sm {
+          padding-top: 60px;
         }
       }
       .single-slider {

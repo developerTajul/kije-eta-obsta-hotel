@@ -578,6 +578,8 @@
           breakpoint: 776,
           settings: {
             slidesToShow: 1,
+            dots: true,
+            arrows: false,
           },
         },
       ],

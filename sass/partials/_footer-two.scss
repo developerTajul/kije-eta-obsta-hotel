@@ -93,6 +93,7 @@
     @include sm {
       grid-template-columns: repeat(2, 1fr);
       width: auto !important;
+      gap: 0;
     }
     .single-instagram-feed {
       width: 177px;
@@ -101,7 +102,7 @@
       position: relative;
       flex-shrink: 0;
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;

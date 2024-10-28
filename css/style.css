@@ -81380,6 +81380,11 @@ body.admin-bar .header-area.style-7 {
   background-color: transparent;
   z-index: -1;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area .shape {
+    display: none;
+  }
+}
 .slider-area .slider-bg {
   position: absolute;
   top: 0;
@@ -81869,6 +81874,11 @@ body.admin-bar .header-area.style-7 {
     padding-top: 100px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-2 {
+    padding-bottom: 60px;
+  }
+}
 .slider-area.style-2 .overlay {
   position: absolute;
   width: 100%;
@@ -81902,6 +81912,11 @@ body.admin-bar .header-area.style-7 {
 @media (max-width: 991px) {
   .slider-area.style-2 .slider-wrapper-two .single-slider-wrapper {
     padding-top: 90px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area.style-2 .slider-wrapper-two .single-slider-wrapper {
+    padding-top: 60px;
   }
 }
 .slider-area.style-2 .slider-wrapper-two .single-slider {
@@ -90488,6 +90503,11 @@ ul.children {
 .slider-area {
   padding-bottom: 75px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area {
+    padding-bottom: 60px;
+  }
+}
 .slider-area .checknow-form {
   padding-top: 154px;
 }
@@ -91314,6 +91334,12 @@ ul.children {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .feature-and-facilities.style-1 .inner-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .feature-and-facilities.style-1 .inner-wrapper .shape {
   position: absolute;
   top: 0;
@@ -91406,6 +91432,11 @@ ul.children {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .bottom-image {
+    display: none;
+  }
 }
 
 .video-popup-area.style-1 {
@@ -91527,7 +91558,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .room_and_suites.style-2 {
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 }
 .room_and_suites.style-2 .section-title {
@@ -91690,7 +91721,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .price-area.style-1 {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 }
 .price-area.style-1:before {
@@ -91756,6 +91787,11 @@ ul.children {
 .checknow-form.styel-2 .inner-wrapper {
   background-color: rgba(255, 255, 255, 0.2);
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .checknow-form.styel-2 .inner-wrapper {
+    padding-top: 60px;
+  }
+}
 .checknow-form.styel-2 .inner-wrapper form {
   box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
 }
@@ -91807,7 +91843,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .testimonial-slider-area.style-2 {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 56px;
   }
 }
 .testimonial-slider-area.style-2 .bg-image {
@@ -91876,6 +91912,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-us-area.style-3 {
     padding-bottom: 60px;
+    padding-top: 40px;
   }
 }
 .about-us-area.style-3 .bg-image {
@@ -91925,6 +91962,12 @@ ul.children {
 .project-area.style-1 {
   overflow: hidden;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-area.style-1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .project-area.style-1 .outer-shape {
   position: absolute;
@@ -92009,8 +92052,93 @@ ul.children {
 .project-area.style-1 .slick-list {
   overflow: visible;
 }
+.project-area.style-1 .slick-dots {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  transform: translateY(-50%);
+  z-index: 20;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+@media (max-width: 1800px) {
+  .project-area.style-1 .slick-dots {
+    right: 5%;
+  }
+}
+@media (max-width: 991px) {
+  .project-area.style-1 .slick-dots {
+    gap: 20px;
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .project-area.style-1 .slick-dots {
+    gap: 15px;
+    margin-top: 0;
+    transform: translateY(25%);
+  }
+}
+@media (max-width: 575px) {
+  .project-area.style-1 .slick-dots {
+    gap: 10px;
+    bottom: 40px;
+    flex-direction: row;
+    position: static;
+    left: 0;
+    right: 0;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-area.style-1 .slick-dots {
+    flex-direction: column;
+  }
+}
+.project-area.style-1 .slick-dots li {
+  display: flex;
+  line-height: 0;
+  outline: 1px solid transparent;
+  border: 4px solid transparent;
+  border-radius: 50px;
+  transition: all 0.5s ease-out;
+}
+.project-area.style-1 .slick-dots li button {
+  font-size: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #aa8453;
+  border-radius: 50px;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.5s ease-out;
+}
+.project-area.style-1 .slick-dots li button:hover {
+  background-color: #ffffff;
+  transition: all 0.5s ease-out;
+}
+.project-area.style-1 .slick-dots li.slick-active {
+  transition: all 0.5s ease-out;
+  outline: 1px solid #808287;
+}
+.project-area.style-1 .slick-dots li.slick-active button {
+  width: 10px;
+  height: 10px;
+  transition: all 0.5s ease-out;
+}
+.project-area.style-1 .slick-dots li.slick-active button:before {
+  display: none;
+}
 
-.subscribe-area.style-1 {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .subscribe-area.style-1 {
+    padding-top: 96px;
+  }
+}
+.subscribe-area.style-1 .inner-wrapper {
   min-height: 621px;
   height: 100%;
   background-repeat: no-repeat;
@@ -92037,6 +92165,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .subscribe-area.style-1 .subscribe-form-widget {
     padding: 0 15px;
+    max-width: 350px;
   }
 }
 .subscribe-area.style-1 .subscribe-form-widget .short-title {
@@ -93835,6 +93964,12 @@ ul.children {
 .footer .footer-sec {
   padding-top: 80px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .footer-sec {
+    padding-top: 60px;
+    padding-bottom: 54px;
+  }
+}
 .footer .footer-sec hr {
   margin: 30px 0 0 0;
 }
@@ -94581,6 +94716,7 @@ ul.children {
   .footer .widget-instagram-feed {
     grid-template-columns: repeat(2, 1fr);
     width: auto !important;
+    gap: 0;
   }
 }
 .footer .widget-instagram-feed .single-instagram-feed {
