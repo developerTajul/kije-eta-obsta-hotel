@@ -1,6 +1,10 @@
 .list-item-wrapper-outer {
   display: flex;
   gap: 108px;
+  flex-wrap: wrap;
+  @include sm {
+    gap: 30px;
+  }
 }
 .list-item-wrapper {
   display: flex;
@@ -8,7 +12,7 @@
   gap: 15px;
   padding: 0;
   list-style: none;
-
+  margin-bottom: 0;
   @include sm {
     gap: 10px;
   }

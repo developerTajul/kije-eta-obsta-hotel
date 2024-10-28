@@ -1,5 +1,13 @@
 // List page wrapper
 .list-page-wrapper {
+  @include sm {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  &.details-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .btn-wrapper {
     display: flex;
     align-items: center;
@@ -26,6 +34,12 @@
     @include md {
       margin-top: 60px;
       padding: 30px;
+    }
+    @include sm {
+      padding: 30px;
+      margin-top: 60px;
+      // margin-bottom: 60px;
+      // margin-top: 60px;
     }
     .sidebar-title {
       display: flex;
@@ -73,9 +87,9 @@
         letter-spacing: 2.1px;
         background-color: $white;
       }
-      input[type='date'] {
+      input[type="date"] {
         color: #a19292;
-        font-family: 'Barlow Condensed';
+        font-family: "Barlow Condensed";
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -107,7 +121,7 @@
           }
         }
         &:before {
-          content: '\f107';
+          content: "\f107";
           font-size: 12px;
           position: absolute;
           font-family: $font-awesome;
@@ -146,7 +160,7 @@
         position: relative;
         width: 100%;
 
-        input[type='range'] {
+        input[type="range"] {
           -webkit-appearance: none;
           appearance: none;
           position: absolute;
@@ -204,7 +218,7 @@
 
         cursor: pointer;
 
-        input[type='checkbox'] {
+        input[type="checkbox"] {
           display: none; // Hide the default checkbox
         }
 
@@ -220,7 +234,7 @@
           transition: background-color 0.3s ease, border-color 0.3s ease;
 
           &:after {
-            content: '';
+            content: "";
             position: absolute;
             left: 4px;
             top: 4px;
@@ -235,7 +249,7 @@
           }
         }
 
-        input[type='checkbox']:checked + .checkmark {
+        input[type="checkbox"]:checked + .checkmark {
           background-color: $white; // Brown fill when checked
           border-color: $primary-color;
 
@@ -269,6 +283,9 @@
   &.details-page {
     .tab-slider {
       position: relative;
+      @include sm {
+        margin-bottom: 60px;
+      }
       .tab-btn {
         position: absolute;
         top: 40%;
@@ -305,8 +322,9 @@
         }
         @include sm {
           position: absolute;
-          left: unset;
-          bottom: 42px;
+          left: 0;
+          bottom: -50px;
+          width: 100%;
         }
         li {
           display: flex;
@@ -314,6 +332,10 @@
           justify-content: center;
           width: 220px;
           height: 150px;
+          @include sm {
+            height: auto;
+            width: 100%;
+          }
           button {
             width: 220px;
             height: 150px;
@@ -324,8 +346,8 @@
               height: 60px;
             }
             @include sm {
-              width: 30px;
-              height: 30px;
+              width: 100%;
+              height: 40px;
             }
             img {
               width: 100%;

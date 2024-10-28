@@ -65,8 +65,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @include sm {
+    margin: 60px 0;
+  }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -126,7 +129,7 @@
       }
 
       &:before {
-        content: '\f068';
+        content: "\f068";
         font-size: 12px;
         font-family: $font-awesome;
         display: inline-flex;
