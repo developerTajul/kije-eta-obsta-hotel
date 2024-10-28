@@ -1,62 +1,62 @@
 (function ($) {
-  "use strict";
+  'use strict';
   $(document).ready(function () {
     /*
         Window Load
         ============================*/
     window.onload = new (function () {
-      $("#preloader").fadeOut();
-      $("#preloader-status").delay(200).fadeOut("slow");
-      $("body").delay(200).css({ "overflow-x": "hidden" });
+      $('#preloader').fadeOut();
+      $('#preloader-status').delay(200).fadeOut('slow');
+      $('body').delay(200).css({ 'overflow-x': 'hidden' });
     })();
     /*
        Jquery Mobile Menu
        ============================*/
-    $("#main-menu").meanmenu({
-      meanMenuContainer: ".mobile-nav-menu",
-      meanScreenWidth: "991",
+    $('#main-menu').meanmenu({
+      meanMenuContainer: '.mobile-nav-menu',
+      meanScreenWidth: '991',
       meanExpand: ['<i class="fal fa-plus"></i>'],
     });
 
     /*
        Jquery Header Search
        ============================*/
-    $(".search-btn").on("click", function (e) {
+    $('.search-btn').on('click', function (e) {
       e.preventDefault();
-      $("body").css("overflow", "hidden");
+      $('body').css('overflow', 'hidden');
 
-      $(".search-form-wrapper").addClass("active");
+      $('.search-form-wrapper').addClass('active');
     });
-    $(".search-close").on("click", function (e) {
+    $('.search-close').on('click', function (e) {
       e.preventDefault();
-      $("body").css("overflow", "auto");
-      $(".search-form-wrapper").removeClass("active");
+      $('body').css('overflow', 'auto');
+      $('.search-form-wrapper').removeClass('active');
     });
 
     window.onclick = function (e) {
-      if (e.target.matches(".search-form-wrapper")) {
-        $(".search-form-wrapper").removeClass("active");
+      if (e.target.matches('.search-form-wrapper')) {
+        $('.search-form-wrapper').removeClass('active');
       }
     };
 
     /*
        Jquery Sidebar Toggle
        ============================*/
-    $(".mobile-menu-toggle-btn").on("click", function () {
-      $(".menu-sidebar-area").addClass("active");
-      $(".body-overlay").addClass("active");
+    $('.mobile-menu-toggle-btn').on('click', function () {
+      $('.menu-sidebar-area').addClass('active');
+      $('.body-overlay').addClass('active');
     });
-    $(".menu-sidebar-close-btn").on("click", function () {
-      $(".menu-sidebar-area").removeClass("active");
-      $(".body-overlay").removeClass("active");
+    $('.menu-sidebar-close-btn').on('click', function () {
+      $('.menu-sidebar-area').removeClass('active');
+      $('.body-overlay').removeClass('active');
     });
 
     /*
        Jquery Body Overlay
        ============================*/
-    $(".body-overlay").on("click", function () {
-      $(".menu-sidebar-area").removeClass("active");
-      $(".body-overlay").removeClass("active");
+    $('.body-overlay').on('click', function () {
+      $('.menu-sidebar-area').removeClass('active');
+      $('.body-overlay').removeClass('active');
     });
     /*
         Stikey Js
@@ -106,30 +106,30 @@
       );
 
       if (100 < $(window).scrollTop()) {
-        $(".header-menu-area.sticky-header").addClass("sticky_menu");
+        $('.header-menu-area.sticky-header').addClass('sticky_menu');
       }
       if (100 < $(window).scrollTop()) {
       }
 
       if (height > 1400) {
-        const nav = $(".header-menu-area.sticky-header");
+        const nav = $('.header-menu-area.sticky-header');
         let scrolled = false;
 
         $(window).scroll(function () {
           if (100 < $(window).scrollTop() && !scrolled) {
             nav
-              .addClass("sticky_menu animated fadeIn")
-              .animate({ "margin-top": "0px" }, 300); // 300 milliseconds for smooth scroll
+              .addClass('sticky_menu animated fadeIn')
+              .animate({ 'margin-top': '0px' }, 300); // 300 milliseconds for smooth scroll
             scrolled = true;
-            $(".hamburger-left").addClass("hide");
+            $('.hamburger-left').addClass('hide');
           }
 
           if (100 > $(window).scrollTop() && scrolled) {
             nav
-              .removeClass("sticky_menu animated fadeIn")
-              .css("margin-top", "0px");
+              .removeClass('sticky_menu animated fadeIn')
+              .css('margin-top', '0px');
             scrolled = false;
-            $(".hamburger-left").removeClass("hide");
+            $('.hamburger-left').removeClass('hide');
           }
         });
       }
@@ -138,7 +138,7 @@
     /*
         Client Logo Slider
         ============================*/
-    $(".client-logo-slider-wrapper").slick({
+    $('.client-logo-slider-wrapper').slick({
       slidesToShow: 5,
       infinite: true,
       autoplay: false,
@@ -182,44 +182,44 @@
         },
       ],
     });
-    var minRange = $("#minRange");
-    var maxRange = $("#maxRange");
+    var minRange = $('#minRange');
+    var maxRange = $('#maxRange');
 
     // Set initial values for min and max price
     var minPrice = minRange.val();
     var maxPrice = maxRange.val();
 
     // Update displayed values
-    $("#minPrice").text("$" + minPrice);
-    $("#maxPrice").text("$" + maxPrice);
+    $('#minPrice').text('$' + minPrice);
+    $('#maxPrice').text('$' + maxPrice);
 
     // Update the price values dynamically
-    minRange.on("input", function () {
+    minRange.on('input', function () {
       if (parseInt(minRange.val()) > parseInt(maxRange.val())) {
         minRange.val(maxRange.val());
       }
-      $("#minPrice").text("$" + minRange.val());
+      $('#minPrice').text('$' + minRange.val());
     });
 
-    maxRange.on("input", function () {
+    maxRange.on('input', function () {
       if (parseInt(maxRange.val()) < parseInt(minRange.val())) {
         maxRange.val(minRange.val());
       }
-      $("#maxPrice").text("$" + maxRange.val());
+      $('#maxPrice').text('$' + maxRange.val());
     });
     /*
         Portfolio Hover
         ============================*/
-    $(".portfolio-showscreen").each(function () {
-      const item = $(this).find(".portfolio-card");
-      const img = $(this).find(".tabimg");
-      item.on("mouseenter", function () {
-        const tab_id = $(this).attr("data-tab");
-        item.removeClass("active");
-        $(this).addClass("active");
-        img.removeClass("active");
-        $("#" + tab_id).addClass("active");
-        if ($(this).hasClass("active")) {
+    $('.portfolio-showscreen').each(function () {
+      const item = $(this).find('.portfolio-card');
+      const img = $(this).find('.tabimg');
+      item.on('mouseenter', function () {
+        const tab_id = $(this).attr('data-tab');
+        item.removeClass('active');
+        $(this).addClass('active');
+        img.removeClass('active');
+        $('#' + tab_id).addClass('active');
+        if ($(this).hasClass('active')) {
           return false;
         }
       });
@@ -228,7 +228,7 @@
     /*
         Jquery Empty Post Content Hide
         ============================*/
-    $(".blog-area .post-content p")
+    $('.blog-area .post-content p')
       .filter(function () {
         return /\u00A0/.test($(this).text());
       })
@@ -237,32 +237,32 @@
     /*
         Skill Progress Bar Js
         ============================*/
-    $(".skill-progress-card").each(function () {
+    $('.skill-progress-card').each(function () {
       let section = $(this);
-      section.one("inview", function (event, isInView) {
+      section.one('inview', function (event, isInView) {
         if (isInView) {
-          section.find(".progress-inner").each(function () {
+          section.find('.progress-inner').each(function () {
             $(this)
-              .find(".progress-content")
+              .find('.progress-content')
               .animate(
                 {
-                  width: $(this).attr("data-percentage"),
+                  width: $(this).attr('data-percentage'),
                 },
                 2000
               );
             $(this)
-              .find(".progress-number-count")
+              .find('.progress-number-count')
               .animate(
                 {
-                  left: $(this).attr("data-percentage"),
+                  left: $(this).attr('data-percentage'),
                 },
                 {
                   duration: 2000,
                   step: function (now) {
                     let data = Math.round(now);
                     $(this)
-                      .find(".progress-percent")
-                      .html(data + "%");
+                      .find('.progress-percent')
+                      .html(data + '%');
                   },
                 }
               );
@@ -274,9 +274,9 @@
     /*
        Slider
        ============================*/
-    $(".slider-wrapper-two").on("init", function (event, slick) {
+    $('.slider-wrapper-two').on('init', function (event, slick) {
       // Modify the slick dots after they are initialized
-      $(".slick-dots li button").each(function (index) {
+      $('.slick-dots li button').each(function (index) {
         $(this).html(
           '<img src="images/hero-section/v-2/dot-img-' +
             (index + 1) +
@@ -285,7 +285,7 @@
         );
       });
     });
-    $(".slider-wrapper").slick({
+    $('.slider-wrapper').slick({
       slidesToShow: 1,
       infinite: true,
       autoplay: false,
@@ -312,7 +312,7 @@
         },
       ],
     });
-    $(".slider-wrapper-two").slick({
+    $('.slider-wrapper-two').slick({
       slidesToShow: 1,
       infinite: true,
       autoplay: false,
@@ -342,7 +342,7 @@
     /*
         Hero Gallery Slider
         ============================*/
-    $(".hero-gallery-slider").slick({
+    $('.hero-gallery-slider').slick({
       slidesToShow: 3,
       infinite: true,
       autoplay: true,
@@ -399,7 +399,7 @@
     /*
        Info Card Slider
        ============================*/
-    $("#info_card_slider_wrapper").slick({
+    $('#info_card_slider_wrapper').slick({
       slidesToShow: 3,
       infinite: true,
       autoplay: true,
@@ -433,7 +433,7 @@
     /*
        Testimonial Slider
        ============================*/
-    $(".testimonial-slider").slick({
+    $('.testimonial-slider').slick({
       slidesToShow: 1,
       infinite: true,
       autoplay: false,
@@ -493,24 +493,24 @@
     //   e.preventDefault();
     //   $("#testimonial_style_one .slick-next").trigger("click");
     // });
-    $(".testimonial-slider-wrapper").on(
-      "init afterChange",
+    $('.testimonial-slider-wrapper').on(
+      'init afterChange',
       function (event, slick, currentSlide) {
         // Calculate the center slide index
         const centerSlide =
           Math.floor(slick.options.slidesToShow / 2) + currentSlide;
 
         // Remove the center class from all slides first
-        $(".testimonial-card").removeClass("center-slide");
+        $('.testimonial-card').removeClass('center-slide');
 
         // Add the center class to the center slide
-        slick.$slides.eq(centerSlide).addClass("center-slide");
+        slick.$slides.eq(centerSlide).addClass('center-slide');
       }
     );
     /*
         Testimonial Slider
         ============================*/
-    $(".testimonial-slider-wrapper").slick({
+    $('.testimonial-slider-wrapper').slick({
       slidesToShow: 3,
       infinite: true,
       autoplay: false,
@@ -534,19 +534,19 @@
       ],
     });
 
-    $("#testimonial_two_prev_btn").on("click", function (e) {
+    $('#testimonial_two_prev_btn').on('click', function (e) {
       e.preventDefault();
-      $("#testimonial_style_two .slick-prev").trigger("click");
+      $('#testimonial_style_two .slick-prev').trigger('click');
     });
-    $("#testimonial_two_next_btn").on("click", function (e) {
+    $('#testimonial_two_next_btn').on('click', function (e) {
       e.preventDefault();
-      $("#testimonial_style_two .slick-next").trigger("click");
+      $('#testimonial_style_two .slick-next').trigger('click');
     });
 
     /*
         Project Card Slider
         ============================*/
-    $(".project-slider").slick({
+    $('.project-slider').slick({
       slidesToShow: 2,
       infinite: true,
       autoplay: true,
@@ -588,7 +588,7 @@
     /*
        Feature Slider JS
        ============================*/
-    $(".feature-slider-wrapper").slick({
+    $('.feature-slider-wrapper').slick({
       slidesToShow: 3,
       infinite: true,
       autoplay: true,
@@ -619,7 +619,7 @@
     /*
         Post Card Slider
         ============================*/
-    $("#post_card_slider_wrapper").slick({
+    $('#post_card_slider_wrapper').slick({
       slidesToShow: 3,
       infinite: true,
       autoplay: true,
@@ -653,19 +653,19 @@
       ],
     });
 
-    $(".latest-posts-area .slider-nav-prev-btn").on("click", function (e) {
+    $('.latest-posts-area .slider-nav-prev-btn').on('click', function (e) {
       e.preventDefault();
-      $("#post_card_slider_wrapper .slick-prev").trigger("click");
+      $('#post_card_slider_wrapper .slick-prev').trigger('click');
     });
-    $(".latest-posts-area .slider-nav-next-btn").on("click", function (e) {
+    $('.latest-posts-area .slider-nav-next-btn').on('click', function (e) {
       e.preventDefault();
-      $("#post_card_slider_wrapper .slick-next").trigger("click");
+      $('#post_card_slider_wrapper .slick-next').trigger('click');
     });
 
     /*
        Related Portfolio Slider
        ============================*/
-    $("#related_portfolio")
+    $('#related_portfolio')
       .slick({
         slidesToShow: 3,
         infinite: true,
@@ -702,16 +702,16 @@
           },
         ],
       })
-      .on("setPosition", function (event, slick) {
-        slick.$slides.css("height", slick.$slides.width() + "px");
+      .on('setPosition', function (event, slick) {
+        slick.$slides.css('height', slick.$slides.width() + 'px');
       });
 
     /*
        Post Gallery Slider
        ============================*/
-    $(".tab-slider").on("init", function (event, slick) {
+    $('.tab-slider').on('init', function (event, slick) {
       // Modify the slick dots after they are initialized
-      $(".slick-dots li button").each(function (index) {
+      $('.slick-dots li button').each(function (index) {
         $(this).html(
           '<img src="images/room-card/service-details/img-' +
             (index + 1) +
@@ -720,7 +720,7 @@
         );
       });
     });
-    $(".tab-slider").slick({
+    $('.tab-slider').slick({
       slidesToShow: 1,
       infinite: true,
       autoplay: true,
@@ -739,7 +739,7 @@
     /*
        Post Gallery Slider
        ============================*/
-    $(".post-gallery").slick({
+    $('.post-gallery').slick({
       slidesToShow: 1,
       infinite: true,
       autoplay: true,
@@ -758,7 +758,7 @@
     /*
        Portfolio Logo Slider
        ============================*/
-    $(".portfolio-slider").slick({
+    $('.portfolio-slider').slick({
       slidesToShow: 2,
       infinite: true,
       autoplay: false,
@@ -813,7 +813,7 @@
     });
 
     // Team Area slider
-    $(".team-area-slider-wrapper").slick({
+    $('.team-area-slider-wrapper').slick({
       slidesToShow: 4,
       infinite: true,
       autoplay: true,
@@ -859,7 +859,7 @@
     });
 
     // Room card slider
-    $(".room-card-wrapper").slick({
+    $('.room-card-wrapper').slick({
       slidesToShow: 4,
       infinite: true,
       autoplay: false,
@@ -913,38 +913,38 @@
     let isDragging = false;
     let startX;
 
-    $(".drag-handle").on("mousedown touchstart", function (e) {
+    $('.drag-handle').on('mousedown touchstart', function (e) {
       isDragging = true;
       startX = e.pageX || e.originalEvent.touches[0].pageX;
-      $(this).addClass("grabbing");
+      $(this).addClass('grabbing');
     });
 
-    $(document).on("mousemove touchmove", function (e) {
+    $(document).on('mousemove touchmove', function (e) {
       if (isDragging) {
         let currentX = e.pageX || e.originalEvent.touches[0].pageX;
         let diff = startX - currentX;
 
         // Determine the drag direction and apply animation
         if (diff > 50) {
-          $(".room-card-wrapper").slick("slickNext");
+          $('.room-card-wrapper').slick('slickNext');
           startX = currentX; // Reset the start point
-          $(".slick-active").addClass("drag-left").removeClass("drag-right");
+          $('.slick-active').addClass('drag-left').removeClass('drag-right');
         } else if (diff < -50) {
-          $(".room-card-wrapper").slick("slickPrev");
+          $('.room-card-wrapper').slick('slickPrev');
           startX = currentX; // Reset the start point
-          $(".slick-active").addClass("drag-right").removeClass("drag-left");
+          $('.slick-active').addClass('drag-right').removeClass('drag-left');
         }
       }
     });
 
-    $(document).on("mouseup touchend", function () {
+    $(document).on('mouseup touchend', function () {
       isDragging = false;
-      $(".drag-handle").removeClass("grabbing");
-      $(".slick-active").removeClass("drag-left drag-right");
+      $('.drag-handle').removeClass('grabbing');
+      $('.slick-active').removeClass('drag-left drag-right');
     });
 
     // Room and suites
-    $(".room-card-wrapper-two").slick({
+    $('.room-card-wrapper-two').slick({
       slidesToShow: 4,
       infinite: true,
       autoplay: false,
@@ -997,7 +997,7 @@
     /*
         Counter Js
         ============================*/
-    $(".counter").counterUp({
+    $('.counter').counterUp({
       delay: 10,
       time: 1000,
     });
@@ -1005,10 +1005,10 @@
     /*
        Magnific Popup
        ============================*/
-    $(".video-play").magnificPopup({
+    $('.video-play').magnificPopup({
       // disableOn: 700,
-      type: "iframe",
-      mainClass: "mfp-fade",
+      type: 'iframe',
+      mainClass: 'mfp-fade',
       removalDelay: 160,
       preloader: false,
       fixedContentPos: false,
@@ -1022,12 +1022,12 @@
     /*
        Jquery Nice Select Js
        ============================*/
-    $("select").niceSelect();
+    $('select').niceSelect();
 
     /*
        Jquery Tilt Js
        ============================*/
-    $(".tilt-animate").tilt({
+    $('.tilt-animate').tilt({
       maxTilt: 12,
       perspective: 1500,
     });
@@ -1038,58 +1038,58 @@
     /*
         Isotope Grid Js
         ============================*/
-    $(".portfolio-filter").on("click", "li", function () {
-      $("li").removeClass("active");
-      $(this).addClass("active");
-      var filterValue = $(this).attr("data-filter");
+    $('.portfolio-filter').on('click', 'li', function () {
+      $('li').removeClass('active');
+      $(this).addClass('active');
+      var filterValue = $(this).attr('data-filter');
       $grid.isotope({
         filter: filterValue,
       });
     });
-    var $grid = $(".isotope-grid").isotope({
-      itemSelector: ".masonry-portfolio-item",
+    var $grid = $('.isotope-grid').isotope({
+      itemSelector: '.masonry-portfolio-item',
       percentPosition: true,
       masonry: {
-        columnWidth: ".masonry-portfolio-item",
+        columnWidth: '.masonry-portfolio-item',
       },
     });
     $grid.imagesLoaded().progress(function () {
-      $grid.isotope("layout");
+      $grid.isotope('layout');
     });
 
     // Accordion Init Height
-    const accordionEl = $(".accordion-box-wrapper");
+    const accordionEl = $('.accordion-box-wrapper');
     const accordionHeight = accordionEl.innerHeight();
-    accordionEl.css("height", accordionHeight);
+    accordionEl.css('height', accordionHeight);
 
     /*
         Circle Rotate Text In JS
         ============================*/
-    const circleRotateElm = $(".circle-rotate-text");
+    const circleRotateElm = $('.circle-rotate-text');
     if (circleRotateElm.length) {
       circleRotateElm.each(function () {
         const elm = $(this);
-        const options = elm.data("circle-text");
-        if (typeof options === "string") {
+        const options = elm.data('circle-text');
+        if (typeof options === 'string') {
           const parsedOptions = JSON.parse(options);
           elm.circleType(parsedOptions);
-        } else if (typeof options === "object") {
+        } else if (typeof options === 'object') {
           elm.circleType(options);
         }
       });
     }
 
     // Portfolio Hover
-    $(".portfolio-card-main-wrapper").each(function () {
-      const item = $(this).find(".portfolio-card, .icon-card-inner");
-      const img = $(this).find(".tabimg");
-      item.on("mouseenter", function () {
-        const tab_id = $(this).attr("data-tab");
-        item.removeClass("active");
-        $(this).addClass("active");
-        img.removeClass("active");
-        $("#" + tab_id).addClass("active");
-        if ($(this).hasClass("active")) {
+    $('.portfolio-card-main-wrapper').each(function () {
+      const item = $(this).find('.portfolio-card, .icon-card-inner');
+      const img = $(this).find('.tabimg');
+      item.on('mouseenter', function () {
+        const tab_id = $(this).attr('data-tab');
+        item.removeClass('active');
+        $(this).addClass('active');
+        img.removeClass('active');
+        $('#' + tab_id).addClass('active');
+        if ($(this).hasClass('active')) {
           return false;
         }
       });
@@ -1099,45 +1099,45 @@
         Scroll To Top Js
         ============================*/
     $(function () {
-      $("#scrollTop").hide();
+      $('#scrollTop').hide();
       var position = $(window).scrollTop();
       var timer;
-      $(window).on("scroll", function () {
+      $(window).on('scroll', function () {
         var scrollTop = $(window).scrollTop();
         clearTimeout(timer);
         if (scrollTop > 100) {
           if (scrollTop > position) {
-            $("#scrollTop").fadeOut();
+            $('#scrollTop').fadeOut();
           } else {
-            $("#scrollTop").fadeIn();
+            $('#scrollTop').fadeIn();
             timer = window.setTimeout(function () {
-              $("#scrollTop").fadeOut();
+              $('#scrollTop').fadeOut();
             }, 3000);
           }
           position = scrollTop;
         } else {
-          $("#scrollTop").fadeOut();
+          $('#scrollTop').fadeOut();
         }
       });
-      $(".scrollup-btn").click(function () {
-        $("html, body").animate(
+      $('.scrollup-btn').click(function () {
+        $('html, body').animate(
           {
             scrollTop: 0,
           },
-          "slow"
+          'slow'
         );
         return false;
       });
     });
 
     // Share btn click action
-    $(".social-btn").on("click", function () {
-      $(".share-group").toggleClass("active");
-      $(".social-btn-overlay").toggleClass("active");
+    $('.social-btn').on('click', function () {
+      $('.share-group').toggleClass('active');
+      $('.social-btn-overlay').toggleClass('active');
     });
-    $(".social-btn-overlay").on("click", function () {
-      $(".share-group").removeClass("active");
-      $(".social-btn-overlay").removeClass("active");
+    $('.social-btn-overlay').on('click', function () {
+      $('.share-group').removeClass('active');
+      $('.social-btn-overlay').removeClass('active');
     });
     // CountDown
     var countdownTime = {
@@ -1167,17 +1167,17 @@
       }
 
       // Update HTML elements
-      $("#days").text(countdownTime.days);
-      $("#hours").text(countdownTime.hours);
-      $("#minutes").text(countdownTime.minutes);
-      $("#seconds").text(countdownTime.seconds);
+      $('#days').text(countdownTime.days);
+      $('#hours').text(countdownTime.hours);
+      $('#minutes').text(countdownTime.minutes);
+      $('#seconds').text(countdownTime.seconds);
     }
 
     setInterval(updateCountdown, 1000);
 
-    document.querySelectorAll("#calendar-icon").forEach(function (icon, index) {
-      icon.addEventListener("click", function () {
-        document.getElementsByClassName("date-input")[index].showPicker(); // Triggers the corresponding date input
+    document.querySelectorAll('.date-input').forEach(function (icon, index) {
+      icon.addEventListener('click', function () {
+        document.getElementsByClassName('date-input')[index].showPicker(); // Triggers the corresponding date input
       });
     });
   });

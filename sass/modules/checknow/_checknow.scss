@@ -43,6 +43,11 @@ input[type='date']::-ms-clear {
         color: #a19292;
         border-radius: 0;
         line-height: normal;
+        &:after {
+          top: 50%;
+          right: 10px;
+          width: auto;
+        }
       }
     }
     .input-wrapper {

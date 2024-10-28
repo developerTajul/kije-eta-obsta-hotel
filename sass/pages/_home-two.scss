@@ -256,7 +256,7 @@
       padding: 60px 0;
     }
     &:before {
-      content: "";
+      content: '';
       background-color: rgba(49, 43, 43, 0.8);
       position: absolute;
       left: 0;
@@ -378,6 +378,7 @@
       }
     }
     .section-title {
+      margin-bottom: 26px;
       @include sm {
         margin-bottom: 0;
       }
@@ -524,7 +525,7 @@
       width: 102%;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: -100%;
