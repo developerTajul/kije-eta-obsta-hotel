@@ -17,6 +17,18 @@
         position: relative;
         display: inline-block;
         padding: 0 12px;
+        @include xl {
+          font-size: 350px;
+        }
+        @include lg {
+          font-size: 250px;
+        }
+        @include md {
+          font-size: 150px;
+        }
+        @include sm {
+          font-size: 100px;
+        }
         &:before {
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: $gray;
@@ -26,11 +38,23 @@
           font-weight: 700;
           line-height: normal;
           color: transparent;
-          content: 'Coming Soon';
+          content: "Coming Soon";
           position: absolute;
           left: 20px;
           top: 12px;
           z-index: -1;
+          @include xl {
+            font-size: 350px;
+          }
+          @include lg {
+            font-size: 250px;
+          }
+          @include md {
+            font-size: 150px;
+          }
+          @include sm {
+            font-size: 100px;
+          }
         }
       }
       .countdown-container {
@@ -38,6 +62,10 @@
         align-items: center;
         justify-content: center;
         gap: 60px;
+        flex-wrap: wrap;
+        @include sm {
+          gap: 30px;
+        }
       }
 
       .time-unit {

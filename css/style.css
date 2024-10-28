@@ -87870,6 +87870,14 @@ body.admin-bar .header-area.style-7 {
   padding-top: 0;
   padding-left: 40px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .widget .search-form,
+  .widget ul,
+  .widget .tagcloud,
+  .widget .widget-instagram-feed {
+    padding: 0;
+  }
+}
 .widget .widget-instagram-feed {
   width: 315px;
 }
@@ -92763,6 +92771,26 @@ ul.children {
   display: inline-block;
   padding: 0 12px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .error-wrapper.coming-soon .error-content .error-title {
+    font-size: 350px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .error-wrapper.coming-soon .error-content .error-title {
+    font-size: 250px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .error-wrapper.coming-soon .error-content .error-title {
+    font-size: 150px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .error-wrapper.coming-soon .error-content .error-title {
+    font-size: 100px;
+  }
+}
 .error-wrapper.coming-soon .error-content .error-title:before {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #808287;
@@ -92778,11 +92806,37 @@ ul.children {
   top: 12px;
   z-index: -1;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .error-wrapper.coming-soon .error-content .error-title:before {
+    font-size: 350px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .error-wrapper.coming-soon .error-content .error-title:before {
+    font-size: 250px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .error-wrapper.coming-soon .error-content .error-title:before {
+    font-size: 150px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .error-wrapper.coming-soon .error-content .error-title:before {
+    font-size: 100px;
+  }
+}
 .error-wrapper.coming-soon .error-content .countdown-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 60px;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .error-wrapper.coming-soon .error-content .countdown-container {
+    gap: 30px;
+  }
 }
 .error-wrapper.coming-soon .error-content .time-unit {
   display: flex;

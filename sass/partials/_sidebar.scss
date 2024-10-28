@@ -41,6 +41,9 @@
     padding: 40px;
     padding-top: 0;
     padding-left: 40px;
+    @include sm {
+      padding: 0;
+    }
   }
 
   /* Widget Instagram Feed */
@@ -138,7 +141,7 @@
           color: $text-color;
 
           &:before {
-            content: '\f274';
+            content: "\f274";
             font-family: $font-awesome;
             padding-right: 8px;
           }
@@ -287,7 +290,7 @@
       line-height: 30px;
       @include transition;
       &:after {
-        content: '/';
+        content: "/";
       }
 
       &:hover {
@@ -521,7 +524,7 @@
   .wp-block-rss__item-publish-date,
   .rss-date {
     &:before {
-      content: '\f274';
+      content: "\f274";
       font-family: $font-awesome;
       padding-right: 8px;
     }
@@ -530,7 +533,7 @@
   .wp-block-latest-posts__post-author,
   .wp-block-rss__item-author {
     &:before {
-      content: '\f007';
+      content: "\f007";
       font-family: $font-awesome;
       padding-right: 8px;
     }
