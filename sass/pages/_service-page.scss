@@ -10,12 +10,7 @@
   }
   .room-card {
     &.styel-4 {
-      @include sm {
-        margin-bottom: 50px;
-      }
-      @include md {
-        margin-bottom: 50px;
-      }
+      margin-bottom: 50px;
     }
   }
   .btn-wrapper {
@@ -37,6 +32,9 @@
         color: $white;
       }
     }
+  }
+  .basic-pagination {
+    margin-bottom: 0;
   }
   .sidebar {
     background-color: #f8f5f0;

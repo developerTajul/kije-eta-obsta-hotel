@@ -92991,15 +92991,8 @@ ul.children {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .list-page-wrapper .room-card.styel-4 {
-    margin-bottom: 50px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .list-page-wrapper .room-card.styel-4 {
-    margin-bottom: 50px;
-  }
+.list-page-wrapper .room-card.styel-4 {
+  margin-bottom: 50px;
 }
 .list-page-wrapper .btn-wrapper {
   display: flex;
@@ -93020,6 +93013,9 @@ ul.children {
 .list-page-wrapper .btn-wrapper .list-btn:hover {
   background-color: #aa8453;
   color: #ffffff;
+}
+.list-page-wrapper .basic-pagination {
+  margin-bottom: 0;
 }
 .list-page-wrapper .sidebar {
   background-color: #f8f5f0;
