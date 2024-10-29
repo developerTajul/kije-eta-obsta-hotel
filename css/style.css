@@ -81122,6 +81122,11 @@ body.admin-bar .header-area.style-7 {
   align-items: center;
   gap: 10px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section-title .short-title {
+    margin-bottom: 10px;
+  }
+}
 .section-title .title {
   font-family: "Gilda Display", serif;
   font-size: 54px;
@@ -86927,6 +86932,11 @@ body.admin-bar .header-area.style-7 {
   align-items: center;
   gap: 10px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section-title .short-title {
+    margin-bottom: 10px;
+  }
+}
 .section-title .title {
   font-family: "Gilda Display", serif;
   font-size: 54px;
@@ -89111,6 +89121,12 @@ ul.children {
   .team-member-card {
     width: auto;
     height: auto;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .team-member-card {
+    margin-bottom: 30px;
   }
 }
 .team-member-card:hover .image:before {
@@ -89121,6 +89137,10 @@ ul.children {
 .team-member-card:hover .image img {
   transform: scale(1.1);
   transition: all 0.5s ease-out;
+}
+.team-member-card:hover .social-links {
+  right: 30px;
+  z-index: 1;
 }
 .team-member-card .image-wrapper {
   overflow: hidden;
@@ -89222,20 +89242,6 @@ ul.children {
 }
 .team-member-card .social-links i {
   color: #ffffff;
-}
-.team-member-card:hover .social-links {
-  right: 30px;
-  z-index: 1;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .team-member-card {
-    margin-bottom: 50px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .team-member-card {
-    margin-bottom: 50px;
-  }
 }
 
 .team-member-slider-wrapper {
@@ -90440,7 +90446,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .checknow-form {
-    padding-top: 40px;
+    padding-top: 10px;
   }
 }
 .slider-area .checknow-form form .select-container {
@@ -90456,6 +90462,11 @@ ul.children {
 
 .about-us-area {
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-us-area {
+    padding-bottom: 10px;
+  }
 }
 .about-us-area .outer-shape {
   position: absolute;
@@ -90574,6 +90585,11 @@ ul.children {
     padding-bottom: 80px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .booking-area {
+    padding-bottom: 60px;
+  }
+}
 .booking-area .shape-wrapper {
   background-color: #f8f5f0;
   position: absolute;
@@ -90638,7 +90654,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .booking-area .contact-info .desc {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .booking-area .booking-form {
@@ -90726,6 +90742,11 @@ ul.children {
 @media (max-width: 1199px) {
   .booking-area .about-us-area {
     margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .booking-area .about-us-area {
+    margin-top: 60px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -90902,6 +90923,11 @@ ul.children {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .service-area {
+    background: none;
+  }
 }
 .service-area:before {
   content: "";
@@ -91104,7 +91130,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .team-area.style-1 {
-    padding-top: 90px;
+    padding-top: 62px;
   }
 }
 .team-area.style-1 .shape {
@@ -91259,7 +91285,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .feature-and-facilities.style-1 .inner-wrapper {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
 }
 .feature-and-facilities.style-1 .inner-wrapper .shape {
@@ -91512,7 +91538,7 @@ ul.children {
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translate(50px, 50px);
+  transform: none;
 }
 @media (max-width: 1399px) {
   .room_and_suites.style-2 .banner-text {
@@ -91535,6 +91561,7 @@ ul.children {
 }
 .room_and_suites.style-2 .banner-text p {
   transform: none;
+  line-height: 163px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .room_and_suites.style-2 .banner-text p {
@@ -91642,6 +91669,12 @@ ul.children {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .price-area.style-1 {
     padding-bottom: 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-area.style-1 {
+    padding-bottom: 160px;
+    padding-top: 80px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -92958,6 +92991,16 @@ ul.children {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .list-page-wrapper .room-card.styel-4 {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .list-page-wrapper .room-card.styel-4 {
+    margin-bottom: 50px;
+  }
+}
 .list-page-wrapper .btn-wrapper {
   display: flex;
   align-items: center;
@@ -93833,6 +93876,11 @@ ul.children {
   top: 0;
   left: 50%;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer .square-shape {
+    left: 35%;
+  }
+}
 .footer .square-shape .inner {
   width: 40px;
   height: 40px;
@@ -94080,11 +94128,12 @@ ul.children {
   margin-top: -5px;
   padding-left: 0;
   margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer-widget.widget_nav_menu li {
   position: relative;
-  display: inline-block;
-  width: 100%;
+  width: 50%;
   padding-bottom: 10px;
 }
 .footer-widget.widget_nav_menu li:last-child {
@@ -94098,7 +94147,7 @@ ul.children {
   transition: all 0.5s ease-out;
   position: relative;
   font-family: "Barlow Condensed", sans-serif;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
 }
@@ -94887,6 +94936,11 @@ input[type=date]::-ms-clear {
   align-items: center;
   gap: 8px;
 }
+@media (max-width: 991px) {
+  .checknow-form form .input-wrapper {
+    flex: 1;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .checknow-form form .input-wrapper {
     flex-direction: column;
@@ -94934,6 +94988,12 @@ input[type=date]::-ms-clear {
   position: relative;
   display: inline-block;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .checknow-form form .input-wrapper .date-container,
+  .checknow-form form .input-wrapper .select-container {
+    flex: 1;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .checknow-form form .input-wrapper .date-container,
   .checknow-form form .input-wrapper .select-container {
@@ -94978,6 +95038,11 @@ input[type=date]::-ms-clear {
 @media (max-width: 1199px) {
   .checknow-form form button {
     margin-top: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .checknow-form form button {
+    flex: 1;
   }
 }
 .checknow-form form select {

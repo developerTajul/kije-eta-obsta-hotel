@@ -8,6 +8,16 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .room-card {
+    &.styel-4 {
+      @include sm {
+        margin-bottom: 50px;
+      }
+      @include md {
+        margin-bottom: 50px;
+      }
+    }
+  }
   .btn-wrapper {
     display: flex;
     align-items: center;
@@ -87,9 +97,9 @@
         letter-spacing: 2.1px;
         background-color: $white;
       }
-      input[type="date"] {
+      input[type='date'] {
         color: #a19292;
-        font-family: "Barlow Condensed";
+        font-family: 'Barlow Condensed';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -121,7 +131,7 @@
           }
         }
         &:before {
-          content: "\f107";
+          content: '\f107';
           font-size: 12px;
           position: absolute;
           font-family: $font-awesome;
@@ -160,7 +170,7 @@
         position: relative;
         width: 100%;
 
-        input[type="range"] {
+        input[type='range'] {
           -webkit-appearance: none;
           appearance: none;
           position: absolute;
@@ -218,7 +228,7 @@
 
         cursor: pointer;
 
-        input[type="checkbox"] {
+        input[type='checkbox'] {
           display: none; // Hide the default checkbox
         }
 
@@ -234,7 +244,7 @@
           transition: background-color 0.3s ease, border-color 0.3s ease;
 
           &:after {
-            content: "";
+            content: '';
             position: absolute;
             left: 4px;
             top: 4px;
@@ -249,7 +259,7 @@
           }
         }
 
-        input[type="checkbox"]:checked + .checkmark {
+        input[type='checkbox']:checked + .checkmark {
           background-color: $white; // Brown fill when checked
           border-color: $primary-color;
 

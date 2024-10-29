@@ -26,6 +26,9 @@
     position: absolute;
     top: 0;
     left: 50%;
+    @include sm {
+      left: 35%;
+    }
     .inner {
       width: 40px;
       height: 40px;
@@ -342,12 +345,14 @@
       margin-top: -5px;
       padding-left: 0;
       margin-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     li {
       position: relative;
-      display: inline-block;
-      width: 100%;
+      // display: inline;
+      width: 50%;
       padding-bottom: 10px;
 
       &:last-child {
@@ -362,7 +367,7 @@
         @include transition;
         position: relative;
         font-family: $body-font;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         gap: 8px;
         @include lg {

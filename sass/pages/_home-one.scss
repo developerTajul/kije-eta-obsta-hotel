@@ -391,7 +391,7 @@
       padding-top: 100px;
     }
     @include sm {
-      padding-top: 40px;
+      padding-top: 10px;
     }
     form {
       .select-container {
@@ -411,6 +411,9 @@
 // About Us Area
 .about-us-area {
   position: relative;
+  @include sm {
+    padding-bottom: 10px;
+  }
   .outer-shape {
     position: absolute;
     left: 117px;
@@ -511,6 +514,9 @@
     padding-top: 0;
     padding-bottom: 80px;
   }
+  @include sm {
+    padding-bottom: 60px;
+  }
   .shape-wrapper {
     background-color: #f8f5f0;
     position: absolute;
@@ -564,7 +570,7 @@
       line-height: normal;
       color: $gray;
       @include sm {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
   }
@@ -608,7 +614,7 @@
           margin-bottom: 10px;
         }
 
-        input[type="date"],
+        input[type='date'],
         select {
           width: 100%;
           padding: 12px;
@@ -657,6 +663,9 @@
   .about-us-area {
     @include rmaxwd(1199) {
       margin-top: 70px;
+    }
+    @include sm {
+      margin-top: 60px;
     }
     .image-wrapper {
       .main-img {
@@ -835,8 +844,11 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  @include sm {
+    background: none;
+  }
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -1043,7 +1055,7 @@
   &.style-1 {
     position: relative;
     @include sm {
-      padding-top: 90px;
+      padding-top: 62px;
     }
     .shape {
       position: absolute;
@@ -1186,7 +1198,7 @@
       background-size: cover;
       @include sm {
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
       }
       .shape {
         position: absolute;

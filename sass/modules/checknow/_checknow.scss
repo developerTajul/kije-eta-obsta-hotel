@@ -54,6 +54,9 @@ input[type='date']::-ms-clear {
       display: flex;
       align-items: center;
       gap: 8px;
+      @include rmaxwd(991) {
+        flex: 1;
+      }
       @include sm {
         flex-direction: column;
         width: 100%;
@@ -93,6 +96,9 @@ input[type='date']::-ms-clear {
       .select-container {
         position: relative;
         display: inline-block;
+        @include md {
+          flex: 1;
+        }
         @include sm {
           width: 100%;
         }
@@ -140,6 +146,9 @@ input[type='date']::-ms-clear {
       margin-top: 8px;
       @include rmaxwd(1199) {
         margin-top: 0;
+      }
+      @include md {
+        flex: 1;
       }
     }
     select {
