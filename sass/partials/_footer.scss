@@ -38,7 +38,7 @@
     padding-top: 80px;
     @include sm {
       padding-top: 60px;
-      padding-bottom: 54px;
+      padding-bottom: 0;
     }
 
     hr {
@@ -369,7 +369,7 @@
           align-items: start;
         }
         &:before {
-          content: "\f101";
+          content: '\f101';
           font-family: $font-awesome;
           font-size: 16px;
           color: $white;
@@ -695,7 +695,7 @@
   .mc4wp-form-255 {
     margin-top: 12px;
     .mc4wp-form-fields {
-      input[type="submit"] {
+      input[type='submit'] {
         padding: 12px 20px;
         background-color: $primary-color;
         color: $white;

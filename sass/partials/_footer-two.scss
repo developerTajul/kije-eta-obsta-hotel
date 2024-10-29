@@ -16,6 +16,9 @@
     }
   }
   &.style-2 {
+    .footer-sec {
+      padding-bottom: 0;
+    }
     .footer-widget-title {
       font-size: 30px;
       font-style: normal;
@@ -72,6 +75,9 @@
     .footer-bottom-wrapper {
       padding-top: 26px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
+      @include sm {
+        padding-top: 20px;
+      }
     }
   }
   // Instagram Widget
@@ -97,7 +103,7 @@
     @include sm {
       grid-template-columns: repeat(2, 1fr);
       width: auto !important;
-      gap: 0;
+      gap: 10px;
     }
     .single-instagram-feed {
       width: 177px;
@@ -105,8 +111,12 @@
       overflow: hidden;
       position: relative;
       flex-shrink: 0;
+      @include sm {
+        width: 155px;
+        height: 110px;
+      }
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;

@@ -1,5 +1,11 @@
 .team-details-area {
   position: relative;
+  @include sm {
+    padding: 60px 0 56px 0;
+  }
+  @include md {
+    padding: 80px 0 76px 0;
+  }
   .image-wrapper {
     position: relative;
     img {
@@ -11,6 +17,9 @@
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
+    @include sm {
+      display: none;
+    }
   }
   .team-details-wrapper {
     @include rmaxwd(991) {
@@ -104,6 +113,9 @@
       @include rmaxwd(991) {
         flex-wrap: wrap;
       }
+      @include sm {
+        margin-top: 15px;
+      }
     }
     .desc {
       font-size: 16px;
@@ -111,6 +123,9 @@
       font-weight: 400;
       line-height: 29px;
       color: $gray;
+      @include sm {
+        margin-top: 22px;
+      }
     }
   }
 }
