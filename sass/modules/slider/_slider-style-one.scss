@@ -138,6 +138,10 @@
             font-weight: 400;
             line-height: normal;
             text-transform: uppercase;
+            @include sm {
+              font-size: 24px;
+              line-height: 42px;
+            }
           }
           @include xl {
             color: $white;
