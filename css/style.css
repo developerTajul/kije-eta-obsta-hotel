@@ -95167,10 +95167,9 @@ input[type=date]::-ms-clear {
   display: none;
 }
 .checknow-form form button {
-  padding: 7px 40px;
+  padding: 9.5px 40px;
   background-color: #aa8453;
   color: #ffffff;
-  margin-top: 8px;
 }
 @media (max-width: 1199px) {
   .checknow-form form button {
