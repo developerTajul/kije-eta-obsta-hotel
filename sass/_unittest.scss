@@ -27,14 +27,14 @@ ul {
     font-weight: 500;
     margin-bottom: 10px;
   }
-  input[type='password'] {
+  input[type="password"] {
     font-size: 1.2rem;
     line-height: 20px;
     padding: 12px 20px;
     border: 1px solid #e4e4f2;
     width: 100%;
   }
-  input[type='submit'] {
+  input[type="submit"] {
     background-color: $primary-color;
     border: none;
     padding: 10px 40px;
@@ -55,7 +55,13 @@ ul {
 table {
   margin-bottom: 20px;
   width: 100%;
-
+  &.pricing-table {
+    td {
+      @include sm {
+        padding: 20px !important;
+      }
+    }
+  }
   caption {
     border: 1px solid #dfe2e9;
     padding: 6px 10px;
@@ -171,7 +177,7 @@ table {
   max-width: 100%;
 }
 
-.wp-caption img[class*='wp-image-'] {
+.wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -636,8 +642,8 @@ figure.wp-block-embed {
   }
 }
 // Global Checkbox & Radio Style
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
@@ -658,9 +664,9 @@ input[type='radio'] {
   box-shadow: none !important;
 }
 
-input[type='radio']::before {
+input[type="radio"]::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 8px;
   width: 8px;
   transition: 0.3s;
@@ -672,9 +678,9 @@ input[type='radio']::before {
   right: 0;
   margin: auto;
 }
-input[type='checkbox']::before {
+input[type="checkbox"]::before {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.44899 7.76355C3.36328 7.84971 3.24641 7.89784 3.12495 7.89784C3.00349 7.89784 2.88662 7.84971 2.80091 7.76355L0.213156 5.17534C-0.0554271 4.90676 -0.0554271 4.47134 0.213156 4.20321L0.537198 3.87917C0.805781 3.61059 1.24074 3.61059 1.50932 3.87917L3.12495 5.4948L7.49057 1.12917C7.75916 0.860589 8.19457 0.860589 8.4627 1.12917L8.78674 1.45321C9.05532 1.7218 9.05532 2.15721 8.78674 2.42534L3.44899 7.76355Z' fill='white'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center center;
@@ -690,13 +696,13 @@ input[type='checkbox']::before {
   right: 0;
   margin: auto;
 }
-input[type='checkbox']:checked::before,
-input[type='radio']:checked::before {
+input[type="checkbox"]:checked::before,
+input[type="radio"]:checked::before {
   transform: scale(1);
   box-sizing: inherit !important;
 }
-input[type='checkbox']:checked,
-input[type='radio']:checked {
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
   border-color: $primary-color !important;
 }
 
@@ -780,7 +786,7 @@ input[type='radio']:checked {
         color: $text-color;
 
         &:before {
-          content: '\f274';
+          content: "\f274";
           font-family: $font-awesome;
           padding-right: 8px;
         }

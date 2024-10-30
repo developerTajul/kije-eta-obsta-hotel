@@ -614,7 +614,7 @@
           margin-bottom: 10px;
         }
 
-        input[type='date'],
+        input[type="date"],
         select {
           width: 100%;
           padding: 12px;
@@ -848,7 +848,7 @@
     background: none;
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -1202,8 +1202,8 @@
       }
       .shape {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: -1px;
+        right: -1px;
         z-index: 2;
         @include rmaxwd(991) {
           display: none;

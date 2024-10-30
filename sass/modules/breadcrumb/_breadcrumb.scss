@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center center;
   background-color: #000000b2;
+  overflow: hidden;
   @include sm {
     padding-top: 104px;
   }
@@ -22,7 +23,7 @@
   }
   .shape-two {
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
   }
 }
