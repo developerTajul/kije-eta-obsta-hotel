@@ -78,7 +78,7 @@ input[type="date"]::-ms-clear {
         letter-spacing: 2.1px;
         width: 290px;
         @include rmaxwd(1399) {
-          // width: 100%;
+          width: 100%;
         }
       }
       .nice-select {

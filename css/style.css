@@ -91554,6 +91554,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .video-popup-area.style-1 .gift-card {
     padding: 40px;
+    margin-top: 0;
   }
 }
 .video-popup-area.style-1 .gift-card .shape {
@@ -92607,6 +92608,12 @@ ul.children {
   }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-area.about-page {
+    padding-top: 0;
+  }
+}
+
 .book-appointment-area .comment-respond {
   margin-top: 0;
 }
@@ -92980,6 +92987,12 @@ ul.children {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-area.about-page {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .contact-page-widget {
     padding-top: 182px;
     padding-bottom: 80px;
@@ -93122,8 +93135,8 @@ ul.children {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .list-page-wrapper {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .list-page-wrapper.details-page {
@@ -95097,6 +95110,12 @@ input[type=date]::-ms-clear {
   line-height: normal;
   letter-spacing: 2.1px;
   width: 290px;
+}
+@media (max-width: 1399px) {
+  .checknow-form form .input-wrapper input,
+  .checknow-form form .input-wrapper select {
+    width: 100%;
+  }
 }
 .checknow-form form .input-wrapper .nice-select {
   width: 290px;

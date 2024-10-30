@@ -34,3 +34,12 @@
     }
   }
 }
+
+// Testimonial-area
+.testimonial-area {
+  &.about-page {
+    @include sm {
+      padding-top: 0;
+    }
+  }
+}
