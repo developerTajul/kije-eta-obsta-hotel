@@ -17,7 +17,14 @@
     }
   }
 }
-
+// About us area
+.team-area {
+  &.about-page {
+    @include sm {
+      padding-bottom: 30px;
+    }
+  }
+}
 // Brand Slider
 .brand-slider-area {
   &.style-2 {
