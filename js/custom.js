@@ -7,7 +7,7 @@
     window.onload = new (function () {
       $('#preloader').fadeOut();
       $('#preloader-status').delay(1000).fadeOut('slow');
-      $('body').delay(200).css({ 'overflow-x': 'hidden' });
+      $('body').delay(1000).css({ 'overflow-x': 'hidden' });
     })();
     /*
        Jquery Mobile Menu
