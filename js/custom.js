@@ -1173,14 +1173,37 @@
       $('#seconds').text(countdownTime.seconds);
     }
 
-    // setInterval(updateCountdown, 1000);
-    // flatpickr('.date-input', {
-    //   dateFormat: 'Y-m-d', // Customize format as needed
-    // });
+    // custom date picker
+    document.querySelectorAll('.datepicker').forEach(datepicker => {
+      const textInput = datepicker.querySelector('input[type="text"]');
+      const dateInput = datepicker.querySelector('input[type="date"]');
+      const calendarIcon = datepicker.querySelector('.fa-calendar-alt');
+      let pickerOpen = false;
 
-    document.querySelectorAll('.date-input').forEach(function (icon, index) {
-      icon.addEventListener('click', function () {
-        document.getElementsByClassName('date-input')[index].showPicker(); // Triggers the corresponding date input
+      // Function to toggle the date picker
+      function toggleDatePicker() {
+        if (!pickerOpen) {
+          dateInput.showPicker();
+          pickerOpen = true;
+        } else {
+          dateInput.blur(); // Close the picker
+          pickerOpen = false;
+        }
+      }
+
+      // Show picker on text input or icon click
+      textInput.addEventListener('click', toggleDatePicker);
+      calendarIcon.addEventListener('click', toggleDatePicker);
+
+      // Sync the selected date with the text input and close the picker
+      dateInput.addEventListener('change', () => {
+        textInput.value = dateInput.value; // Format the date as needed
+        pickerOpen = false;
+      });
+
+      // Reset `pickerOpen` status when picker is closed by clicking outside
+      dateInput.addEventListener('blur', () => {
+        pickerOpen = false;
       });
     });
   });

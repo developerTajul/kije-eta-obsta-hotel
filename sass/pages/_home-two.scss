@@ -265,7 +265,7 @@
       padding: 60px 0;
     }
     &:before {
-      content: "";
+      content: '';
       background-color: rgba(49, 43, 43, 0.8);
       position: absolute;
       left: 0;
@@ -325,17 +325,17 @@
       }
       form {
         box-shadow: 0px 4px 20px 0px rgba(234, 234, 234, 0.3);
-        .input-wrapper {
-        }
-        .input-wrapper,
-        button {
-          @include md {
-            flex: 1;
-          }
-          @include sm {
-            flex: 1;
-          }
-        }
+        // .input-wrapper {
+        // }
+        // .input-wrapper,
+        // button {
+        //   @include md {
+        //     flex: 1;
+        //   }
+        //   @include sm {
+        //     flex: 1;
+        //   }
+        // }
         .date-container {
           @include rmaxwd(991) {
             flex: 1;
@@ -534,7 +534,7 @@
       width: 102%;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: -100%;
@@ -712,7 +712,7 @@
       top: 0;
       right: 255px;
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 30px;
         height: 45px;

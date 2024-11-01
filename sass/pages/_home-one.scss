@@ -605,9 +605,36 @@
         position: relative;
         margin-bottom: 20px;
 
-        .date-container {
+        .datepicker {
           position: relative;
+
+          #calendar-icon {
+            position: absolute;
+            right: 10px; // Adjust as needed
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            pointer-events: none;
+          }
+
+          input {
+            width: 100%;
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            background-color: #f6f6f6;
+            color: #616670;
+
+            &[type='date'] {
+              position: absolute;
+              inset: 0;
+              z-index: -1;
+              opacity: 0;
+            }
+          }
         }
+
         label {
           font-size: 16px;
           font-style: normal;
@@ -634,16 +661,6 @@
             outline: none;
             border-color: $primary-color;
           }
-        }
-
-        i {
-          display: inline-block;
-          position: absolute;
-          right: 15px;
-          top: 50%;
-          transform: translateY(60%);
-          background-color: #f6f6f6;
-          color: #a19292;
         }
       }
 

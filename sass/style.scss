@@ -236,22 +236,3 @@ Footer
 
 // Blog-card
 @import 'modules/blog-card/blog-card';
-
-input[type='date'] {
-  -moz-appearance: textfield;
-  position: relative;
-  z-index: 1;
-}
-
-/* Optional: style adjustments for the custom icon */
-#calendar-icon {
-  position: absolute;
-  right: 10px; /* Adjust as needed */
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  pointer-events: none;
-}
-.date-input {
-  -moz-appearance: textfield;
-}
